@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>브랜드파워1위 스마트교복</title>
+  <script src="js/promise.js"></script>
+  <script src="https://unpkg.com/jquery"></script>
+  <!--01-04-2019 start-->
+  <!--made miryean-->
+  <!--왜 이 포트폴리오를 선택했는지 : css, jquery 사용에 중점을 둠 / 내용 더 필요-->
+  <!--만드는 중 뭔가를 바꿨다면 왜 바꿨는지 설명-->
+  <!-- animation을 css로 구현해서 브라우저에서 버벅임이 없다 -->
+</head>
+<body>
+  <section id="main-door">
+  <!-- 파란 문 양옆에서 닫침 -->
+    <div class="door-bg">
+      <div class="left-door"></div>
+      <div class="right-door"></div>
+    </div>
+    <div class="cloud-bg">
+      <div class="left-cloud"></div>
+      <div class="right-cloud"></div>
+    </div>
+      
+    <!-- 스마트 로고 -->
+    <div class="logo"></div>
+
+    <!-- 파란 텍스트 배너 -->
+    <div class="text-banner">
+      <div class="banner-text-l"></div>
+      <div class="banner-text-r"></div>
+    </div>
+
+    <!-- 남자모델, 교복 -->
+    <div class="actor-1"></div>
+    <img id="uniform-1" src="img/main/img_clothes01.png" alt="uniform">
+
+    <!-- 여자모델, 배너, 교복 -->
+    <img id="uniform-2" src="img/main/img_clothes02.png" alt="uniform">
+    <div class="actor-2"></div>
+    
+    <!-- 분홍 텍스트 배너 -->
+    <div class="text-banner-pink"></div>
+  </section> 
+
+  <a class="skip" href="page/main.html"></a>
+
+
+  <script>
+
+    // main-door 효과 (es5)
+    
+    promise(function(resolve){ $(window).on('load',resolve) })
+    .then(function(){
+      //파란 문 양옆에서 닫침
+      $('.door-bg').addClass('door-active');
+      return promise.timeout(500);
+    })
+    .then(function(){
+      //파란배너 skip 나옴
+      $('.skip').addClass('show');
+      $('.text-banner').addClass('banner-active');
+      return promise.timeout(1300);
+    })
+    .then(function(){
+      //파란배너합쳐짐, 남자모델 나옴
+      $('.text-banner').addClass('banner-move');
+      $('.actor-1').addClass('actor-active');
+      return promise.timeout(1000);
+    })
+    .then(function(){
+      //유니폼 효과
+      $('#uniform-1').addClass('uniform-active');
+      return promise.timeout(1000);
+    })
+    .then(function(){
+      //남자모델, 유니폼 제거
+      $('.actor-1').removeClass('actor-active');
+      $('#uniform-1').removeClass('uniform-active');
+      return promise.timeout(100);
+    })
+    .then(function(){
+      //배너 제거
+      $('.text-banner').addClass('hide');
+      return promise.timeout(300); 
+    })
+    .then(function(){
+      //배경바뀌고 여자모델과 분홍배너 나옴
+      $('.door-bg').addClass('hide');
+      $('.cloud-bg').addClass('show');
+      $('.text-banner-pink').addClass('show');
+      $('.actor-2').addClass('actor-active');
+      return promise.timeout(1000);
+    })
+    .then(function(){
+      //여자 유니폼 나옴
+      $('#uniform-2').addClass('uniform-active');
+      return promise.timeout(1500);
+    })
+    .then(function(){
+      //배경바뀌고 여자모델과 배너 로고 제거
+      $('.cloud-bg').addClass('cloud-active');
+      $('.actor-2').removeClass('actor-active');
+      $('#uniform-2').addClass('hide');
+      $('.text-banner-pink').addClass('active');
+      $('.logo').addClass('hide');
+      return promise.timeout(1000);
+    })
+    // 이걸 넣으면 마지막 액션이 적용되지 않음
+    .then(function(){
+     location.href = 'page/main.html';
+    })
+    ;
+
+    //chrome, ie edge에서만 가능한 문법 (es6)
+    // $(window).on("load", async function(){
+    //   $("#main-door").addClass("door-active");
+    //   await promise.timeout(1000);
+    //   $("#main-door").addClass("banner-active");
+    //   await promise.timeout(1000);
+
+      // $("#main-door").addClass("door-active");
+      // await promise.timeout(1000);
+      // $("#main-door").removeClass("door-active");
+      // await promise.timeout(1000);
+      //});
+  
+    
+  </script>
+
+
+</body>
+</html>

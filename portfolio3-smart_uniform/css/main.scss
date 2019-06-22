@@ -1,0 +1,675 @@
+html {
+  width: 100%;
+  height: 100%;
+
+  >body {
+    margin: 0;
+    height: 100%;
+
+    > header {
+      margin: 0;
+      height: 100vh;
+
+      >nav.gnb {
+        height: 100%;
+        overflow: hidden;
+
+        >div.menu {
+          width: calc(100% - 140px);
+          height: 100%;
+          color: #FFFFFF;
+
+          >.menu-body {
+            width: calc(100% - 140px);
+            height: 100%;
+            position: fixed;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav.gnb {
+  position: relative;
+  z-index: 998;
+
+  >.gnb-menu { //click effect 넣기
+    position: fixed;
+    width: 140px;
+    right: 0;
+    left: auto;
+    height: 100%;
+    z-index: 999;
+
+    a#blue-gnb, a#pink-gnb {
+      position: relative;
+      display: block;
+      height: 50%;
+      cursor: pointer;
+
+      span { //완전 가운데로 가지를 않음
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: 6px;
+        width:fit-content;
+        margin-left: 3px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFFFFF;
+        line-height: 1.5em;
+        text-align: center;
+
+
+        &:after {
+          content: url(../img/bg_mnavi_p.png);
+          width: 10px;
+          height: 17px;
+          display: block;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          padding-top: 10px;
+        }
+      }
+    }
+
+    a#blue-gnb {
+      background-color:#1573AA;
+    }
+
+    a#pink-gnb {
+      background-color:#E7437D;
+    }
+  }
+
+  >div.menu { //아래에 스크롤이 생김
+    //fixed 해도 스크롤이 아래로 내려감
+    position: fixed;
+    
+    .btnBox {
+      box-sizing: border-box;
+      height: 10%;
+      padding-top: 2%;
+      margin-right: 20px;
+      float: right;
+
+      >a {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        color: #eee;
+        opacity: 0.8;
+        text-decoration: none;
+        margin-top: 3px;
+        margin-left: 30px;
+      }
+
+      >a.closeBtn {
+        width: 30px;
+        margin: 0 0 0 40px;
+
+        >img {
+          width:100%;
+        }
+      }
+    }
+    
+    .main-body {
+      height: 70%;
+      padding: 30px 0px 0px 30px;
+      overflow: hidden;
+      clear: both;
+
+      >.headerLogo { //좀더 위로 올리고 싶음
+        width: 145px;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.7em;
+        letter-spacing: 15px;
+        float: left;
+        margin: 0;
+      }
+
+      >.gnbMenu { //스크롤 바꾸기
+        height: 100%;
+        width: calc(100% - 150px);
+        padding-bottom: 30px;
+        overflow: auto; 
+
+        >ul {
+          box-sizing: border-box;
+          display: inline-block;
+          width: 255px;
+          border: 1px solid white;
+          vertical-align: top;
+          margin-top: 30px;
+          margin-left: 10px;
+          padding-left: 40px;
+
+          h3, p, li {
+            letter-spacing: -1px;
+          }
+
+          h3 {
+            font-size: 1.3em;
+            margin-top: 30px;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 1.5em;
+            margin-top: 20px;
+          }
+
+          span {
+            display: block;
+            width: 55px;
+            height: 1px;
+            margin: 25px 0;
+            border-bottom: 1px solid white;
+            opacity: 0.3;
+          }
+
+          >li.contentsList {
+            list-style: none;
+
+            >a.insideList {
+              display: inline-block;
+              text-decoration: none;
+              font-size: 0.8em;
+              color: white;
+              line-height: 2em;
+              padding-left: 10px;
+              background-image: url(../img/bg_hmenu_sub_a.png);
+              background-repeat: no-repeat;
+              background-position: 0 11px;
+
+              &:hover {
+                color: #FFFE8E;
+              }
+            }
+          }
+        }
+
+        ul.contents-top {
+          min-height: 285px;
+        }
+        
+        ul.contents-buttom {
+          min-height: 340px;
+        }
+      }
+    }
+
+    div.snb {
+      margin-top: 2%;
+      overflow: hidden;
+
+      >.snb-center {
+        width: 410px;
+        margin: 0 auto;
+
+        >a.snb-btn {
+          display: block;
+          float: left;
+          width: 20%;
+          text-decoration: none;
+        }
+      }
+
+      a.snb-right-btn {
+        display: block;
+        float: right;
+        margin-right: 20px;
+      }
+    }
+  }
+  
+  >div.menu.parents {
+    position: fixed;
+    left: 100%;
+    background-color: #1E75A8;
+    transition: left .5s;
+
+    &.menu-active {
+      left: 0;
+    }
+  }
+
+  >div.menu.students {
+    position: fixed;
+    left: 100%;
+    background-color: #E7437D;
+    transition: left .5s;
+
+    &.menu-active {
+      left: 0;
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+
+//body
+.body-wrap {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: calc(100% - 140px);
+}
+// section
+section {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.intro-1 { //header영역때문에 absolute로 자리잡음
+  background: #fff;
+  position: relative;
+  width: 100%;
+  height: 960px;
+  overflow: hidden;
+
+  .intro-right-bg {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 0%;
+    bottom: 0%;
+    background: #ECEDEF;
+  }
+
+  .intro1-wrap {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: top .5s;
+
+    &.show {
+      top: 0%;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 180px;
+    height: 80px;
+    z-index: 5;
+  }
+
+  .left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+
+    >div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+  }
+
+  .right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+  }
+
+  .bg-img {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(0%, -50%);
+    width: 55%;
+  }
+}
+
+// intro-1 bg
+.intro1.bg1 {
+  >.left {
+    background: #C9EBF7;
+    h2 {
+      font-size: 50px;
+      font-weight: lighter;
+
+      strong {
+        color: #085EA9;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      margin-top: 40px;
+    }
+    >div >div {
+      margin-top: 40px;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+
+.intro1.bg2 {
+  >.left {
+    background: #F2D6D5;
+    h2 {
+      font-size: 48px;
+      font-weight: lighter;
+      strong {
+        color: #D93F75;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      margin-top: 40px;
+    }
+    >div >div {
+      margin-top: 40px;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.intro1.bg3 {
+  >.left {
+    background: #BAEBF0;
+    >div{
+      width: 80%;
+
+      h2 {
+        font-size: 45px;
+        font-weight: lighter;
+        strong {
+          color: #127D84;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-top: 40px;
+      }
+      img {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.intro1.bg4 {
+  >.bg-img {
+    left: 1%;
+    transform: translate(0%, -50%);
+  }
+  >.left {
+    background: #D7DFF8;
+  }
+  >img+img {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(0%, -50%);
+    width: 50%;
+  }
+}
+
+//section2
+
+section,article,div,p,span,h1,h2,h3,a {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+a {text-decoration: none; color: inherit;}
+
+.style-introduce {
+  padding-top: 150px;
+  padding-bottom: 180px;
+  background-image: url(../img/hero/img_parallax01_2.png), url(../img/hero/img_parallax02_2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80%;
+  background-position: 0px 0px, 90% 50%;
+
+  article {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    div {
+      width: 50%;
+      float: left;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .style-text-box {
+      height: 370px;
+      margin-top: 120px;
+      padding-left: 8%;
+
+      &:first-child {
+        padding-left: 0px;
+      }
+
+      p {
+        font-size: 70px;
+        color: #252A2E;
+
+        span {
+          display: block;
+          color: #E2487E;
+        }
+      }
+
+      p+p {
+        margin-top: 50px;
+        font-size: 20px;
+        color: #252A2E;
+      }
+    }
+  }
+}
+
+.center-line {
+  position:relative;
+  display: block;
+  width:auto;
+  height:0px;
+  
+  &:after {
+    content: "";
+    display: block;
+    position:absolute;
+    left:50%;
+    width:1px;
+    height: 160px;
+    background-color: #8C9196;
+    transform: translateY(-50%);
+  }
+}
+
+//section3
+.look-book {
+  height: 1152px;
+  //배경이 사실 다른거임
+  background: #F3F5F6;
+  padding: 150px 0px 60px 0px;
+  
+  >div{
+    //화면이 작아져도 일정히 보였으면 좋겠다
+    //width: calc(100% - 80px);
+    width: calc(100% - 80px);
+    overflow: hidden;
+    margin: 0px auto;
+
+    h2 {
+      float: left;
+      font-size: 50px;
+      font-weight: normal;
+
+      span {
+        display: block;
+        font-weight: bold;
+      }
+    }
+
+    .look-book-btn {
+      float: right;
+      width: 350px;
+
+      a {
+        display: inline-block;
+        margin-right: 90px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        color: #9D9D9D;
+        border-bottom: 2px solid #9D9D9D;
+
+        &:last-child{
+          margin-right: 0px;
+        }
+
+        &:hover, &:focus, &.on {
+          color: #272D31;
+        }
+      }
+    }
+  }
+
+  .list-wrap{
+    height:701px;
+    position: relative;
+
+    ul.list {
+      position: absolute;
+      top: 0;
+      padding-left: 600px;
+      white-space: nowrap;
+      transition: all .3s;
+
+      >li {
+        display: inline-block;
+        white-space: nowrap;
+
+        img {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    width: 100%;
+    text-align: center;
+
+    >a {
+      //이거 왜 안먹힘
+      &:hover, &:focus {
+        color: #3E4347;
+      }
+    }
+
+    .prev-btn {
+      margin-right: 30px;
+    }
+  }
+}
+
+.center-line.sec3-4 {
+  &:after {
+    height: 80px;
+    transform: translateY(0%);
+  }
+}
+
+//section4
+.smart-tv {
+  margin-top: 80px;
+
+  span {
+    display: block;
+  }
+
+  h2 {
+    margin-top: 170px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+
+    span {
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+  }
+  
+  article {
+    //동영상이 height도 함께 정사각형으로 줄어들었으면 좋겠다
+    width: calc(100% - 80px);
+    height: 676px;
+    margin: 40px auto;
+  }
+
+  article+article {
+    display: flex;
+    justify-content: space-between;
+    height: 440px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    a {
+      position: relative;
+      background: url(../img/hero/img_smainbanner_01.jpg) no-repeat center top / 380px 340px;
+      width: 360px;
+      height: 100%;
+
+      &:nth-child(2) {
+        background-image: url(../img/hero/img_smainbanner_02.jpg)
+      }
+
+      &:last-child {
+        background-image: url(../img/hero/img_smainbanner_03.jpg)
+      }
+
+      p {
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translateX(-50%);
+        width: 300px;
+        padding: 35px;
+        margin: 0px auto;
+        background: #fff;
+        font-size: 30px;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

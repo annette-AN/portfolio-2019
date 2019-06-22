@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/header.css" media="screen and (max-width : 2560px)">
+  <link rel="stylesheet" href="css/index.css" media="screen and (max-width : 2560px)">
+  <link rel="stylesheet" href="css/index-reactive.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/iscroll.js"></script>
+  <title>index/admin/portfolio</title>
+  <!-- http://webarch.revox.io/3.0/html/index.html# -->
+  <!-- 5/20 1h, 5/21 20:30~1:00 4.5h, 5/22 22:00~2:00 4h, 5/25 13:00~16:00 3h 20:00~22:30 2.5h,
+  5/26 14:00~14:30 0.5h 15:00~18:00 3h 5/27 14:00~17:00 3h 5/28 10:30~11:30 1h 5/29 14:30~17:00 2.5h 10:30~12:00 1.5h
+  5/31 15:10~17:00 6/4 13:30~18:00 6/5 16:00~ -->
+  <!-- 브라우저 크기 1600px -->
+</head>
+<body class="index">
+  <!-- notice 일괄로 만들기 -->
+  <a href="#main" id="skip-nav">본문 바로가기</a>
+  <header>
+    <nav id="main-tnb">
+      <ul class="tnb-wrap">
+        <li class="menu-bar"><a href="#"><i class="fas fa-bars"><span class="child-text-ir">메뉴바 아이콘</span></i></a></li>
+        <li class="refresh"><a href="#"><i class="fas fa-redo"><span class="child-text-ir">새로고침 아이콘</span></i></a></li>
+        <!-- bell .notice 를 넣으면 신호등 표시가 나옴 -->
+        <li class="bell"><a href="#"><i class="far fa-bell"><span class="child-text-ir">알림종 아이콘</span></i></a></li>
+        <li class="search-board">
+          <label for="search-dashboard" class="child-text-ir">사이트 내 검색</label>
+          <input type="text" placeholder="Search Dashboard" id="search-dashboard">
+          <a href="#"><i class="fas fa-search"><span class="child-text-ir">돋보기 아이콘</span></i></a>
+        </li>
+      </ul>
+
+      <div class="user-wrap">
+        <div class="user-profile"><span class="child-text-ir">사용자프로필사진</span></div>     
+        <ul class="user-info">
+          <li>
+            <a href="#"><i class="fas fa-cogs"><span class="child-text-ir">사용자 정보</span></i></a>
+            <ul>
+              <li><a href="#">my account</a></li>
+              <li><a href="#">my calendar</a></li>
+              <!-- inbox .notice 를 넣으면 신호등 표시가 나옴, 알림 개수는 content에 적으면 적용됨 -->
+              <li class="inbox notice"><a href="#">my inbox</a></li>
+              <li><a href="#"><i class="fas fa-power-off"><span class="child-text-ir">로그아웃 아이콘</span></i>log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="main-gnb">
+      <div id="main-gnb-header">
+        <h1>web<span><span class="child-text-ir">동그라미 아이콘</span></span><strong>Admin</strong></h1>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"><span class="child-text-ir">홈 바로가기 아이콘</span></i></a></li>
+          <!-- mail .notice 를 넣으면 신호등 표시가 나옴 -->
+          <li><a class="mail" href="#"><i class="fas fa-envelope"><span class="child-text-ir">메일 바로가기 아이콘</span></i></a></li>
+        </ul>
+      </div>
+
+      <div id="main-gnb-contents">
+        <div class="gnb-user-profile">
+          <!-- 회원 프로필 사진영역 -->
+          <div class="user-profile">
+            <span class="child-text-ir">사용자프로필사진</span>
+          </div>
+          <h2>fred smith 
+            <span>Life goes on...</span>
+          </h2>
+        </div>
+
+        <ul class="main-gnb-menu">
+          <li>
+            <a href="index.html">
+              <i class="fas fa-home"></i>
+              <span>home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cube"></i>
+              <span>widgets</span>
+            </a>
+          </li>
+          <li>
+            <a href="page/subpage-list.html">
+              <i class="fas fa-list-alt"></i>
+              <span>list</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-ethereum"></i>
+              <span>themes</span>
+            </a>
+            <ul>
+              <li><a href="#">coporate</a></li>
+              <li><a href="#">simple</a></li>
+              <li><a href="#">elegant</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-layer-group"></i>
+              <span>layouts</span>
+              </a>
+            <ul>
+              <li><a href="#">layout options</a></li>
+              <li><a href="#">boxed layout</a></li>
+              <li><a href="#">inner boxed layout</a></li>
+              <li><a href="#">extended layout</a></li>
+              <li><a href="#">RTL layout</a></li>
+              <li><a href="#">horizontal menu</a></li>
+              <li><a href="#">horizontal menu &amp; boxed</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-tablet-alt"></i>
+              <span>UI elements</span>
+            </a>
+            <ul>
+              <li><a href="#">typography</a></li>
+              <li><a href="#">messages &amp; notifications</a></li>
+              <li><a href="#">notifications</a></li>
+              <li><a href="#">icons</a></li>
+              <li><a href="#">buttons</a></li>
+              <li><a href="#">tabs &amp; accordions</a></li>
+              <li><a href="#">sliders</a></li>
+              <li><a href="#">group list</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fas fa-share-square"></i>
+                <span>forms</span>
+              </a>
+            <ul>
+              <li><a href="#">form elements</a></li>
+              <li><a href="#">form validations</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fas fa-th"></i>
+                <span>grids</span>
+              </a>
+            <ul>
+              <li><a href="#">simple grids</a></li>
+              <li><a href="#">draggable grids</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fas fa-table"></i>
+                <span>tables</span>
+              </a>
+            <ul>
+              <li><a href="#">basic tables</a></li>
+              <li><a href="#">data tables</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>maps</span>
+              </a>
+            <ul>
+              <li><a href="#">google maps</a></li>
+              <li><a href="#">vector maps</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fab fa-sketch"></i>
+                <span>extra</span>
+              </a>
+            <ul>
+              <li><a href="#">user profile</a></li>
+              <li><a href="#">time line</a></li>
+              <li><a href="#">support ticket</a></li>
+              <li><a href="#">gallery</a></li>
+              <li><a href="#">calendar</a></li>
+              <li><a href="#">search results</a></li>
+              <li><a href="#">invoice</a></li>
+              <li><a href="#">404 page</a></li>
+              <li><a href="#">500 page</a></li>
+              <li><a href="#">blank page</a></li>
+              <li><a href="#">login</a></li>
+              <li><a href="#">login v2</a></li>
+              <li><a href="#">lockscreen</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fas fa-ellipsis-h"></i>
+                <span>menu levels</span>
+              </a>
+            <ul>
+              <li><a href="#">level 1</a></li>
+              <li><a href="#">level 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="main-wrap">
+      <section id="overall">
+        <article>
+          <h2>OVERALL SALES</h2>
+          <ul class="re-close-btn">
+            <li><a href="#"><i class="fas fa-redo"><span class="child-text-ir">새로고침 아이콘</span></i></a></li>
+            <li><a href="#"><i class="fas fa-times"><span class="child-text-ir">닫기 버튼</span></i></a></li>
+          </ul>
+          
+          <ul>
+            <li>
+              <h3>overall visits</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>today's</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>monthly</h3>
+              <span>15,489</span>
+            </li>
+          </ul>
+          <p>
+            <span></span>
+            <span>4% higher</span> than last month
+          </p>
+        </article>
+
+        <article>
+          <h2>OVERALL VISIT</h2>
+          <ul class="re-close-btn">
+            <li><a href="#"><i class="fas fa-redo"><span class="child-text-ir">새로고침 아이콘</span></i></a></li>
+            <li><a href="#"><i class="fas fa-times"><span class="child-text-ir">닫기 버튼</span></i></a></li>
+          </ul>
+          
+          <ul>
+            <li>
+              <h3>overall visits</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>today's</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>monthly</h3>
+              <span>15,489</span>
+            </li>
+          </ul>
+          <p>
+            <span></span>
+            <span>4% higher</span> than last month
+          </p>
+        </article>
+
+        <article>
+          <h2>SERVER LOAD</h2>
+          <ul class="re-close-btn">
+            <li><a href="#"><i class="fas fa-redo"><span class="child-text-ir">새로고침 아이콘</span></i></a></li>
+            <li><a href="#"><i class="fas fa-times"><span class="child-text-ir">닫기 버튼</span></i></a></li>
+          </ul>
+          
+          <ul>
+            <li>
+              <h3>overall visits</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>today's</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>monthly</h3>
+              <span>15,489</span>
+            </li>
+          </ul>
+          <p>
+            <span></span>
+            <span>4% higher</span> than last month
+          </p>
+        </article>
+
+        <article>
+          <h2>OVERALL SALES</h2>
+          <ul class="re-close-btn">
+            <li><a href="#"><i class="fas fa-redo"><span class="child-text-ir">새로고침 아이콘</span></i></a></li>
+            <li><a href="#"><i class="fas fa-times"><span class="child-text-ir">닫기 버튼</span></i></a></li>
+          </ul>
+          
+          <ul>
+            <li>
+              <h3>overall visits</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>today's</h3>
+              <span>15,489</span>
+            </li>
+            <li>
+              <h3>monthly</h3>
+              <span>15,489</span>
+            </li>
+          </ul>
+          <p>
+            <span></span>
+            <span>4% higher</span> than last month
+          </p>
+        </article>
+      </section>
+
+      <section id="sales-info">
+        <article class="map-area">
+          <div>
+            <img src="img/map.png" alt="지점 정보 지도">
+          </div>
+          <div>
+            <h3><em>quick</em>view</h3>
+            <p>
+              <span class="child-text-ir">지점 정보</span>
+            </p>
+          </div>
+        </article>
+        <article class="sales">
+          <ul>
+            <li>
+              <h3>You have earned</h3>
+              <span>15,489</span> USD
+            </li>
+            <li>
+              <h3>TODAY</h3>
+              <span>15,489</span> USD
+            </li>
+            <li>
+              <h3>THIS MONTH</h3>
+              <span>15,489</span> USD
+            </li>
+          </ul>
+
+          <div class="table-wrap">
+            <table>
+              <colgroup>
+                <col style="width:25%;">
+                <col style="width:55%;">
+                <col style="width:20%;">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td colspan="3">last sale</td>
+                </tr>
+                <tr>
+                  <td>25601</td>
+                  <td><a href="#">Redesign product template</a></td>
+                  <td>$<span>4,700</span></td>
+                </tr>
+                <tr>
+                  <td>25602</td>
+                  <td><a href="#">Redesign product template</a></td>
+                  <td>$<span>4,700</span></td>
+                </tr>            
+              </tbody>
+            </table>
+          </div>
+          <div><span class="child-text-ir">디자인용 그림</span></div>
+        </article>
+      </section>
+
+      <section class="joing">
+        <div class="joing-group">
+          <ul class="re-close-btn">
+            <li><a href="#"><i class="fas fa-redo"><span class="child-text-ir">새로고침 아이콘</span></i></a></li>
+            <li><a href="#"><i class="fas fa-times"><span class="child-text-ir">닫기 버튼</span></i></a></li>
+          </ul>
+          <img src="img/9.jpg" alt="로봇과 아이">
+          <div class="post">
+            <i class="fas fa-map-marker-alt"><span class="child-text-ir">핀 아이콘</span></i>
+            <span>21 Jan</span>
+            <p>New Year <em>UI Bundle</em> now on webarch</p>
+            <span><em>214</em> comments</span>
+            <span><em>24k</em> likes</span>
+          </div>
+          <div>
+            <span>#citymax</span>
+            <span>#new york city</span>
+            <span>#amazing</span>
+          </div>
+          <div>
+            <span>Jane Smith, John Smith, David Jester, pepper post and 214 others join this.</span>
+            <div class="user-profile"><span class="child-text-ir">사용자프로필사진</span></div>
+            <label for="comment" class="child-text-ir">댓글달기</label>
+            <input type="text" placeholder="Write a comment" id="comment">
+            <button>Join Group</button>
+          </div>
+        </div>
+        <!-- 얘를 밑에 깔고싶음 -->
+        <ul class="joing-board">
+          <!-- before로 넣기 -->
+          <!-- <p><img src="img/9.jpg" alt=""></p> -->
+          <li>
+            <div>
+              <img src="img/joing-img/list1-1.png" alt="21 jan, new year UI Bundle now on webarch">
+            </div>
+            <div>
+              <img src="img/joing-img/list1-1.png" alt="21 jan, new year UI Bundle now on webarch">
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="img/joing-img/list2-1.png" alt="Jane smith, 'just completed the heart walk adverting campaign'">
+            </div>
+            <div>
+              <img src="img/joing-img/list2-2.png" alt="david cooper, 'just completed the heart walk adverting campaign'">
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="img/joing-img/list3-1.png" alt="15% up, webarch dashboard 2,567USD, front-end design 1,420USD">
+            </div>
+            <div>
+              <img src="img/joing-img/list3-2.png" alt="today sale's 450USD, last sale 23.45USD">
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="img/joing-img/list4-1.png" alt="run away go, queen's favourite">
+            </div>
+            <div>
+              <img src="img/joing-img/list4-2.png" alt="black sun empire, king's favourite">
+            </div>
+          </li>
+        </ul>
+
+        <div class="weather-wrap">
+          <div class="weather-today">
+            <h2>California USA</h2>
+            <div>
+              <span>sunday</span>
+              <em>32<span class="inline">&#176;</span></em>
+              <span>partly cloudy</span>
+            </div>
+            <div>
+              <!-- 날씨 class넣으면 icon나옴 
+
+                1. 맑음
+                <span class="w-sunny"><span class="child-text-ir">맑음</span>
+
+                2. 비
+                <span class="w-rain">
+                
+                3. 흐림
+                <span class="w-cloudy">
+                
+                4. 약간흐림
+                <span class="w-partly-cloudy"><span class="child-text-ir">약간흐림</span>
+                  
+              -->
+              <span class="w-partly-cloudy"><span class="child-text-ir">약간흐림</span></span>
+              <span><span>54</span>MPH</span>
+              <span><span>53</span>MM</span>
+            </div>
+  
+            <ul>
+              <li>
+                <span>11:30<span>PM</span></span>
+                <span class="w-rain"><span class="child-text-ir">비</span></span>
+                <em>32<span class="inline">&#176;</span></em>
+              </li>
+              <li>
+                <span>11:30<span>PM</span></span>
+                <span class="w-rain"><span class="child-text-ir">비</span></span>
+                <em>32<span class="inline">&#176;</span></em>
+              </li>
+              <li>
+                <span>11:30<span>PM</span></span>
+                <span class="w-rain"><span class="child-text-ir">비</span></span>
+                <em>32<span class="inline">&#176;</span></em>
+              </li>
+              <li>
+                <span>11:30<span>PM</span></span>
+                <span class="w-rain"><span class="child-text-ir">비</span></span>
+                <em>32<span class="inline">&#176;</span></em>
+              </li>
+              <li>
+                <span>11:30<span>PM</span></span>
+                <span class="w-rain"><span class="child-text-ir">비</span></span>
+                <em>32<span class="inline">&#176;</span></em>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="weather-weak">
+            <table>
+              <colgroup>
+                <col style="width:25%;">
+                <col style="width:30%;">
+                <col style="width:45%;">
+              </colgroup>
+              <tr>
+                <td>sun</td>
+                <td class="w-icon"><span class="w-sunny"><span class="child-text-ir">맑음</span></span></td>
+                <td class="w-deg"><span>32</span>-<span>28</span> C&#176;</td>
+              </tr>
+              <tr>
+                <td>mon</td>
+                <td class="w-icon"><span class="w-rain"><span class="child-text-ir">비</span></span></td>
+                <td class="w-deg"><span>32</span>-<span>28</span> C&#176;</td>
+              </tr>
+              <tr>
+                <td>tue</td>
+                <td class="w-icon"><span class="w-cloudy"><span class="child-text-ir">흐림</span></span></td>
+                <td class="w-deg"><span>32</span>-<span>28</span> C&#176;</td>
+              </tr>
+              <tr>
+                <td>wed</td>
+                <td class="w-icon"><span class="w-partly-cloudy"><span class="child-text-ir">약간흐림</span></span></td>
+                <td class="w-deg"><span>32</span>-<span>28</span> C&#176;</td>
+              </tr>
+              <tr>
+                <td>thur</td>
+                <td class="w-icon"><span class="w-rain"><span class="child-text-ir">비</span></span></td>
+                <td class="w-deg"><span>32</span>-<span>28</span> C&#176;</td>
+              </tr>
+              <tr>
+                <td>fri</td>
+                <td class="w-icon"><span class="w-sunny"><span class="child-text-ir">맑음</span></span></td>
+                <td class="w-deg"><span>32</span>-<span>28</span> C&#176;</td>
+              </tr>
+              <tr>
+                <td>sat</td>
+                <td class="w-icon"><span class="w-sunny"><span class="child-text-ir">맑음</span></span></td>
+                <td class="w-deg"><span>32</span>-<span>28</span> C&#176;</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>

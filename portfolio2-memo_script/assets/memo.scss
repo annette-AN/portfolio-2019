@@ -1,0 +1,385 @@
+@mixin media-mobile {
+  @media all and (max-width:768px) {
+    @content;
+  }
+}
+
+section.memo-write {
+
+  .memo-body {
+    position: relative;
+    margin: 80px auto;
+    width: 800px;
+    max-width: calc(100% - 80px);
+    min-width: 350px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.1);
+    
+    @include media-mobile(){
+      width: 800px;
+
+      &[open] {
+        height: 161px;
+      }
+    }
+
+    &[open] {
+
+      .blind-sec { //인풋이라 부모 width를 안받음
+        width: 100%;
+        display: inline-block;
+      }
+
+      div.memo-front-icons {
+        display: none;
+
+        @include media-mobile(){
+          display: block;
+
+          a.input-icon{
+            font-size: 15px;
+            margin-right: 15px;
+          }
+        }
+      }
+
+      .memo-mid-icons {
+        display: inline-block;
+
+        @include media-mobile(){
+          margin-right: 20px;
+        }
+      }
+
+      div.btn-set {
+        display: block;
+
+        @include media-mobile(){
+          float: none;
+          position: absolute;
+          right: 0px;
+        }
+      }
+    }
+
+    a.input-icon {
+      color: gray;
+      font-size: 20px;
+      text-decoration: none;
+      position: relative;
+      margin-right:30px;
+
+      div.upload-tooltip {
+        font-size: 12px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        background-color: gray;
+        border-radius: 5px;
+        padding: 5px 10px;
+        white-space:nowrap;
+        line-height: initial;
+      }
+    }
+
+    a.input-icon-l {
+      color: #CACACA;
+      font-size: 15px;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .memo-description, .memo-title {
+      font-family:sans-serif;
+      color: gray;
+      padding: 10px 20px;
+      background: none;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      width: 70%;
+      height: 40px;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .blind-sec {
+      display: none;
+
+      .memo-description:focus , .memo-title:focus {
+        outline: none;
+      }
+    }
+
+    div.memo-front-icons {
+      display: inline-block;
+      position: absolute;
+      top:0px;
+      right: 0px;
+      line-height: 40px;
+
+      @include media-mobile(){
+        display: none;
+      }
+    }
+
+
+    div.memo-mid-icons {
+      display: none;
+      margin: 10px 10px 10px 20px;
+
+      a.input-icon {
+        font-size: 15px;
+        margin-right: 20px;
+      }
+    }
+      
+    div.btn-set {
+      display: none;
+      float: right;
+
+      button {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 0 15px;
+        background: none;
+        border: none;
+        line-height: 40px;
+        cursor: pointer;
+        font-family:sans-serif;
+        outline: none;
+      }
+    }
+  }
+}
+
+
+//memo-show
+section.memo-show {
+  width: 800px;
+  max-width: calc(100%);
+  margin: 0 auto;
+
+  .no-memo {
+  margin: 200px auto;
+  width: 800px;
+  max-width: calc(100% - 40px);
+  color: rgb(209, 209, 209);
+  text-align: center;
+  font-size: 25px;
+
+  &[hidden] {
+    display: none;
+  }
+
+    i {
+      font-size: 150px;
+    }
+  }
+
+  .memo-body {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    max-width: calc(100% - 40px);
+    height: 125px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    transition: box-shadow .5s;
+
+
+    &:hover, &[hover] {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.1);
+
+      div.memo-mid-icons {
+        opacity: 1;
+
+        a.input-icon {
+          opacity: 1;
+        }
+      }
+    }
+
+    a.input-icon {
+      opacity: 0;
+      color: gray;
+      font-size: 20px;
+      text-decoration: none;
+      position: relative;
+      margin-right:30px;
+
+      div.upload-tooltip {
+        font-size: 12px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        background-color: gray;
+        border-radius: 5px;
+        padding: 5px 10px;
+        white-space:nowrap;
+        line-height: initial;
+      }
+    }
+
+    .memo-description, .memo-title {
+      font-family:sans-serif;
+      color: #3E3E3E;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      width: 100%;
+      box-sizing: border-box;
+      outline: none;
+      background: none;
+    }
+
+    .memo-title {
+      font-size: 13px;
+    }
+
+    div.memo-front-icons {
+      display: none; //hover 및 open일 때도 안보임
+    }
+
+    div.memo-mid-icons {
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      
+      a.input-icon {
+        
+        &:hover {
+        color: #3E3E3E;
+        }
+
+        opacity: 0;
+        display: inline-block;
+        text-align: center;
+        width: 15%;
+        margin: 0;
+        transition: opacity .5s;
+
+        i {
+          font-size: 15px;
+          line-height: 27px;
+        }
+      }
+
+      a.input-icon-l {
+        display: none;
+      }
+    }
+
+    div.btn-set {
+      display: none;
+      float: right;
+
+      button {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 0 15px;
+        background: white;
+        border: none;
+        line-height: 40px;
+        cursor: pointer;
+        font-family:sans-serif;
+        outline: none;
+      }
+    }
+  }
+}
+
+@include media-mobile{
+
+  section.memo-show {
+    margin-left: 20px;
+
+    .memo-body{
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      max-width: calc(100% - 80px);
+      margin: 0px 0px 0px 20px;
+      
+      &:hover {
+        box-shadow: none;
+      }
+
+      .blind-sec {
+        display: none;
+      }
+
+      div.memo-mid-icons{
+        display: none;
+      }
+
+      &[open] {
+        height: auto;
+        
+        .blind-sec {
+          display: block;
+          width: 100%;
+
+          .memo-title {
+            font-size: 16px;
+            color: gray;
+          }
+
+          a.input-icon {
+            opacity: 1;
+            margin-right: 0px;
+          }
+        }
+
+        div.memo-mid-icons {
+          display: block;
+          margin-top: 10px;
+  
+          a.input-icon {
+            opacity: 1;
+          }
+        }
+
+        div.btn-set {
+          display: block;
+          width: 100%;
+          margin: 10px 0px 0px 0px;
+          border-top: 1px solid #c4c4c4;
+  
+          button {
+            line-height: 25px;
+            margin: 0px;
+            padding: 3px 0;
+            border: none;
+            width: 49%;
+            box-sizing: border-box;
+  
+            &:first-child {
+              border-right: 1px solid #c4c4c4;
+            }
+  
+            .memo-save {
+              float: left;
+            }
+  
+            .memo-close {
+              float: right;
+            }
+          }
+        }
+      }
+
+      div.memo-description{
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+}
