@@ -20,12 +20,12 @@
  - 2-3 [회원가입페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-up.html)
 
 #### 3. 스마트교복 사이트 카피 & 부분 리뉴얼
-> 비주얼 페이지 효과가 끝난 후 메인페이지로 자동 연결, 상단에 skip 버튼 있습니다.
-
     - Viewport : PC / Tablet / Mobile 
     - IE Surpport : IE10+ / Chrome -참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main-page / login page / sign-up page 
     - 언어 : HTML5. SCSS, JS -기술 : JQuery (slide, swiper), css3 (animation)
+ 
+ > 비주얼 페이지 효과가 끝난 후 메인페이지로 자동 연결, 상단에 skip 버튼 있습니다.
  
  - 3-1 [비주얼페이지](https://annette-an.github.io/portfolio-2019/portfolio3-smart_uniform/)
  - 3-2 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio3-smart_uniform/)
