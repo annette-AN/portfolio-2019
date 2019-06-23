@@ -2,13 +2,13 @@
  - 작업툴 Visual Studio Code
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼
-     1-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio1-memo_script/)
- <br>
+    - Viewport : PC / Tablet / Mobile 
+    - IE Surpport : IE10+ / Chrome -참여도 : 퍼블리싱 100%, 스크립트 100% 
+    - 구성(링크) : main-page / login page / sign-up page 
+    - 언어 : HTML5. SCSS, JS -기술 : JQuery (slide, swiper), css3 (animation)
  
- - Viewport : PC / Tablet / Mobile 
- - IE Surpport : IE10+ / Chrome -참여도 : 퍼블리싱 100%, 스크립트 100% 
- - 구성(링크) : main-page / login page / sign-up page 
- - 언어 : HTML5. SCSS, JS -기술 : JQuery (slide, swiper), css3 (animation)
+  <br>
+  1-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio1-memo_script/)
  
 #### 2. 웨어벨리 사이트 카피 & 부분 리뉴얼 (warevalley)
      2-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/)
