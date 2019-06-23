@@ -41,7 +41,7 @@
     - Viewport : PC / Tablet / Mobile 
     - IE Surpport : IE10+ / Chrome 
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
-    - 구성(링크) : main page / 게시판 / 게시글 작성
+    - 구성(링크) : main page / 게시판 / 게시글 등록 페이지
     - 언어 : HTML5. SCSS, JS 
     - 기술 : JQuery, css3(animation)
     
