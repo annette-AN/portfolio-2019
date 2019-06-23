@@ -6,22 +6,6 @@
   }
 }
 
-
-// reset
-h1,h2,h3,h4,div,ul,ol,li,dl,dt,dd,p,address,header,nav,main,
-section,article,footer,aside,figure,a {
-  margin: 0; padding: 0; box-sizing: border-box;}
-
-header, body, nav, main, section, article, footer, aside, figure {
-  display: block; margin:0; padding: 0;
-}
-
-li {list-style: none;}
-a {text-decoration: none; color: #898989;}
-a img {border: 0;}
-img {vertical-align: middle;} //인라인요소에 middle 기본 리셋
-body {font: 15px/1.6 'Noto Sans KR';}
-
 .hero-wrap {
   position: relative;
   aside{

@@ -200,15 +200,15 @@ header.main-header.first {
 
       //nav.gnb
       @include media-mobile(){
-        width: 200px;
-        left: 0;
-        height: auto;
-        margin-left: 20px;
+        width: 100%;
+        height: calc(100vh - 110px);
         opacity: 1;
+        overflow: auto;
     
         >ul.gnb-menu{
           margin-top: 20px;
-          height: 100%;
+          width: 100%;
+          height: auto;
           display: block;
     
           >li.menu-item{

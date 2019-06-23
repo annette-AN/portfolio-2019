@@ -204,15 +204,15 @@ header.main-header.first[open] nav.gnb ul.gnb-menu li.menu-item ul.sub-menu li a
 
 @media all and (max-width: 768px) {
   header.main-header.first[open] nav.gnb {
-    width: 200px;
-    left: 0;
-    height: auto;
-    margin-left: 20px;
+    width: 100%;
+    height: calc(100vh - 110px);
     opacity: 1;
+    overflow: auto;
   }
   header.main-header.first[open] nav.gnb > ul.gnb-menu {
     margin-top: 20px;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: block;
   }
   header.main-header.first[open] nav.gnb > ul.gnb-menu > li.menu-item {
