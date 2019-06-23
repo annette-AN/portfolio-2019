@@ -11,15 +11,15 @@
  - 1-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio1-memo_script)
     
 #### 2. 웨어벨리 사이트 카피 & 부분 리뉴얼 (warevalley)
-     2-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/)
+ 2-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/)
  2-2 [로그인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-in.html)
  2-3 [회원가입페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-up.html)
  <br>
  
- - Viewport : PC / Tablet / Mobile 
- - IE Surpport : IE10+ / Chrome -참여도 : 퍼블리싱 100%, 스크립트 100% 
- - 구성(링크) : main-page / login page / sign-up page 
- - 언어 : HTML5. SCSS, JS -기술 : JQuery (slide, swiper), css3 (animation)
+    - Viewport : PC / Tablet / Mobile 
+    - IE Surpport : IE10+ / Chrome -참여도 : 퍼블리싱 100%, 스크립트 100% 
+    - 구성(링크) : main-page / login page / sign-up page 
+    - 언어 : HTML5. SCSS, JS -기술 : JQuery (slide, swiper), css3 (animation)
 
 #### 3. 스마트교복 사이트 카피 & 부분 리뉴얼
 > 비주얼 페이지 효과가 끝난 후 메인페이지로 자동 연결, 상단에 skip 버튼 있습니다.
