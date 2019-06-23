@@ -1,7 +1,7 @@
 * * *
 # portfolio-2019
 
-### <span style="color: pink">PF 1 메모 저장 스크립트 카피 & 부분 리뉴얼</span>
+### PF 1 메모 저장 스크립트 카피 & 부분 리뉴얼
 #### 1. 메인페이지
 https://annette-an.github.io/portfolio-2019/portfolio1-memo_script/
 <br><br>
