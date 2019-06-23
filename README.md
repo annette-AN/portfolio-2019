@@ -3,7 +3,7 @@
 <br>
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
-    - Viewport : PC / Tablet / Mobile 
+    - *Viewport* : PC / Tablet / Mobile 
     - IE Surpport : IE10+ / Chrome 
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page
@@ -12,7 +12,7 @@
     
  - 1-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio1-memo_script)
         
-#### 2. 웨어벨리 사이트 카피 & 부분 리뉴얼 (warevalley) 
+#### 2. 웨어벨리 사이트 카피 & 부분 리뉴얼
     - Viewport : PC / Tablet / Mobile 
     - IE Surpport : IE10+ / Chrome 
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
@@ -37,7 +37,7 @@
  - 3-1 [비주얼페이지](https://annette-an.github.io/portfolio-2019/portfolio3-smart_uniform/)
  - 3-2 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio3-smart_uniform/)
 
-### 4 관리자 페이지 카피 & 부분 리뉴얼
+#### 4 관리자 페이지 카피 & 부분 리뉴얼
     - Viewport : PC / Tablet / Mobile 
     - IE Surpport : IE10+ / Chrome 
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
