@@ -11,9 +11,9 @@
  - 1-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio1-memo_script)
     
 #### 2. 웨어벨리 사이트 카피 & 부분 리뉴얼 (warevalley)
- 2-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/)
- 2-2 [로그인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-in.html)
- 2-3 [회원가입페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-up.html)
+ - 2-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/)
+ - 2-2 [로그인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-in.html)
+ - 2-3 [회원가입페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-up.html)
  <br>
  
     - Viewport : PC / Tablet / Mobile 
