@@ -1,5 +1,4 @@
 # 안미례 포토폴리오 - 2019
-<br>
  > ### 작업툴 Visual Studio Code
 <br>
 
