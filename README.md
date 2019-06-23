@@ -2,7 +2,6 @@
  - 작업툴 Visual Studio Code
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼
-  <br>
   - 1-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio1-memo_script)
   <br>
  
@@ -12,7 +11,6 @@
     - 언어 : HTML5. SCSS, JS -기술 : JQuery (slide, swiper), css3 (animation)
         
 #### 2. 웨어벨리 사이트 카피 & 부분 리뉴얼 (warevalley)
- <br>
  - 2-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/)
  - 2-2 [로그인페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-in.html)
  - 2-3 [회원가입페이지](https://annette-an.github.io/portfolio-2019/portfolio2-warevalley/page/sign-up.html)
