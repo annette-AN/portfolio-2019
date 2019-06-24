@@ -297,7 +297,7 @@ caption.child-text-ir, label.child-text-ir {
 }
 
 .user-wrap .user-info li ul li.notice:after {
-  content: '110';
+  content: '1';
   display: inline-block;
   position: absolute;
   top: 12px;
