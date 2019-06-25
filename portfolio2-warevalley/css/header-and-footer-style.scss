@@ -18,6 +18,7 @@ a {text-decoration: none; color: #898989;}
 a img {border: 0;}
 img {vertical-align: middle;} //인라인요소에 middle 기본 리셋
 body {font: 15px/1.6 'Noto Sans KR';}
+body.no-scroll {height: 100vh; overflow: hidden;}
 
 //main page header
 header.main-header.first {
@@ -201,7 +202,7 @@ header.main-header.first {
       //nav.gnb
       @include media-mobile(){
         width: 100%;
-        height: calc(100vh - 110px);
+        height: calc(100vh - 160px);
         opacity: 1;
         overflow: auto;
     

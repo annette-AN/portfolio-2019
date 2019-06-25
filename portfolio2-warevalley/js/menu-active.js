@@ -6,9 +6,11 @@ $(function(){
 
   function toggleMenuOpenClose() {
     if ($('.main-header').is('[open]')) {
-        $('.main-header').removeAttr('open');
+      $('body').removeClass('no-scroll');
+      $('.main-header').removeAttr('open');
     } else {
-        $('.main-header').attr('open', '');
+      $('body').addClass('no-scroll');
+      $('.main-header').attr('open', '');
     }
   };
 

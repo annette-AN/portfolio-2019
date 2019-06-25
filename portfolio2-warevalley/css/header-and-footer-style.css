@@ -33,6 +33,11 @@ body {
   font: 15px/1.6 'Noto Sans KR';
 }
 
+body.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
 header.main-header.first {
   position: fixed;
   top: 0;
@@ -205,7 +210,7 @@ header.main-header.first[open] nav.gnb ul.gnb-menu li.menu-item ul.sub-menu li a
 @media all and (max-width: 768px) {
   header.main-header.first[open] nav.gnb {
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 160px);
     opacity: 1;
     overflow: auto;
   }
