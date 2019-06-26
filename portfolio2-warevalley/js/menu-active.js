@@ -8,9 +8,11 @@ $(function(){
     if ($('.main-header').is('[open]')) {
       $('body').removeClass('no-scroll');
       $('.main-header').removeAttr('open');
+      console.log('close');
     } else {
       $('body').addClass('no-scroll');
       $('.main-header').attr('open', '');
+      console.log('open');
     }
   };
 
@@ -23,9 +25,9 @@ $(function(){
         toggleMenuOpenClose();
     } else {
       if ($(this).is('.sub-menu-open')) {
-      $(this).removeClass('sub-menu-open');
+        $(this).removeClass('sub-menu-open');
       } else {
-      $(this).addClass('sub-menu-open');
+        $(this).addClass('sub-menu-open');
       }
     }
   });

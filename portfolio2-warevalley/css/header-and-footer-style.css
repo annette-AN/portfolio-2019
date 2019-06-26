@@ -161,6 +161,7 @@ header.main-header.first[open] nav.tnb a {
     bottom: 0px;
     width: 100%;
     min-width: calc(100% + 40px);
+    background: #F5F6F8;
   }
   header.main-header.first[open] nav.tnb a {
     width: 50%;
