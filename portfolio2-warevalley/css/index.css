@@ -636,8 +636,11 @@ section.aboutus div.hero {
   width: 1500px;
   height: 450px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url(../img/main_img04.png) center top no-repeat/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.2)), url(../img/main_img04.png) center top no-repeat/cover;
+  background-image: url(../img/main_img04.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 section.aboutus div.hero div.innerBox {
@@ -663,7 +666,7 @@ section.aboutus div.hero div.innerBox h3 {
   width: 375px;
   line-height: 120px;
   padding-left: 80px;
-  font-size: 40px;
+  font-size: 37px;
   text-align: center;
   float: left;
   letter-spacing: 2px;
