@@ -11,16 +11,7 @@
 <br>
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
-
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-    
-    
-    |----------|:-------------:|
-    | Viewport | PC / Tablet / Mobile |
+    - Viewport : PC / Tablet / Mobile
     - IE Surpport : IE10+ / Chrome 
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page
