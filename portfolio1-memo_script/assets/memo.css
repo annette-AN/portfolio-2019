@@ -305,9 +305,9 @@ section.memo-show .memo-body div.btn-set button {
     height: auto;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 800px;
     max-width: calc(100% - 80px);
-    margin: 0px 0px 0px 20px;
+    margin: 10px 40px;
   }
   section.memo-show .memo-body:hover {
     -webkit-box-shadow: none;

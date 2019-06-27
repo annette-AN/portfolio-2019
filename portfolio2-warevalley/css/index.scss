@@ -369,7 +369,8 @@ section#product {
         height: 100%;
 
         .image-wrap {
-          background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center no-repeat /80px 80px;
+          background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center /80px 80px;
+          background-repeat: no-repeat;
           max-width: calc(100% - 10px);
           width: 210px;
           //width랑 동일하게 height가 줄어들었으면 함

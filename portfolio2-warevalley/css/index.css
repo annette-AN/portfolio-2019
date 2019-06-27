@@ -355,7 +355,8 @@ section#product article .swiper-wrapper .swiper-slide {
 }
 
 section#product article .swiper-wrapper .swiper-slide .image-wrap {
-  background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center no-repeat/80px 80px;
+  background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center/80px 80px;
+  background-repeat: no-repeat;
   max-width: calc(100% - 10px);
   width: 210px;
   height: 200px;
