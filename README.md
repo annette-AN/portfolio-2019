@@ -1,7 +1,10 @@
 # 안미례 포트폴리오 - 2019
- > ### 작업툴 Visual Studio Code
- > ### Skill
+ > ### 작업툴 
  
+  - Visual Studio Code
+  
+ > ### Skills
+
   - HTML : HTML5, 웹 접근성 관리 가능
   - CSS : CSS3 스펙, 반응형 페이지 제작 가능
   - JS : Pure Javascript (기초 수준), Jqeury swiper UI 구현 가능
