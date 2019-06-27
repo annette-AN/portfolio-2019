@@ -301,9 +301,6 @@ section.memo-show .memo-body div.btn-set button {
 }
 
 @media all and (max-width: 768px) {
-  section.memo-show {
-    margin-left: 20px;
-  }
   section.memo-show .memo-body {
     height: auto;
     overflow: hidden;
