@@ -1,5 +1,7 @@
 # 안미례 포트폴리오 - 2019
  > ### 작업툴 Visual Studio Code
+ > ### Skill
+  - Visual Studio Code
 <br>
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
