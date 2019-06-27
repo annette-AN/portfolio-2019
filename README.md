@@ -53,6 +53,6 @@
     - 언어 : HTML5, SCSS, JS 
     - 기술 : JQuery, css3(animation)
     
- - 4-1. [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/)
- - 4-2. [게시판](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/page/subpage-list.html)
- - 4-3. [게시글 등록 페이지](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/page/subpage-write.html)
+ - 4-1 [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/)
+ - 4-2 [게시판](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/page/subpage-list.html)
+ - 4-3 [게시글 등록 페이지](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/page/subpage-write.html)
