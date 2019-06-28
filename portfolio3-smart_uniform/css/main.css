@@ -663,7 +663,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 60px;
-  margin-bottom: 80px;
 }
 
 .smart-tv article + article a {

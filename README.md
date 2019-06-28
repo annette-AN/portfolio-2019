@@ -12,7 +12,7 @@
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
     - Viewport : PC / Tablet / Mobile
-    - IE Surpport : IE10+ / Chrome 
+    - IE Surpport : IE10+ / IE edge / Chrome / Safari
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page
     - 언어 : HTML5, SCSS, JS 
@@ -22,7 +22,7 @@
         
 #### 2. 웨어벨리 사이트 카피 & 부분 리뉴얼
     - Viewport : PC / Tablet / Mobile 
-    - IE Surpport : IE10+ / Chrome 
+    - IE Surpport : IE10+ / IE edge / Chrome / Safari
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page / login page / sign-up page 
     - 언어 : HTML5, SCSS, JS 
@@ -34,7 +34,7 @@
 
 #### 3. 스마트교복 사이트 카피 & 부분 리뉴얼
     - Viewport : PC
-    - IE Surpport : Edge+ / Chrome 
+    - IE Surpport : IE edge / Chrome
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : visual page / main page
     - 언어 : HTML5, SCSS, JS 
@@ -47,7 +47,7 @@
 
 #### 4 관리자 페이지 카피 & 부분 리뉴얼
     - Viewport : PC / Tablet / Mobile 
-    - IE Surpport : Edge+ / Chrome 
+    - IE Surpport : IE edge / Chrome / Safari
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page / 게시판 / 게시글 등록 페이지
     - 언어 : HTML5, SCSS, JS 
