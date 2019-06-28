@@ -34,7 +34,8 @@ img {
 }
 
 body {
-  font: 15px/1.6 'Noto Sans KR';
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px/1.6;
 }
 
 section {
@@ -66,7 +67,7 @@ section .sign-up-wrap .sign-up strong {
   color: #646464;
   text-align: center;
   width: 390px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 section .sign-up-wrap .sign-up span {

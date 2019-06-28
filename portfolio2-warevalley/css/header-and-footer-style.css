@@ -30,7 +30,8 @@ img {
 }
 
 body {
-  font: 15px/1.6 'Noto Sans KR';
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px/1.6;
 }
 
 body.no-scroll {

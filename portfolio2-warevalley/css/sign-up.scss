@@ -19,7 +19,7 @@ li {list-style: none;}
 a {text-decoration: none; color: #898989;}
 a img {border: 0;}
 img {vertical-align: middle;} //인라인요소에 middle 기본 리셋
-body {font: 15px/1.6 'Noto Sans KR';}
+body {font-family: 'Noto Sans KR', sans-serif; font-size: 15px/1.6;}
 
 
 
@@ -50,8 +50,7 @@ section{
         color: #646464;
         text-align: center;
         width: 390px;
-        margin: 0 auto;
-
+        margin: 20px auto;
       }
 
       span {
