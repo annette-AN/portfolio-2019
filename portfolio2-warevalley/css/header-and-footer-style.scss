@@ -174,7 +174,6 @@ header.main-header.first {
 
       ul.gnb-menu {
         li.menu-item {
-          
           a{
             color: #110c0c;
             font-weight: bold;
@@ -750,7 +749,7 @@ footer {
 
 div.logo-Top { 
   //맨위일때는 안보임
-  z-index: 9999;
+  z-index: 1000;
   position: fixed;
   right: 0;
   bottom: 30px;
