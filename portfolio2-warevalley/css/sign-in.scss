@@ -17,7 +17,7 @@ li {list-style: none;}
 a {text-decoration: none; color: #898989;}
 a img {border: 0;}
 img {vertical-align: middle;} //인라인요소에 middle 기본 리셋
-body {font: 15px/1.6 'Noto Sans KR';}
+body {font-family: 'Noto Sans KR', sans-serif; font-size: 15px/1.6;}
 
 
 
@@ -135,9 +135,9 @@ section{
           font-size: 26px;
         }
         input {
-          margin-top: 15px;
+          margin-top: 16px;
           height: 40px;
-          font-size: 14px;
+          font-size: 16px;
 
           &:nth-child(3) {
             margin-top: 10px;

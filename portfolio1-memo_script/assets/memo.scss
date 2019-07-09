@@ -4,8 +4,9 @@
   }
 }
 
-section.memo-write {
+body {margin: 0px;}
 
+section.memo-write {
   .memo-body {
     position: relative;
     margin: 80px auto;
@@ -93,11 +94,11 @@ section.memo-write {
     }
 
     .memo-description, .memo-title {
-      font-family:sans-serif;
+      font-family: sans-serif;
       color: gray;
       padding: 10px 20px;
       background: none;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: bold;
       border: none;
       width: 70%;
@@ -230,7 +231,7 @@ section.memo-show {
       font-family:sans-serif;
       color: #3E3E3E;
       padding: 10px 20px;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: bold;
       border: none;
       width: 100%;
@@ -298,15 +299,13 @@ section.memo-show {
 @include media-mobile{
 
   section.memo-show {
-    margin-left: 20px;
-
     .memo-body{
       height: auto;
       overflow: hidden;
       position: relative;
-      width: 100%;
+      width: 800px;
       max-width: calc(100% - 80px);
-      margin: 0px 0px 0px 20px;
+      margin: 10px 40px;
       
       &:hover {
         box-shadow: none;

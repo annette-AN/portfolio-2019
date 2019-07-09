@@ -34,7 +34,8 @@ img {
 }
 
 body {
-  font: 15px/1.6 'Noto Sans KR';
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px/1.6;
 }
 
 section {
@@ -66,7 +67,7 @@ section .sign-up-wrap .sign-up strong {
   color: #646464;
   text-align: center;
   width: 390px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 section .sign-up-wrap .sign-up span {
@@ -181,7 +182,7 @@ section .sign-up-wrap .privacy-terms .btn-set button[type=reset] {
   section .sign-up-wrap .sign-up input {
     margin-top: 15px;
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
   }
   section .sign-up-wrap .sign-up input:nth-child(3) {
     margin-top: 10px;

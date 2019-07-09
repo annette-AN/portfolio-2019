@@ -95,9 +95,11 @@
     width: 100%;
   }
   .joing .joing-board {
+    position: relative;
+    display: block;
     width: 100%;
-    top: calc(100% + 10px);
-    margin-bottom: 10px;
+    height: calc(100vw - 110px);
+    margin: 10px 0px;
   }
 }
 

@@ -355,7 +355,8 @@ section#product article .swiper-wrapper .swiper-slide {
 }
 
 section#product article .swiper-wrapper .swiper-slide .image-wrap {
-  background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center no-repeat/80px 80px;
+  background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center/80px 80px;
+  background-repeat: no-repeat;
   max-width: calc(100% - 10px);
   width: 210px;
   height: 200px;
@@ -583,7 +584,7 @@ section.board-list div div.orange-board {
 }
 
 section.board-list div div.orange-board > h3 {
-  background: url(../img/download/icon/right-arrow.png) 160px center no-repeat/20px;
+  background: url(../img/download/icon/right-arrow.png) 165px center no-repeat/20px;
 }
 
 section.board-list div div.news {
@@ -635,8 +636,10 @@ section.aboutus div.hero {
   width: 1500px;
   height: 450px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url(../img/main_img04.png) center top no-repeat/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.2)), url(../img/main_img04.png) center top no-repeat/cover;
+  background-image: url(../img/main_img04.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section.aboutus div.hero div.innerBox {
@@ -662,7 +665,7 @@ section.aboutus div.hero div.innerBox h3 {
   width: 375px;
   line-height: 120px;
   padding-left: 80px;
-  font-size: 40px;
+  font-size: 37px;
   text-align: center;
   float: left;
   letter-spacing: 2px;

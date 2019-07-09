@@ -8,6 +8,7 @@
 
 .hero-wrap {
   position: relative;
+
   aside{
     position: absolute;
     bottom: 40px;
@@ -368,7 +369,8 @@ section#product {
         height: 100%;
 
         .image-wrap {
-          background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center no-repeat /80px 80px;
+          background: #f5f6f8 url(../img/download/common/icon_solutions1.png) center /80px 80px;
+          background-repeat: no-repeat;
           max-width: calc(100% - 10px);
           width: 210px;
           //width랑 동일하게 height가 줄어들었으면 함
@@ -616,7 +618,7 @@ section.board-list {
       margin-left: 30px;
 
       >h3 {
-        background: url(../img/download/icon/right-arrow.png) 160px center no-repeat / 20px;
+        background: url(../img/download/icon/right-arrow.png) 165px center no-repeat / 20px;
       }
       
     }
@@ -680,8 +682,10 @@ section.aboutus {
     width: 1500px;
     height: 450px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0,0,0,0.2)), url(../img/main_img04.png) center top no-repeat/ cover;
-     
+    background-image: url(../img/main_img04.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     div.innerBox{
       position: absolute;
@@ -702,7 +706,7 @@ section.aboutus {
         width: 375px;
         line-height: 120px;
         padding-left: 80px;
-        font-size: 40px;
+        font-size: 37px;
         text-align: center;
         float: left;
         letter-spacing: 2px;

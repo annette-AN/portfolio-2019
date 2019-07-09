@@ -30,7 +30,13 @@ img {
 }
 
 body {
-  font: 15px/1.6 'Noto Sans KR';
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px/1.6;
+}
+
+body.no-scroll {
+  height: 100vh;
+  overflow: hidden;
 }
 
 header.main-header.first {
@@ -156,6 +162,7 @@ header.main-header.first[open] nav.tnb a {
     bottom: 0px;
     width: 100%;
     min-width: calc(100% + 40px);
+    background: #F5F6F8;
   }
   header.main-header.first[open] nav.tnb a {
     width: 50%;
@@ -205,7 +212,7 @@ header.main-header.first[open] nav.gnb ul.gnb-menu li.menu-item ul.sub-menu li a
 @media all and (max-width: 768px) {
   header.main-header.first[open] nav.gnb {
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 160px);
     opacity: 1;
     overflow: auto;
   }
@@ -636,7 +643,7 @@ footer div.btn-set a i {
 }
 
 footer address.main-footer {
-  margin: 20px auto 0;
+  margin: 20px auto 40px;
 }
 
 footer address.main-footer span {
@@ -655,12 +662,8 @@ footer address.main-footer span:nth-child(4), footer address.main-footer span:la
   border: none;
 }
 
-footer div.valleyLogo {
-  width: 190px;
-  height: 45px;
-  margin: 30px auto 40px;
-  background-color: #4a4a4a;
-  border-radius: 30px;
+footer address.main-footer span:last-child {
+  margin-bottom: 20px;
 }
 
 @media all and (max-width: 768px) {
@@ -672,8 +675,8 @@ footer div.valleyLogo {
     display: block;
     border: 1px solid #5A5A5A;
     border-radius: 0;
-    height: 55px;
-    line-height: 55px;
+    height: 45px;
+    line-height: 45px;
     background-color: #545454;
     margin: 0px;
     padding: 0px;
@@ -683,10 +686,11 @@ footer div.valleyLogo {
     margin: 0px;
   }
   footer address.main-footer span {
-    padding: 15px 0px 0px 0px;
+    padding: 15px 10px 0px 10px;
     display: block;
     font-size: 14px;
     color: #fff;
+    word-break: keep-all;
   }
   footer address.main-footer span a {
     color: #fff;
@@ -697,7 +701,7 @@ footer div.valleyLogo {
 }
 
 div.logo-Top {
-  z-index: 9999;
+  z-index: 1000;
   position: fixed;
   right: 0;
   bottom: 30px;

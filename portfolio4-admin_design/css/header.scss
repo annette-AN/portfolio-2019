@@ -267,7 +267,7 @@ caption.child-text-ir, label.child-text-ir {
 
           //알림갯수 고치기
           &.notice:after {
-            content: '110';
+            content: '1';
             display: inline-block;
             position: absolute;
             top: 12px;
@@ -594,23 +594,19 @@ header {
 }
 
 main {
-  position: absolute;
-  top: 61px;
-  left: 50px;
-  right: 0px;
-  height: auto;
+  margin: 61px 0px 0px 50px;
   padding: 30px;
   background: #E5E9EC;
-  z-index: 1;
+  overflow: hidden;
 }
 
 header.open + main {
-  left:250px;
+  margin-left: 250px;
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) {
   main {
-    left: 0px;
+    margin-left: 0px;
     padding: 16px;
   }
 
