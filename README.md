@@ -62,4 +62,4 @@
 
 
 #### 6 
-- 6 [Vue 게시판](https://annette-an.github.io/portfolio-2019/portfolio-2019/portfolio6-board_vue/dist/index.html)
+- 6 [Vue 게시판](https://annette-an.github.io/portfolio-2019/portfolio6-board_vue/dist/index.html)
