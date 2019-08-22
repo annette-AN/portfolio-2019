@@ -36,7 +36,7 @@
         <div id="main-gnb-header">
           <h1>web<span><span class="child-text-ir">동그라미 아이콘</span></span><strong>Admin</strong></h1>
           <ul>
-            <li><a href="index.html"><i class="fas fa-home"><span class="child-text-ir">홈 바로가기 아이콘</span></i></a></li>
+            <li><a @click="$router.push('/')"><i class="fas fa-home"><span class="child-text-ir">홈 바로가기 아이콘</span></i></a></li>
             <!-- mail .notice 를 넣으면 신호등 표시가 나옴 -->
             <li><a class="mail" href="#"><i class="fas fa-envelope"><span class="child-text-ir">메일 바로가기 아이콘</span></i></a></li>
           </ul>
@@ -77,7 +77,7 @@ export default {
     isOpen : false,
     isMobile : false,
     headerMenu: [
-      { label: "home", open:false, iconClass: "fas fa-home", to:"/home" },
+      { label: "home", open:false, iconClass: "fas fa-home", to:"/" },
       { label: "widgets", open:false, iconClass: "fas fa-cube" },
       { label: "list", open:false, iconClass: "fas fa-list-alt", to:"/board-list" },
       { label: "themes", open:false, iconClass: "fab fa-ethereum", children:[
