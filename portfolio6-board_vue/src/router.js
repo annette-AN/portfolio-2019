@@ -3,9 +3,11 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+
+console.log('process.env.NODE_ENV',process.env.NODE_ENV)
 export default new Router({
   mode: 'hash',
-  base: process.env.BASE_URL,
+  base: process.env.NODE_ENV === "development" ? "/" : process.env.BASE_URL,
   routes: [
     {
       path: '/',
@@ -38,19 +40,15 @@ export default new Router({
     },
     {
       path: '/board-write/:id',
-      name: 'Board write',
+      name: 'Board write with id',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('./pages/BoardWrite.vue')
     },
     {
-      path: '/samp',
-      name: 'samp',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('./Samp.vue')
+      path: "*",
+      redirect: "/home"
     }
   ]
 })

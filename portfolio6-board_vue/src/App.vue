@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <a href="#main" id="skip-nav">본문 바로가기</a>
-    <header :c
-    lass="[ isOpen ? (isMobile ? '' : 'open') : '' ]">
+    <header :class="[ isOpen ? (isMobile ? '' : 'open') : '' ]">
       <nav id="main-tnb">
         <ul class="tnb-wrap">
           <li class="menu-bar" @click="toggleMenu()"><a href="#"><i class="fas fa-bars"><span class="child-text-ir">메뉴바 아이콘</span></i></a></li>
