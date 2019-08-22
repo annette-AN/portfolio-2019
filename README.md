@@ -76,5 +76,5 @@
     - 언어 : HTML5, SCSS, JS 
     - 기술 : JQuery, css3(animation)
 
-- 6-1 [대쉬보드](https://annette-an.github.io/portfolio-2019/portfolio6-board_vue/dist/#/home)
+- 6-1 [대쉬보드](https://annette-an.github.io/portfolio-2019/portfolio6-board_vue/dist/#/)
 - 6-2 [게시판 CRUD](https://annette-an.github.io/portfolio-2019/portfolio6-board_vue/dist/#/board-list)
