@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <a href="#main" id="skip-nav">본문 바로가기</a>
-    <header :class="[ isOpen ? (isMobile ? '' : 'open') : '' ]">
+    <header :c
+    lass="[ isOpen ? (isMobile ? '' : 'open') : '' ]">
       <nav id="main-tnb">
         <ul class="tnb-wrap">
           <li class="menu-bar" @click="toggleMenu()"><a href="#"><i class="fas fa-bars"><span class="child-text-ir">메뉴바 아이콘</span></i></a></li>
@@ -77,7 +78,7 @@ export default {
     isOpen : false,
     isMobile : false,
     headerMenu: [
-      { label: "home", open:false, iconClass: "fas fa-home", href:"index.html" },
+      { label: "home", open:false, iconClass: "fas fa-home", to:"/home" },
       { label: "widgets", open:false, iconClass: "fas fa-cube" },
       { label: "list", open:false, iconClass: "fas fa-list-alt", to:"/board-list" },
       { label: "themes", open:false, iconClass: "fab fa-ethereum", children:[

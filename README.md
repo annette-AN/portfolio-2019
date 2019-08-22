@@ -57,9 +57,24 @@
  - 4-2 [게시판](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/page/subpage-list.html)
  - 4-3 [게시글 등록 페이지](https://annette-an.github.io/portfolio-2019/portfolio4-admin_design/page/subpage-write.html)
 
-#### 5 
-- 5 [Vue Todolist](https://annette-an.github.io/portfolio-2019/portfolio5-todolist_vue/dist/index.html)
+#### 5 VUE TODO list, Memo list 
+    - Viewport : PC / Tablet / Mobile 
+    - IE Surpport : IE edge / Chrome / Safari
+    - 참여도 : 퍼블리싱 100%, 스크립트 100%
+    - 구성(링크) : main page / 게시판 / 게시글 등록 페이지
+    - 언어 : HTML5, SCSS, JS 
+    - 기술 : JQuery, css3(animation)
 
+- 5-1 [Todolist](https://annette-an.github.io/portfolio-2019/portfolio5-todolist_vue/dist/#/todolist)
+- 5-2 [Memolist](https://annette-an.github.io/portfolio-2019/portfolio5-todolist_vue/dist/#/memolist)
 
-#### 6 
-- 6 [Vue 게시판](https://annette-an.github.io/portfolio-2019/portfolio6-board_vue/dist/index.html)
+#### 6 VUE 게시판
+    - Viewport : PC / Tablet / Mobile 
+    - IE Surpport : IE edge / Chrome / Safari
+    - 참여도 : 퍼블리싱 100%, 스크립트 100%
+    - 구성(링크) : main page / 게시판 / 게시글 등록 페이지 / 게시글 보기 페이지
+    - 언어 : HTML5, SCSS, JS 
+    - 기술 : JQuery, css3(animation)
+
+- 6-1 [대쉬보드](https://annette-an.github.io/portfolio-2019/portfolio6-board_vue/dist/#/home)
+- 6-2 [게시판 CRUD](https://annette-an.github.io/portfolio-2019/portfolio6-board_vue/dist/#/board-list)
