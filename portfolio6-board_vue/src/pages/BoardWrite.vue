@@ -76,7 +76,7 @@
                     <template v-else>
                       <template v-for="file in newPost.file">
                         <li v-if="file.loading === true" class="status-file-uploading">
-                          <span><i class="fas fa-spinner d-yellow"><span class="child-text-ir">로딩중 아이콘</span></i><em>Uploading...</em></span>
+                          <span><i class="fas fa-spinner fa-spin d-yellow"><span class="child-text-ir">로딩중 아이콘</span></i><em>Uploading...</em></span>
                         </li>
                         <li v-else class="status-ppt-file">
                           <span><i class="far fa-file-powerpoint"><span class="child-text-ir">파일 아이콘</span></i><em>{{ file.name }}</em></span>
@@ -118,8 +118,8 @@
                     <template v-else>
                       <template v-for="file in newPost.img">
                         <li v-if="file.loading === true" class="status-image-uploading">
-                          <div><i class="fas fa-spinner d-green"><span class="child-text-ir">로딩중 아이콘</span></i></div>
-                          <span><i class="fas fa-spinner d-yellow"><span class="child-text-ir">로딩중 아이콘</span></i><em>Uploading...</em></span>
+                          <div><i class="fas fa-spinner fa-spin d-green"><span class="child-text-ir">로딩중 아이콘</span></i></div>
+                          <span><i class="fas fa-spinner fa-spin d-yellow"><span class="child-text-ir">로딩중 아이콘</span></i><em>Uploading...</em></span>
                         </li>
                         <li v-else class="status-attached-image-fix">
                           <div><img :src="file.src" alt=""></div>
@@ -147,11 +147,6 @@
           </template>
         </div>
       </section>
-
-      <div>
-        <pre v-html="$data"></pre>
-      </div>
-  
     </div>
   </main>
 </template>
@@ -195,8 +190,9 @@ export default {
       else if(size < 1073741824) return(size / 1048576).toFixed(2) + " MB";
     },
     handleFileChange( newPost, $event ) {
+      const input = $event.target;
       const files = Array.from($event.target.files);
-
+      
       files.forEach((refFile)=>{
         const { lastModified, lastModifiedDate, name, size, type, webkitRelativePath } = refFile;
         const file = {
@@ -211,10 +207,14 @@ export default {
         setTimeout(()=>{
           console.log('file uploaded');
           file.loading = false;
+          input.value = "";
         },2000);
+
+
       })
     },
     handleImageChange( newPost, $event ) {
+      const input = $event.target;
       const files = Array.from($event.target.files);
 
       files.forEach((refFile)=>{
@@ -233,6 +233,7 @@ export default {
         setTimeout(()=>{
           console.log('file uploaded');
           file.loading = false;
+          input.value = "";
         },2000);
       })
     },

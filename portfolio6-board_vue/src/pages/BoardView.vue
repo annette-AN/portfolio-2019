@@ -19,7 +19,7 @@
             <tr>
               <td>작성자</td>
               <td>
-                <p>운영자</p>
+                <p>guest</p>
               </td>
             </tr>
             <tr>
