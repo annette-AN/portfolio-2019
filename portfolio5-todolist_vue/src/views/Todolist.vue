@@ -78,9 +78,10 @@ export default {
 div {
   margin: 0 auto;
 }
-button {
-  width: 40px;
+button+button {
+  margin-left: 5px;
 }
+
 table {
   table-layout: fixed;
   border-collapse: collapse;
