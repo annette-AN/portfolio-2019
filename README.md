@@ -7,7 +7,7 @@
 
   - HTML : HTML5, 웹 접근성 관리 가능
   - CSS : CSS3 스펙, 반응형 페이지 제작 가능
-  - JS : Pure Javascript, JQuery swiper UI 구현 가능
+  - JS : VUE, Pure Javascript, JQuery swiper UI 구현 가능
 <br>
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
