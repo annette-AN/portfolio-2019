@@ -47,7 +47,7 @@
 
 #### 4 관리자 페이지 카피 & 부분 리뉴얼
     - Viewport : PC / Tablet / Mobile 
-    - IE Surpport : IE edge / Chrome / Safari
+    - IE Surpport : IE10+ / Chrome / Safari
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page / 게시판 / 게시글 등록 페이지
     - 언어 : HTML5, SCSS, JS 
@@ -70,7 +70,7 @@
 
 #### 6 VUE 게시판
     - Viewport : PC / Tablet / Mobile 
-    - IE Surpport : IE edge / Chrome / Safari
+    - IE Surpport : IE10+ / Chrome / Safari
     - 참여도 : 퍼블리싱 100%, 스크립트 100%
     - 구성(링크) : main page / 게시판 / 게시글 등록 페이지 / 게시글 보기 페이지
     - 언어 : HTML5, SCSS, JS 
