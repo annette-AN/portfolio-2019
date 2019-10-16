@@ -17,6 +17,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 input, button, select {
@@ -606,6 +607,7 @@ header.open #main-gnb .main-gnb-menu > li ul li a:hover {
 }
 
 main {
+  display: block;
   margin: 61px 0px 0px 50px;
   padding: 30px;
   background: #E5E9EC;

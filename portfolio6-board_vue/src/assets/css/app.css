@@ -17,6 +17,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 input, button, select {
@@ -1836,19 +1837,18 @@ table i {
   position: relative;
   height: 140px;
   margin-bottom: 5px;
+  padding-top: 30px;
   border: 1px solid #d2d2d3;
   border-radius: 3px;
+  text-align: center;
 }
 
-.write .image-preview li div img, .write .image-preview li div i {
+.write .image-preview li div img {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.write .image-preview li div img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -2104,10 +2104,6 @@ table i {
 .file-delete i {
   font-size: 20px;
   color: red;
-}
-
-.file-delete:hover {
-  background: yellow;
 }
 
 @media all and (min-width: 768px) and (max-width: 1149px) {
