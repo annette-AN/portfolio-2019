@@ -10,6 +10,16 @@
   - JS : VUE, Pure Javascript, JQuery swiper UI 구현 가능
 <br>
 
+#### [최근] GUCCI 사이트 카피
+    - Viewport : PC (해상도 1280 이상, 반응형 추가 예정)
+    - IE Surpport : IE10+ / IE edge / Chrome
+    - 참여도 : 퍼블리싱 100%, 스크립트 100% 
+    - 구성(링크) : main page
+    - 언어 : HTML5, SCSS, JS 
+    - 기술 : JQuery, css3(animation)
+    
+ - 1-1 [메인페이지]
+
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
     - Viewport : PC / Tablet / Mobile
     - IE Surpport : IE10+ / IE edge / Chrome / Safari
