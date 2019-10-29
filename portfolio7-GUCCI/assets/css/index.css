@@ -176,7 +176,7 @@ input {
 }
 
 .index .visual .slide .contents .view-btn button {
-  padding: 11px;
+  padding: 11px 30px;
   background: #1B1B1B;
   color: #fff;
   font-weight: 300;
@@ -187,22 +187,36 @@ input {
   background: #333;
 }
 
+.index .visual .slide .contents .view-btn.several-button button {
+  padding: 11px;
+}
+
+.index .visual .slide .contents .view-btn.several-button button + button {
+  margin-left: 10px;
+}
+
 .index .visual .s1 {
-  background-image: url(../img/HeroBigStandard_3200x1520/HeroBigStandard_S93-FS-HERO-02_001_Default.jpg);
+  background-image: url(../img/HeroBigStandard_3200x1520/1/HeroBigStandard_S01CRUISE-HERO-006_001_Default.jpg);
 }
 
 .index .visual .s2 {
-  background-image: url(../img/HeroBigStandard_3200x1520/HeroBigStandard_S93-FS-ADV-02_001_Default.jpg);
+  background-image: url(../img/HeroBigStandard_3200x1520/2/HeroBigStandard_S01-FS-GGMarmont2-01_001_Default.jpg);
 }
 
 .index .visual .s3 {
-  background-image: url(../img/HeroBigStandard_3200x1520/HeroBigStandard_S93-FS-ADV-18_001_Default.jpg);
+  background-image: url(../img/HeroBigStandard_3200x1520/3/HeroBigStandard_S01CRUISE-HERO-062_001_Default.jpg);
+}
+
+.index .visual .s4 {
+  background-image: url(../img/HeroBigStandard_3200x1520/4/HeroBigStandard_S01CRUISE-HERO-008_001_Default.jpg);
 }
 
 .index .visual .indicator {
   position: absolute;
-  top: auto;
   left: 50%;
+  bottom: 30px;
+  top: auto;
+  right: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   overflow: hidden;
@@ -1125,25 +1139,13 @@ input {
 
 .index-main > section > aside {
   position: absolute;
-  top: auto;
+  top: 120px;
   left: auto;
   right: auto;
   bottom: auto;
   width: 180px;
   background: #f5f5f5;
   z-index: 1;
-}
-
-.index-main > section > aside:nth-of-type(1) {
-  top: 120px;
-}
-
-.index-main > section > aside:nth-of-type(2) {
-  top: 300px;
-}
-
-.index-main > section > aside:nth-of-type(3) {
-  bottom: 620px;
 }
 
 .index-main > section > aside > a {
@@ -1165,11 +1167,11 @@ input {
 }
 
 .index-main > section .aside-right {
-  right: 320px;
+  right: 200px;
 }
 
 .index-main > section .aside-left {
-  left: 310px;
+  left: 200px;
 }
 
 .index-main > section aside.aside-center {
@@ -1189,19 +1191,28 @@ input {
 }
 
 .index-main .model-look {
-  padding-bottom: 400px;
+  padding-bottom: 250px;
 }
 
 .index-main .model-look .section-image {
-  top: 100px;
-}
-
-.index-main .model-look .section-image img {
-  width: 420px;
+  top: 0px;
 }
 
 .index-main .model-look .section-contents {
-  top: 150px;
+  top: 100px;
+}
+
+.index-main .model-look aside:nth-of-type(1) {
+  top: 50px;
+}
+
+.index-main .model-look aside:nth-of-type(2) {
+  top: 690px;
+}
+
+.index-main .model-look aside:nth-of-type(3) {
+  top: auto;
+  bottom: 620px;
 }
 
 .index-main .full-image .section-image {
