@@ -3,7 +3,7 @@ body {
   font-size: 11px;
 }
 
-body, div, h1, h2, h3, h4, h5, h6, button, ul, li, a, span, em, p {
+body, div, h1, h2, h3, h4, h5, h6, button, ul, li, a, span, em, p, aside {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
@@ -1150,20 +1150,26 @@ input {
 
 .index-main > section > aside > a {
   display: block;
-  margin: 40px 0px;
-  color: #7a7a7a;
+  margin: 40px 10px;
+  color: #666666;
+  font-weight: 400;
 }
 
 .index-main > section > aside > a > h4 {
-  margin-top: 20px;
+  padding-top: 20px;
   font-size: 20px;
   font-weight: 300;
+  color: #434343;
 }
 
 .index-main > section > aside > a > p {
   margin-top: 20px;
-  font-size: 15px;
-  font-family: serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.index-main > section > aside .no-padding {
+  padding-top: 0px;
 }
 
 .index-main > section .aside-right {
@@ -1330,6 +1336,22 @@ input {
 .index-main .scroll-top i {
   color: #999;
   font-size: 15px;
+}
+
+.index-main .aside-hover-effect {
+  display: inline-block;
+  margin-top: 23px;
+  color: #424242;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.index-main .aside-hover-effect:hover, .index-main .aside-hover-effect:focus {
+  color: #7a7a7a;
+}
+
+.index-main .wide-margin {
+  margin-top: 50px;
 }
 
 .index-footer {
@@ -1669,22 +1691,6 @@ input {
 
 .index-footer .footer-wrap .gucci-info > address, .index-footer .footer-wrap .gucci-info em {
   display: inline-block;
-}
-
-.aside-hover-effect {
-  display: inline-block;
-  margin-top: 23px;
-  color: #424242;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.aside-hover-effect:hover, .aside-hover-effect:focus {
-  color: #7a7a7a;
-}
-
-.wide-margin {
-  margin-top: 50px;
 }
 
 .text-ir {
