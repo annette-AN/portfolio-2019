@@ -697,40 +697,6 @@ input {
   font-size: 18px;
 }
 
-.index #index-header[minimal] {
-  height: 65px;
-  padding-top: 0px;
-  background-color: #1B1B1B;
-}
-
-.index #index-header[minimal] h1 {
-  display: none;
-}
-
-.index #index-header[minimal] #nation-info li + li {
-  margin-left: 0px;
-}
-
-.index #index-header[minimal] #nation-info > li .dropdown-wrap {
-  left: -12px;
-}
-
-.index #index-header[minimal] #nation-info > li .dropdown-wrap > div:before {
-  left: 9px;
-}
-
-.index #index-header[minimal] .user-info li + li {
-  margin-left: 10px;
-}
-
-.index #index-header[minimal] .user-info #popup-login .dropdown-wrap {
-  left: -170px;
-}
-
-.index #index-header[minimal] .user-info #popup-login .dropdown-wrap .popup-design:before {
-  left: 170px;
-}
-
 .index .gnb {
   font-size: 12px;
 }
@@ -1297,7 +1263,7 @@ input {
 .index-main .section-gucci-story > div {
   -webkit-column-count: 3;
           column-count: 3;
-  width: 1300px;
+  width: 1200px;
   height: 850px;
   margin: 0px auto;
 }
@@ -1710,5 +1676,52 @@ input {
 
 .no-cursor {
   cursor: none;
+}
+
+@media all and (min-width: 1297px) {
+  .index #index-header[minimal] {
+    height: 65px;
+    padding-top: 0px;
+  }
+  .index #index-header[minimal] h1 {
+    display: none;
+  }
+  .index #index-header[minimal] #nation-info li + li {
+    margin-left: 0px;
+  }
+  .index #index-header[minimal] #nation-info > li .dropdown-wrap {
+    left: -12px;
+  }
+  .index #index-header[minimal] #nation-info > li .dropdown-wrap > div:before {
+    left: 9px;
+  }
+  .index #index-header[minimal] .user-info li + li {
+    margin-left: 10px;
+  }
+  .index #index-header[minimal] .user-info #popup-login .dropdown-wrap {
+    left: -170px;
+  }
+  .index #index-header[minimal] .user-info #popup-login .dropdown-wrap .popup-design:before {
+    left: 170px;
+  }
+}
+
+@media all and (max-width: 1270px) and (min-width: 768px) {
+  .index .visual {
+    height: auto;
+    padding-top: 50%;
+  }
+}
+
+@media all and (max-width: 1600px) and (min-width: 1297px) {
+  .index-main > section .aside-right {
+    right: 5%;
+  }
+  .index-main > section .aside-left {
+    left: 5%;
+  }
+  .index-main .model-look .section-image img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

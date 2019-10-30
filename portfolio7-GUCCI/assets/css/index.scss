@@ -725,51 +725,6 @@ input {
     }
   }
 
-  #index-header[minimal] {
-    height: 65px;
-    padding-top: 0px;
-    background-color: #1B1B1B;
-
-    h1 {
-      display: none;
-    }
-
-    #nation-info {
-      li + li {
-        margin-left: 0px;
-      }
-
-      > li {
-        .dropdown-wrap {
-          left: -12px;
-
-          > div {
-            &:before {
-              left: 9px;
-            }
-          }
-        }
-      }
-    }
-
-    // .index #index-header .user-info #popup-login .popup-design
-    .user-info {
-      li + li {
-        margin-left: 10px;
-      }
-
-      #popup-login .dropdown-wrap {
-        left: -170px;
-        
-        .popup-design {
-          &:before {
-            left: 170px;
-          }
-        }
-      }
-    }
-  }
-
   .gnb {
     font-size: 12px;
 
@@ -1379,7 +1334,7 @@ input {
 
     > div {
       column-count: 3;
-      width: 1300px;
+      width: 1200px;
       height: 850px;
       margin: 0px auto;
 
@@ -1759,7 +1714,79 @@ input {
 
 
 //반응형 min-width : 500 , max-width
-//header => 1297 이상, 1296 > 1024, 1023 > 768, 767 미만
-//visual => 1271 이상, 1270 > 768, 768미만
-//main => 1601이상 , 1600 > 1297, 1296 > 1024 , 1023 > 768, 767 미만
+
+@media all and (min-width: 1297px) {
+  .index {
+    #index-header[minimal] {
+      height: 65px;
+      padding-top: 0px;
+  
+      h1 {
+        display: none;
+      }
+  
+      #nation-info {
+        li + li {
+          margin-left: 0px;
+        }
+  
+        > li {
+          .dropdown-wrap {
+            left: -12px;
+  
+            > div {
+              &:before {
+                left: 9px;
+              }
+            }
+          }
+        }
+      }
+  
+      // .index #index-header .user-info #popup-login .popup-design
+      .user-info {
+        li + li {
+          margin-left: 10px;
+        }
+  
+        #popup-login .dropdown-wrap {
+          left: -170px;
+          
+          .popup-design {
+            &:before {
+              left: 170px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1270px) and (min-width: 768px) {
+  .index .visual {
+    height: auto;
+    padding-top: 50%;
+  }
+}
+
+//header => 1023 > 768, 767 미만
+//visual => 768미만
+//main => 1296 > 1024 , 1023 > 768, 767 미만
 //footer => 1240 이상, 1239 > 1023 , 768, 767 미만
+
+@media all and (max-width: 1600px) and (min-width: 1297px) {
+  .index-main > section .aside-right {
+    right: 5%;
+  }
+
+  .index-main > section .aside-left {
+    left: 5%;
+  }
+
+  .index-main .model-look .section-image {
+    img {
+      width: 100%;
+    }
+  }
+}
