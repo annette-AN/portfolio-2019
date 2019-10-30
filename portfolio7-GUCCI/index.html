@@ -1672,9 +1672,11 @@
 
     if ( top > 60 ) {
       $header.attr('minimal', '');
+      $header.addClass('on');
       $header.find('[hidden-text]').addClass('hidden');
     } else {
       $header.removeAttr('minimal');
+      $header.removeClass('on');
       $header.find('[hidden-text]').removeClass('hidden');
     }
   });
