@@ -1594,9 +1594,11 @@
       </a>');
     }
 
-    var numSlide = '';
-    var slideWidth = 0;
-    var slideWrapWidth = 0;
+    var slideProps ={
+      numSlide : '',
+      slideWidth : 0,
+      slideWrapWidth : 0
+    }
 
     $('.fashion-show #indicator').empty();
     $('.fashion-show .slide-wrap > a').each(function(i){
@@ -1605,18 +1607,26 @@
 
     $('.fashion-show #indicator li:first-child').addClass('on');
 
-    $(window).resize(function() {
-      $('.fashion-show .slide .slide-wrap a').each(function(i){
-        numSlide = $('.fashion-show .slide-wrap a').length;
-        slideWidth = $('.fashion-show .slide').innerWidth();
-        slideWrapWidth = ( numSlide * slideWidth );
+    function createSlideWrapWidth(slideProps) {
+      slideProps.numSlide = $('.fashion-show .slide-wrap a').length;
+      slideProps.slideWidth = $('.fashion-show .slide').innerWidth();
+      slideProps.slideWrapWidth = ( slideProps.numSlide * slideProps.slideWidth );
 
-        $(this).css({'left': ( i * slideWidth ) + 'px'});
-
-        $('.fashion-show .slide-wrap').css({
-          'width' : slideWrapWidth + 'px',
-        });
+      $('.fashion-show .slide-wrap').css({
+        'width' : slideProps.slideWrapWidth + 'px',
       });
+
+      $('.fashion-show .slide .slide-wrap a').each(function(i){
+        $(this).css({'left': ( i * slideProps.slideWidth ) + 'px'});
+      });
+
+      $('.fashion-show .slide .slide-wrap a').css({'width': (slideProps.slideWidth ) + 'px'});
+    }
+
+    createSlideWrapWidth(slideProps);
+
+    $(window).resize(function() {
+      createSlideWrapWidth(slideProps);
     });
 
     $('.fashion-show #indicator > li > a').on('click', function(e){
@@ -1626,7 +1636,7 @@
       $(this).parent().addClass('on');
       moveToIndex(index)
       $('.fashion-show .slide-wrap').css({
-        'left' : -( index * slideWidth ) + 'px',
+        'left' : -( index * slideProps.slideWidth ) + 'px',
       });
     });
 
@@ -1636,7 +1646,7 @@
       $('.fashion-show #indicator > li').removeClass('on');
       $('.fashion-show #indicator > li').eq(index).addClass('on');
       $('.fashion-show .slide-wrap').css({
-        'left' : -( index * slideWidth ) + 'px',
+        'left' : -( index * slideProps.slideWidth ) + 'px',
       });
     });
   }
