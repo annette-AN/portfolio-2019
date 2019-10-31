@@ -1330,12 +1330,14 @@ input {
 
 .index-footer .footer-wrap {
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0px auto;
+  padding: 0px 15px;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap {
-  padding-top: 60px;
+  padding: 60px 15px 0px;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap header, .index-footer .footer-wrap .footer-menu-wrap span, .index-footer .footer-wrap .footer-menu-wrap em, .index-footer .footer-wrap .footer-menu-wrap address {
@@ -1534,7 +1536,8 @@ input {
   left: 73%;
   right: auto;
   bottom: auto;
-  width: 320px;
+  max-width: 320px;
+  width: 26%;
 }
 
 .index-footer .footer-wrap .other-site > a {

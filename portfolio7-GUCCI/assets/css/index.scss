@@ -1405,11 +1405,15 @@ input {
 
   .footer-wrap {
     position: relative;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    // width: 1200px;
     margin: 0px auto;
+
+    padding: 0px 15px;
   
     .footer-menu-wrap {
-      padding-top: 60px;
+      padding: 60px 15px 0px;
 
       header, span, em, address {
         font-size: 12px;
@@ -1581,7 +1585,8 @@ input {
       left: 73%;
       right: auto;
       bottom: auto;
-      width: 320px;
+      max-width: 320px;
+      width: 26%;
 
       > a {
         width: 65px;
@@ -1808,5 +1813,4 @@ input {
 //header => 1023 > 768, 767 미만
 //visual => 768미만
 //main => 1296 > 1024//height조절필요 , 1023 > 768, 767 미만
-//footer => 1240 이상, 1239 > 1023 , 768, 767 미만
-
+//footer => 768, 767 미만
