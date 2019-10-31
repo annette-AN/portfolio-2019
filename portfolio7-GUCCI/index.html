@@ -1605,21 +1605,22 @@
 
     $('.fashion-show #indicator li:first-child').addClass('on');
 
-    $('.fashion-show .slide-wrap a').each(function(i){
-      numSlide = $('.fashion-show .slide-wrap a').length;
-      slideWidth = 350;
-      slideWrapWidth = ( numSlide * slideWidth );
+    $(window).resize(function() {
+      $('.fashion-show .slide .slide-wrap a').each(function(i){
+        numSlide = $('.fashion-show .slide-wrap a').length;
+        slideWidth = $('.fashion-show .slide').innerWidth();
+        slideWrapWidth = ( numSlide * slideWidth );
 
-      $(this).css({'left': ( i * slideWidth ) + 'px'});
+        $(this).css({'left': ( i * slideWidth ) + 'px'});
 
-      $('.fashion-show .slide-wrap').css({
-        'width' : slideWrapWidth + 'px',
+        $('.fashion-show .slide-wrap').css({
+          'width' : slideWrapWidth + 'px',
+        });
       });
     });
 
     $('.fashion-show #indicator > li > a').on('click', function(e){
       var index = $('.fashion-show #indicator > li').index($(this).parent());
-      slideWidth = 350;
 
       $('.fashion-show #indicator > li').removeClass('on');
       $(this).parent().addClass('on');
@@ -1631,7 +1632,6 @@
 
     $('.fashion-show > ul > li > a').on('mouseenter', function(){
       var index = $('.fashion-show > ul > li').index($(this).parent());
-      slideWidth = 350;
 
       $('.fashion-show #indicator > li').removeClass('on');
       $('.fashion-show #indicator > li').eq(index).addClass('on');
