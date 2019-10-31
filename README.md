@@ -11,7 +11,7 @@
 <br>
 
 #### [최근] GUCCI 사이트 카피
-    - Viewport : PC (해상도 1280 이상, 반응형 추가 예정)
+    - Viewport : PC / Tablet (해상도 1024 이상, 모바일 사이즈 반응형 추가 예정)
     - IE Surpport : IE10+ / IE edge / Chrome
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page
