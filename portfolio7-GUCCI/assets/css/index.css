@@ -1241,6 +1241,8 @@ input {
 
 .index-main .section-gucci-story {
   padding-bottom: 40px;
+  max-height: 1028px;
+  height: auto;
 }
 
 .index-main .section-gucci-story h3 {
@@ -1263,8 +1265,9 @@ input {
 .index-main .section-gucci-story > div {
   -webkit-column-count: 3;
           column-count: 3;
-  width: 1200px;
-  height: 850px;
+  max-width: 1200px;
+  width: 85%;
+  max-height: 850px;
   margin: 0px auto;
 }
 
@@ -1274,7 +1277,8 @@ input {
 }
 
 .index-main .section-gucci-story > div article .image-part img {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
 }
 
 .index-main .section-gucci-story > div article h4 {
@@ -1713,7 +1717,7 @@ input {
   }
 }
 
-@media all and (max-width: 1600px) and (min-width: 1297px) {
+@media all and (max-width: 1600px) and (min-width: 1024px) {
   .index-main > section .aside-right {
     right: 5%;
   }
@@ -1722,6 +1726,18 @@ input {
   }
   .index-main .model-look .section-image img {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 1296px) and (min-width: 1201px) {
+  .index-main .section-gucci-story > div article {
+    margin: 17.3% 0%;
+  }
+}
+
+@media all and (max-width: 1200px) and (min-width: 1024px) {
+  .index-main .section-gucci-story > div article {
+    margin: 15.3% 0%;
   }
 }
 /*# sourceMappingURL=index.css.map */

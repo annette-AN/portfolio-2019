@@ -1314,6 +1314,8 @@ input {
 
   .section-gucci-story {
     padding-bottom: 40px;
+    max-height: 1028px;
+    height: auto;
 
     h3 {
       margin-top: 70px;
@@ -1334,8 +1336,11 @@ input {
 
     > div {
       column-count: 3;
-      width: 1200px;
-      height: 850px;
+      max-width: 1200px;
+      width: 85%;
+      max-height: 850px;
+      //height 조절 필요
+      // height: 40%;
       margin: 0px auto;
 
       article {
@@ -1344,7 +1349,8 @@ input {
 
         .image-part {
           img {
-            width: 340px;
+            width: 100%;
+            max-width: 340px;
           }
         }
 
@@ -1770,12 +1776,7 @@ input {
   }
 }
 
-//header => 1023 > 768, 767 미만
-//visual => 768미만
-//main => 1296 > 1024 , 1023 > 768, 767 미만
-//footer => 1240 이상, 1239 > 1023 , 768, 767 미만
-
-@media all and (max-width: 1600px) and (min-width: 1297px) {
+@media all and (max-width: 1600px) and (min-width: 1024px) {
   .index-main > section .aside-right {
     right: 5%;
   }
@@ -1790,3 +1791,22 @@ input {
     }
   }
 }
+
+@media all and (max-width: 1296px) and (min-width: 1201px) {
+  .index-main .section-gucci-story > div article {
+    margin: 17.3% 0%;
+  }
+
+}
+
+@media all and (max-width: 1200px) and (min-width: 1024px) {
+  .index-main .section-gucci-story > div article {
+    margin: 15.3% 0%;
+  }
+}
+
+//header => 1023 > 768, 767 미만
+//visual => 768미만
+//main => 1296 > 1024//height조절필요 , 1023 > 768, 767 미만
+//footer => 1240 이상, 1239 > 1023 , 768, 767 미만
+
