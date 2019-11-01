@@ -1004,38 +1004,37 @@ input {
   margin-top: 0px;
 }
 
-.index .gnb > ul > li .gucci-deco .col2 > a {
-  display: block;
-  margin-bottom: 26px;
-}
-
-.index .gnb > ul > li .gucci-deco .col2 ul {
-  -webkit-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-}
-
-.index .gnb > ul > li .gucci-deco .col2 ul li:first-child {
-  margin-top: 0px;
+.index .gnb > ul > li .gucci-story > li {
+  overflow: hidden;
 }
 
 .index .gnb > ul > li .gucci-story > li:nth-of-type(1) {
-  max-width: 28%;
+  max-width: 350px;
+  width: 30%;
+  padding: 0px 15px;
 }
 
 .index .gnb > ul > li .gucci-story > li:nth-of-type(2) {
-  max-width: 38%;
+  max-width: 440px;
+  width: 36%;
+  padding: 0px 15px;
 }
 
 .index .gnb > ul > li .gucci-story > li:nth-of-type(3) {
-  max-width: 420px;
   width: 33%;
 }
 
-.index .gnb > ul > li .gucci-story .recently-info > ul {
-  -webkit-column-gap: 4%;
-          column-gap: 4%;
+.index .gnb > ul > li .gucci-story > li > a {
+  margin-bottom: 26px;
+}
+
+.index .gnb > ul > li .gucci-story > li > ul {
+  float: left;
+  width: 50%;
+}
+
+.index .gnb > ul > li .gucci-story > li > ul li:first-child {
+  margin-top: 0px;
 }
 
 .index .gnb > ul > li .gucci-story .recently-info > ul > li + li {
