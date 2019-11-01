@@ -1355,7 +1355,7 @@ input {
     height: auto;
 
     h3 {
-      margin-top: 70px;
+      margin: 70px 0px;
       color: #636363;
       font-weight: 300;
       font-size: 35px;
@@ -1371,35 +1371,82 @@ input {
       }
     }
 
-    > div {
-      column-count: 3;
+    .contents-wrap {
+      position: relative;
       max-width: 1200px;
-      width: 85%;
-      max-height: 850px;
-      //height 조절 필요
-      // height: 40%;
+      width: 90vw;
+      // height: 89vh;
       margin: 0px auto;
 
-      article {
-        display: inline-block;
-        margin: 60px 0px;
+      > div {
+        position: absolute;
+        top: 0px;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 33%;
+        height: calc(100% - 100px);
 
-        .image-part {
-          img {
-            width: 100%;
-            max-width: 340px;
+        article {
+          position: absolute;
+          top: auto;
+          left: 50%;
+          right: auto;
+          bottom: auto;
+          transform: translate(-50%, 0%);
+          max-width: 340px;
+          width: 90%;
+
+          .image-part {
+            img {
+              width: 100%;
+            }
+          }
+  
+          h4 {
+            margin-top: 20px;
+            font-size: 20px;
+          }
+  
+          .aside-hover-effect {
+            margin-top: 10px;
           }
         }
 
-        h4 {
-          margin-top: 20px;
-          font-size: 20px;
+        .position-top {
+          top: 0px;
+          bottom: auto;
         }
 
-        .aside-hover-effect {
-          margin-top: 10px;
+        .position-bottom {
+          top: auto;
+          bottom: 0px;
         }
       }
+
+      .left-absolute {
+        left: 0px;
+        right: auto;
+      }
+
+      .center-relative {
+        position: relative;
+        height: fit-content;
+        margin: 0px auto;
+        padding-bottom: 100px;
+
+        article {
+          position: static;
+          transform: unset;
+          margin: 0px auto;
+        }
+      }
+
+      .right-absolute {
+        right: 0px;
+        left: auto;
+      }
+
     }
   }
 
@@ -1834,18 +1881,6 @@ input {
   }
 }
 
-@media all and (max-width: 1296px) and (min-width: 1201px) {
-  .index-main .section-gucci-story > div article {
-    margin: 17.3% 0%;
-  }
-
-}
-
-@media all and (max-width: 1200px) and (min-width: 1024px) {
-  .index-main .section-gucci-story > div article {
-    margin: 15.3% 0%;
-  }
-}
 
 //header => 1023 > 768, 767 미만
 //visual => 768미만
