@@ -783,10 +783,10 @@
         </li>
         <li menu>
           <a href="#">구찌 데코</a>
-          <ul class="col-list" menu-list>
-            <li class="col4">
+          <ul class="gucci-deco" menu-list>
+            <li>
               <a href="#">구찌 데코</a>
-              <ul class="col4">
+              <ul>
                 <li>
                   <a href="#">캔들</a>
                 </li>
@@ -799,6 +799,8 @@
                 <li>
                   <a href="#">다용도 트레이&도자기함</a>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <a href="#">꽃병</a>
                 </li>
@@ -811,6 +813,8 @@
                 <li>
                   <a href="#">이불 & 담요</a>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <a href="#">바스켓 & 우산꽂이</a>
                 </li>
@@ -825,6 +829,7 @@
                 </li>
               </ul>
             </li>
+
             <li class="details">
               <a href="#">자세히 보기</a>
               <div>
@@ -1668,6 +1673,9 @@
 
 
   //nav gnb 메뉴 오픈
+
+  // $('[menu-list]').eq().addClass('on');
+
   $(document).on('mouseenter', '[menu]', function(){
     $(this).find('[menu-list]').addClass('on');
   });
