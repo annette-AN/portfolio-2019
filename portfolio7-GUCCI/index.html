@@ -872,8 +872,8 @@
         </li>
         <li menu>
           <a href="#">구찌 스토리</a>
-          <ul class="col-list gucci-story" menu-list>
-            <li class="col2">
+          <ul class="gucci-story" menu-list>
+            <li>
               <a href="#">구찌 스토리</a>
               <ul>
                 <li>
@@ -891,6 +891,8 @@
                 <li>
                   <a href="#">셀러브리티</a>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <a href="#">악세서리</a>
                 </li>
@@ -908,7 +910,7 @@
                 </li>
               </ul>
             </li>
-            <li class="col2 no-border recently-info">
+            <li class="no-border recently-info">
               <a href="#">최신 정보</a>
               <ul>
                 <li>
@@ -925,10 +927,12 @@
                     <img src="assets/img/NavRecentlyInfo/NavArticle_FW-ADV_001_Default.jpg" alt="캠페인 프레타포르테"/>
                     <div>    
                       <em>캠페인</em>
-                      <span>프레타포르테(특수문자같은 영문)</span>
+                      <span>프레타포르테</span>
                     </div>
                   </a>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <a href="#">
                     <img src="assets/img/NavRecentlyInfo/NavArticle_S93-GucciGrip_001_Default.jpg" alt="캠페인 핸드셰이크"/>
@@ -1673,9 +1677,6 @@
 
 
   //nav gnb 메뉴 오픈
-
-  // $('[menu-list]').eq().addClass('on');
-
   $(document).on('mouseenter', '[menu]', function(){
     $(this).find('[menu-list]').addClass('on');
   });
