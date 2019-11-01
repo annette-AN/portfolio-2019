@@ -932,14 +932,9 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1000px;
-  width: 90%;
+  max-width: 1150px;
+  width: 85vw;
   margin: 0px auto;
-}
-
-.index .gnb > ul > li .menu-style-WM > li > div {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .index .gnb > ul > li .menu-style-WM > li > div > .gnb-sub-header {

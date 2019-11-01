@@ -962,14 +962,11 @@ input {
           > li {
             display: inline-flex;
             justify-content: space-between;
-            max-width: 1000px;
-            width: 90%;
+            max-width: 1150px;
+            width: 85vw;
             margin: 0px auto;
 
             > div {
-              display: inline-block;
-              vertical-align: top;
-
               > .gnb-sub-header {
                 margin: 26px 0px 22px;
 
@@ -981,7 +978,6 @@ input {
               }
 
               > ul {
-                // display: none;
                 li + li {
                   margin-top: 12px;
                 }
