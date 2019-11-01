@@ -802,6 +802,7 @@ input {
             padding: 0px 35px;
 
             a {
+              display: block;
               font-size: 12px;
             }
 
@@ -1011,16 +1012,33 @@ input {
           }
         }
 
-        .col-list {
-          .col4 {
+        .gucci-deco {
+
+          > li {
+            display: inline-block;
+            width: 30vw;
+            overflow: hidden;
+
             > a {
               display: block;
+              width: fit-content;
               margin-bottom: 22px;
             }
 
+            &:nth-of-type(1) {
+              max-width: 470px;
+              width: 35vw;
+              padding: 0px 15px;
+            }
+
+            > ul + ul {
+              padding-left: 12px;
+            }
+
             ul {
-              column-count: 3;
-              column-gap: 30px;
+              float: left;
+              max-width: 160px;
+              width: 33%;
 
               li:first-child {
                 margin-top: 0px;

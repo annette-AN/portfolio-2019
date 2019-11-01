@@ -779,6 +779,7 @@ input {
 }
 
 .index .gnb > ul > li > ul > li a {
+  display: block;
   font-size: 12px;
 }
 
@@ -969,35 +970,53 @@ input {
   margin-top: 40px;
 }
 
-.index .gnb > ul > li .col-list .col4 > a {
+.index .gnb > ul > li .gucci-deco > li {
+  display: inline-block;
+  width: 30vw;
+  overflow: hidden;
+}
+
+.index .gnb > ul > li .gucci-deco > li > a {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 22px;
 }
 
-.index .gnb > ul > li .col-list .col4 ul {
-  -webkit-column-count: 3;
-          column-count: 3;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+.index .gnb > ul > li .gucci-deco > li:nth-of-type(1) {
+  max-width: 470px;
+  width: 35vw;
+  padding: 0px 15px;
 }
 
-.index .gnb > ul > li .col-list .col4 ul li:first-child {
+.index .gnb > ul > li .gucci-deco > li > ul + ul {
+  padding-left: 12px;
+}
+
+.index .gnb > ul > li .gucci-deco > li ul {
+  float: left;
+  max-width: 160px;
+  width: 33%;
+}
+
+.index .gnb > ul > li .gucci-deco > li ul li:first-child {
   margin-top: 0px;
 }
 
-.index .gnb > ul > li .col-list .col2 > a {
+.index .gnb > ul > li .gucci-deco .col2 > a {
   display: block;
   margin-bottom: 26px;
 }
 
-.index .gnb > ul > li .col-list .col2 ul {
+.index .gnb > ul > li .gucci-deco .col2 ul {
   -webkit-column-count: 2;
           column-count: 2;
   -webkit-column-gap: 30px;
           column-gap: 30px;
 }
 
-.index .gnb > ul > li .col-list .col2 ul li:first-child {
+.index .gnb > ul > li .gucci-deco .col2 ul li:first-child {
   margin-top: 0px;
 }
 
