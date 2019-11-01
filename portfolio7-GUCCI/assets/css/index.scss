@@ -1,6 +1,5 @@
 body {
   font-family: Futura, Futura, "Malgun Gothic", Dotum, sans-serif;
-  // font-family: Futura,"Helvetica","Arial",sans-serif;
   font-size: 11px;
 }
 
@@ -217,7 +216,6 @@ input {
         width: 12px;
         height: 12px;
         border-radius: 6px;
-        // transition: border .4s;
         cursor: pointer;
 
         &:hover, &:focus { 
@@ -627,14 +625,6 @@ input {
           }
         }
       }
-
-      // .no-cursor {
-      //   cursor: initial;
-
-      //   &:hover, &:focus {
-      //     color: rgba(255, 255, 255, 0.9);
-      //   }
-      // }
     }
 
     .site-search {
@@ -859,8 +849,6 @@ input {
               width: 25vw;
               margin: 10px 0px 0px 40px;
 
-              // background: red;
-
               .slide {
                 position: relative;
                 height: 154px;
@@ -873,7 +861,6 @@ input {
 
                   a {
                     position: absolute;
-                    // width: 33%;
                     height: 100%;
 
                     img {
@@ -1082,8 +1069,6 @@ input {
           
           .recently-info {
             > ul {
-              // column-gap: 4%;
-
               > li + li {
                 margin-top: 10px;
               }
@@ -1266,10 +1251,6 @@ input {
 
     .section-image {
       top: 0px;
-
-      img {
-        // width: 100%;
-      }
     }
 
     .section-contents {
@@ -1375,7 +1356,6 @@ input {
       position: relative;
       max-width: 1200px;
       width: 90vw;
-      // height: 89vh;
       margin: 0px auto;
 
       > div {
@@ -1491,9 +1471,7 @@ input {
     position: relative;
     max-width: 1200px;
     width: 100%;
-    // width: 1200px;
     margin: 0px auto;
-
     padding: 0px 15px;
   
     .footer-menu-wrap {
