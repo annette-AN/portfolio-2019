@@ -1706,6 +1706,30 @@
   });
 
 
+  //section-gucci-story height공유
+
+  var contentsProps = {
+    $contentsWrap : '',
+    contentsHeight : 0
+  }
+
+  function createContentsWrapWidth(contentsProps) {
+    contentsProps.$contentsWrap = $('.section-gucci-story .contents-wrap');
+    contentsProps.contentsHeight = contentsProps.$contentsWrap.find('.center-relative').innerHeight();
+    console.log('contentsProps.contentsHeight', contentsProps.contentsHeight);
+
+    contentsProps.$contentsWrap.css({
+      'height' : contentsProps.contentsHeight + 'px'
+    });
+  }
+
+  createContentsWrapWidth(contentsProps);
+
+  $(window).resize(function() {
+    createContentsWrapWidth(contentsProps);
+  });
+
+
   //main .scroll-top
   $('.scroll-top').on('click',function(){
     $('html').animate({ scrollTop : 0 }, 500);
