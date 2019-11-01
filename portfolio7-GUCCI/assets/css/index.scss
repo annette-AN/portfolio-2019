@@ -4,7 +4,7 @@ body {
   font-size: 11px;
 }
 
-body, div, h1, h2, h3, h4, h5, h6, button, ul, li, a, span, em, p, aside {
+body, div, h1, h2, h3, h4, h5, h6, button, ul, li, a, span, em, p, aside, figure {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -839,9 +839,6 @@ input {
           }
 
           .fashion-show {
-            width: 47%;
-            padding-right: 0px;
-
             a {
               display: block;
             }
@@ -851,21 +848,21 @@ input {
             }
 
             ul {
-              max-width: 108px;
-              width: 20%;
+              width: 108px;
             }
 
             figure {
               position: relative;
               vertical-align: top;
               max-width: 350px;
-              width: 60%;
+              width: 25vw;
+              margin: 10px 0px 0px 40px;
+
               // background: red;
 
               .slide {
                 position: relative;
                 height: 154px;
-                margin-top: 10px;
                 overflow: hidden;
 
                 .slide-wrap {
@@ -875,7 +872,7 @@ input {
 
                   a {
                     position: absolute;
-                    width: 33%;
+                    // width: 33%;
                     height: 100%;
 
                     img {
