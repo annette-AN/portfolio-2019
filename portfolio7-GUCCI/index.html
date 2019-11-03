@@ -1425,7 +1425,7 @@
   });
 
   // visual slide
-  function creatSlide() {
+  function createSlide() {
     var numSlide = '';
     var slideNow = 0;
     var slideNext = 0;
@@ -1467,7 +1467,7 @@
     }
     showSlide(1);
   }
-  creatSlide();
+  createSlide();
 
 
   //visual present-svc
@@ -1512,7 +1512,7 @@
 
   //snb dropdown text slide .popup-design
 
-  function creatDropdownTextSlide(textData) {
+  function createDropdownTextSlide(textData) {
     var numSlide = textData.length;
     var slideNow = 0;
     var slideNext = 0;
@@ -1548,7 +1548,7 @@
     });
   }
 
-  creatDropdownTextSlide([
+  createDropdownTextSlide([
     { 
       title:'고객님만을 위한 맞춤 리스트를 살펴보세요',
     },
@@ -1562,7 +1562,7 @@
 
 
   // 검색 영역 스크립트
-  function creatSearchBoxEffect() {
+  function createSearchBoxEffect() {
     var $boxOpen = $('.site-search .box-open');
     var $boxClose = $('.site-search .box-close');
     var $header = $('#index-header');
@@ -1582,11 +1582,11 @@
     });
   }
 
-  creatSearchBoxEffect();
+  createSearchBoxEffect();
 
 
   //nav gnb fashion-show slide 
-  function creatFashionShowSlide(data) {
+  function createFashionShowSlide(data) {
 
     var $fashionShow = $('.fashion-show');
     var $fashionShowList = $fashionShow.children("ul").empty();
@@ -1665,7 +1665,7 @@
     });
   }
 
-  creatFashionShowSlide([
+  createFashionShowSlide([
     { 
       title:"2020 크루즈 컬렉션",
       src:"assets/img/NavSlide/NavHorizontalStandard_S01-FS-SHOWSPACE_001_Default.jpg",
@@ -1713,20 +1713,30 @@
     contentsHeight : 0
   }
 
-  function createContentsWrapWidth(contentsProps) {
-    contentsProps.$contentsWrap = $('.section-gucci-story .contents-wrap');
-    contentsProps.contentsHeight = contentsProps.$contentsWrap.find('.center-relative').innerHeight();
-    console.log('contentsProps.contentsHeight', contentsProps.contentsHeight);
+  function createContentsWrapHeight(contentsProps) {
+    var $img = $('.section-gucci-story .contents-wrap .center-relative img');
 
-    contentsProps.$contentsWrap.css({
-      'height' : contentsProps.contentsHeight + 'px'
-    });
+    function calcWrapHeight(){
+      contentsProps.$contentsWrap = $('.section-gucci-story .contents-wrap');
+      contentsProps.contentsHeight = contentsProps.$contentsWrap.find('.center-relative').innerHeight();
+      console.log('contentsProps.contentsHeight', contentsProps.contentsHeight);
+
+      contentsProps.$contentsWrap.css({
+        'height' : contentsProps.contentsHeight + 'px'
+      });
+    }
+
+    if($img.prop("complete") === true){
+      calcWrapHeight();
+    } else {
+      $img.on("load", calcWrapHeight);
+    }
   }
 
-  createContentsWrapWidth(contentsProps);
+  createContentsWrapHeight(contentsProps);
 
   $(window).resize(function() {
-    createContentsWrapWidth(contentsProps);
+    createContentsWrapHeight(contentsProps);
   });
 
 
@@ -1736,7 +1746,7 @@
   });
 
   //footer
-  function creatFooterSearchEffect() {
+  function createFooterSearchEffect() {
     //input
     $('.search-input').on('focus', function(){
       $(this).addClass('on');
@@ -1756,10 +1766,10 @@
       }
     });
   }
-  creatFooterSearchEffect();
+  createFooterSearchEffect();
 
 
-  function creatOtherSiteEffect() {
+  function createOtherSiteEffect() {
     var $appGroups = $('.index-footer .other-site .app-link-toggle');
     
     $appGroups.on('mouseenter', function(){
@@ -1772,7 +1782,7 @@
       $appGroups.find('.app-links-wrap').removeClass('on');
     });
   }
-  creatOtherSiteEffect();
+  createOtherSiteEffect();
 
 </script>
 </body>
