@@ -1174,6 +1174,7 @@ input {
 
 .index-main > section > aside .no-padding {
   padding-top: 0px;
+  word-break: keep-all;
 }
 
 .index-main > section .aside-right {
@@ -1817,6 +1818,50 @@ input {
   }
   .index-main .model-look .section-image img {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 1023px) and (min-width: 768px) {
+  .index-main > section > aside {
+    width: 18.5vw;
+  }
+  .index-main > section > aside a h4 {
+    font-size: 18px;
+  }
+  .index-main > section > aside .disappear {
+    display: none;
+  }
+  .index-main > section .aside-right {
+    top: 50px;
+    right: 15px;
+  }
+  .index-main > section .aside-left {
+    left: 15px;
+  }
+  .index-main .section-image {
+    top: -50px;
+  }
+  .index-main .section-image img {
+    width: 350px;
+  }
+  .index-main .section-contents {
+    top: -100px;
+  }
+  .index-main .section-contents h4 {
+    font-size: 25px;
+    margin-top: 8px;
+  }
+  .index-main .model-look .section-image img {
+    width: 100%;
+  }
+  .index-main .model-look aside:nth-of-type(2) {
+    top: 500px;
+  }
+  .index-main .model-look aside:nth-of-type(3) {
+    bottom: 500px;
+  }
+  .index-main .aside-hover-effect {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=index.css.map */

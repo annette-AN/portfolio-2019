@@ -1221,6 +1221,7 @@ input {
       }
       .no-padding {
         padding-top: 0px;
+        word-break: keep-all;
       }
     }
 
@@ -1860,7 +1861,74 @@ input {
 }
 
 
-//header => 1023 > 768, 767 미만
+//header => 767 미만
 //visual => 768미만
-//main => 1296 > 1024//height조절필요 , 1023 > 768, 767 미만
+//main => 1023 > 768, 767 미만
 //footer => 768, 767 미만
+
+@media all and (max-width: 1023px) and (min-width: 768px) {
+  .index-main {
+    > section {
+      > aside {
+        width: 18.5vw;
+
+        a {
+          h4 {
+            font-size: 18px;
+          }
+        }
+
+        .disappear {
+          display: none;
+        }
+      }
+
+      .aside-right {
+        top: 50px;
+        right: 15px;
+      }
+
+      .aside-left {
+        left: 15px;
+      }
+    }
+
+    .section-image {
+      top: -50px;
+  
+      img {
+        width: 350px;
+      }
+    }
+
+    .section-contents {
+      top: -100px;
+  
+      h4 {
+        font-size: 25px;
+        margin-top: 8px;
+      }
+    }
+
+    .model-look {
+      .section-image {
+        img {
+          width: 100%;
+        }
+      }
+
+      aside:nth-of-type(2) {
+        top: 500px;
+      }
+
+      aside:nth-of-type(3) {
+        bottom: 500px;
+      }
+    }
+
+    .aside-hover-effect {
+      margin-top: 40px;
+    }
+  }
+
+}
