@@ -1426,6 +1426,7 @@ input {
 }
 
 .index-footer .footer-wrap .footer-menu-wrap {
+  position: relative;
   padding: 60px 15px 0px;
 }
 
@@ -1613,7 +1614,7 @@ input {
   background-color: rgba(110, 107, 103, 0.8);
 }
 
-.index-footer .footer-wrap .other-site {
+.index-footer .footer-wrap .footer-menu-wrap .other-site {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1621,35 +1622,35 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  top: 210px;
+  top: auto;
   left: 73%;
   right: auto;
-  bottom: auto;
+  bottom: 12px;
   max-width: 320px;
   width: 26%;
 }
 
-.index-footer .footer-wrap .other-site > a {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > a {
   width: 65px;
   height: 44px;
   opacity: 0.5;
 }
 
-.index-footer .footer-wrap .other-site > a:hover, .index-footer .footer-wrap .other-site > a:focus {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > a:hover, .index-footer .footer-wrap .footer-menu-wrap .other-site > a:focus {
   opacity: 1;
 }
 
-.index-footer .footer-wrap .other-site > a .margin-top {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > a .margin-top {
   margin-top: 5px;
 }
 
-.index-footer .footer-wrap .other-site > button {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button {
   position: relative;
   width: 50px;
   background-color: initial;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle svg {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle svg {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1657,15 +1658,15 @@ input {
   bottom: auto;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .reversal-icon {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .reversal-icon {
   display: none;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .reversal-icon.on {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .reversal-icon.on {
   display: initial;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap {
   position: absolute;
   bottom: 100%;
   left: -10px;
@@ -1678,12 +1679,12 @@ input {
   transition: opacity .5s;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap.on {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap.on {
   opacity: 1;
   pointer-events: initial;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links {
   width: 120px;
   padding: 0px 5px;
   background-color: #f2f2f2;
@@ -1691,7 +1692,7 @@ input {
           box-shadow: 0px 0px 3px 1px #9F111B;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links::before {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links::before {
   position: absolute;
   top: calc(100% - 15px);
   left: 15px;
@@ -1709,7 +1710,7 @@ input {
           box-sizing: border-box;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a {
   position: relative;
   display: block;
   padding: 6px 5px 4px;
@@ -1717,7 +1718,7 @@ input {
   text-align: left;
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a i {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a i {
   position: absolute;
   right: 0px;
   bottom: 4px;
@@ -1726,8 +1727,12 @@ input {
   color: rgba(159, 17, 27, 0.8);
 }
 
-.index-footer .footer-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a + a {
+.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a + a {
   border-top: 1px solid rgba(159, 17, 27, 0.5);
+}
+
+.index-footer .footer-wrap .footer-menu-wrap .text-ir {
+  font-size: 0px;
 }
 
 .index-footer .footer-wrap .gucci-info {
@@ -1862,6 +1867,58 @@ input {
   }
   .index-main .aside-hover-effect {
     margin-top: 40px;
+  }
+  .index-footer .footer-wrap {
+    padding: 0px 60px;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap {
+    padding: 60px 0px 0px;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .footer-menu {
+    width: 24%;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .footer-menu > ul {
+    width: 100%;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .footer-menu div {
+    width: 200px;
+    margin-top: 20px;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .footer-menu.move {
+    position: relative;
+    display: block;
+    width: auto;
+    margin-top: 100px;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .footer-menu.move:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 1px;
+    background: #49443E;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .other-site {
+    position: static;
+    left: auto;
+    bottom: auto;
+    max-width: none;
+    width: 35vw;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .other-site > a {
+    width: 50px;
+    margin-top: 90px;
+  }
+  .index-footer .footer-wrap .footer-menu-wrap .other-site > button {
+    width: 45px;
+    margin-top: 85px;
+  }
+  .index-footer .footer-wrap .gucci-info {
+    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=index.css.map */

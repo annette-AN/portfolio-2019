@@ -1476,6 +1476,7 @@ input {
     padding: 0px 15px;
   
     .footer-menu-wrap {
+      position: relative;
       padding: 60px 15px 0px;
 
       header, span, em, address {
@@ -1638,119 +1639,123 @@ input {
           }
         }
       }
-    }
 
-    .other-site {
-      display: inline-flex;
-      justify-content: space-between;
-      position: absolute;
-      top: 210px;
-      left: 73%;
-      right: auto;
-      bottom: auto;
-      max-width: 320px;
-      width: 26%;
-
-      > a {
-        width: 65px;
-        height: 44px;
-        opacity: 0.5;
-
-        &:hover, &:focus {
-          opacity: 1;
+      .other-site {
+        display: inline-flex;
+        justify-content: space-between;
+        position: absolute;
+        top: auto;
+        left: 73%;
+        right: auto;
+        bottom: 12px;
+        max-width: 320px;
+        width: 26%;
+  
+        > a {
+          width: 65px;
+          height: 44px;
+          opacity: 0.5;
+  
+          &:hover, &:focus {
+            opacity: 1;
+          }
+  
+          .margin-top {
+            margin-top: 5px;
+          }
         }
-
-        .margin-top {
-          margin-top: 5px;
-        }
-      }
-
-      > button {
-        position: relative;
-        width: 50px;
-        background-color: initial;
-
-        .app-groups {
-          .app-link-toggle {
-            svg {
-              position: absolute;
-              top: 0px;
-              left: 0px;
-              right: auto;
-              bottom: auto;
-            }
   
-            .reversal-icon {
-              display: none;
+        > button {
+          position: relative;
+          width: 50px;
+          background-color: initial;
   
-              &.on {
-                display: initial;
+          .app-groups {
+            .app-link-toggle {
+              svg {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: auto;
+                bottom: auto;
               }
-            }
-
-            .app-links-wrap {
-              position: absolute;
-              bottom: 100%;
-              left: -10px;
-              top: auto;
-              right: auto;
-              padding-bottom: 15px;
-              opacity: 0;
-              pointer-events: none;
-              transition: opacity .5s;
-  
-              &.on {
-                opacity: 1;
-                pointer-events: initial;
-              }
-              
-              #app-links {
-                width: 120px;
-                padding: 0px 5px;
-                background-color: #f2f2f2;
-                box-shadow: 0px 0px 3px 1px #9F111B;
-      
-                &::before {
-                  position: absolute;
-                  top: calc(100% - 15px);
-                  left: 15px;
-                  right: auto;
-                  bottom: auto;
-                  display: block;
-                  content: '';
-                  width: 14px;
-                  height: 14px;
-                  border: 7px solid #f2f2f2;
-                  border-left-color: transparent;
-                  border-right-color: transparent;
-                  border-bottom-color: transparent;
-                  box-sizing: border-box;
+    
+              .reversal-icon {
+                display: none;
+    
+                &.on {
+                  display: initial;
                 }
-      
-                > a {
-                  position: relative;
-                  display: block;
-                  padding: 6px 5px 4px;
-                  font-size: 10px;
-                  text-align: left;
-      
-                  i {
+              }
+  
+              .app-links-wrap {
+                position: absolute;
+                bottom: 100%;
+                left: -10px;
+                top: auto;
+                right: auto;
+                padding-bottom: 15px;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity .5s;
+    
+                &.on {
+                  opacity: 1;
+                  pointer-events: initial;
+                }
+                
+                #app-links {
+                  width: 120px;
+                  padding: 0px 5px;
+                  background-color: #f2f2f2;
+                  box-shadow: 0px 0px 3px 1px #9F111B;
+        
+                  &::before {
                     position: absolute;
-                    right: 0px;
-                    bottom: 4px;
-                    top: auto;
-                    left: auto;
-                    color: rgba(159, 17, 27, 0.8);
+                    top: calc(100% - 15px);
+                    left: 15px;
+                    right: auto;
+                    bottom: auto;
+                    display: block;
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    border: 7px solid #f2f2f2;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                    border-bottom-color: transparent;
+                    box-sizing: border-box;
                   }
-                }
-      
-                > a + a {
-                  border-top: 1px solid rgba(159, 17, 27, 0.5);
+        
+                  > a {
+                    position: relative;
+                    display: block;
+                    padding: 6px 5px 4px;
+                    font-size: 10px;
+                    text-align: left;
+        
+                    i {
+                      position: absolute;
+                      right: 0px;
+                      bottom: 4px;
+                      top: auto;
+                      left: auto;
+                      color: rgba(159, 17, 27, 0.8);
+                    }
+                  }
+        
+                  > a + a {
+                    border-top: 1px solid rgba(159, 17, 27, 0.5);
+                  }
                 }
               }
             }
           }
         }
+      }
+
+      .text-ir {
+        font-size: 0px;
       }
     }
 
@@ -1867,6 +1872,7 @@ input {
 //footer => 768, 767 미만
 
 @media all and (max-width: 1023px) and (min-width: 768px) {
+  //main
   .index-main {
     > section {
       > aside {
@@ -1931,4 +1937,69 @@ input {
     }
   }
 
+  //footer
+  .index-footer {
+    .footer-wrap {
+      padding: 0px 60px;
+
+      .footer-menu-wrap {
+        padding: 60px 0px 0px;
+
+        .footer-menu {
+          width: 24%;
+
+          > ul {
+            width: 100%;
+          }
+
+          div {
+            width: 200px;
+            margin-top: 20px;
+          }
+        }
+
+        .footer-menu.move {
+          position: relative;
+          display: block;
+          width: auto;
+          margin-top: 100px;
+          
+          &:before {
+            display: block;
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0px;
+            right: auto;
+            bottom: auto;
+            width: 100%;
+            height: 1px;
+            background: #49443E;
+          }
+        }
+
+        .other-site {
+          position: static;
+          left: auto;
+          bottom: auto;
+          max-width: none;
+          width: 35vw;
+
+          > a {
+            width: 50px;
+            margin-top: 90px;
+          }
+
+          > button {
+            width: 45px;
+            margin-top: 85px;
+          }
+        }
+      }
+
+      .gucci-info {
+        padding-top: 50px;
+      }
+    }
+  }
 }
