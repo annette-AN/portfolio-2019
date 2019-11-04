@@ -1369,8 +1369,8 @@ input {
 
 .index-main .section-gucci-story .contents-wrap .center-relative article {
   position: static;
-  -webkit-transform: unset;
-          transform: unset;
+  -webkit-transform: none;
+          transform: none;
   margin: 0px auto;
 }
 
