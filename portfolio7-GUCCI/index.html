@@ -987,7 +987,7 @@
             <img src="assets/img/MainImage/section1/aside/Vignette_598182G38GT9769_001_Light.jpg" alt="남성 가방 GG 울 토트백"/>
           </span>
           <h4>남성 가방</h4>
-          <p>
+          <p class="disappear">
             현대적 울<br/>
             패브릭으로<br/>
             재해석된 GG 패턴.
@@ -1017,7 +1017,7 @@
             <img src="assets/img/MainImage/section2/aside/ProductPush_598169G38ET9769_001_Light.jpg" alt="액티브웨어"/>
           </span>
           <h4>액티브웨어</h4>
-          <p>
+          <p class="disappear">
             구찌 자카드<br/>
             라벨이 하이브리드<br/>
             디자인을 강조.
@@ -1034,7 +1034,7 @@
             <img src="assets/img/MainImage/section2/aside/Vignette_604171XDAX39061_001_Light.jpg" alt="팬츠"/>
           </span>
           <h4>팬츠</h4>
-          <p>
+          <p class="disappear">
             핵심 쉐입이<br>
             재구성되어<br>
             스포츠웨어,<br>
@@ -1054,7 +1054,7 @@
             <img src="assets/img/MainImage/section2/aside/Vignette_604075D3V001000_001_Light.jpg" alt="남성 슈즈"/>
           </span>
           <h4>남성 슈즈</h4>
-          <p>
+          <p class="disappear">
             하우스의<br>
             헤리티지에 경의를<br>
             표하는 홀스빗.
@@ -1084,7 +1084,7 @@
             <img src="assets/img/MainImage/section3/aside/Vignette_603725G38Q04174_001_Light.jpg" alt="여성 슈즈 GG 울 슬리퍼"/>
           </span>
           <h4>여성 슈즈</h4>
-          <p>
+          <p class="disappear">
             새로운 아이코닉<br>
             패브릭으로<br>
             재탄생한<br>
@@ -1716,7 +1716,6 @@
   function createContentsWrapWidth(contentsProps) {
     contentsProps.$contentsWrap = $('.section-gucci-story .contents-wrap');
     contentsProps.contentsHeight = contentsProps.$contentsWrap.find('.center-relative').innerHeight();
-    console.log('contentsProps.contentsHeight', contentsProps.contentsHeight);
 
     contentsProps.$contentsWrap.css({
       'height' : contentsProps.contentsHeight + 'px'
