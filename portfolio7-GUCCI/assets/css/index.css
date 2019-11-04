@@ -1647,7 +1647,7 @@ input {
 .index-footer .footer-wrap .footer-menu-wrap .other-site > button {
   position: relative;
   width: 50px;
-  background-color: initial;
+  background-color: #1B1B1B;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle svg {
