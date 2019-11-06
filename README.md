@@ -12,13 +12,13 @@
 
 #### [최근] GUCCI 사이트 카피
     - Viewport : PC / Tablet (해상도 1024 이상, 모바일 사이즈 반응형 추가 예정)
-    - IE Surpport : Chrome
+    - IE Surpport : IE10+ / IE edge / Chrome
     - 참여도 : 퍼블리싱 100%, 스크립트 100% 
     - 구성(링크) : main page
     - 언어 : HTML5, SCSS, JS 
     - 기술 : JQuery, css3(animation)
     
- - [메인페이지] https://annette-an.github.io/portfolio-2019/portfolio7-GUCCI/)
+ - [메인페이지] (https://annette-an.github.io/portfolio-2019/portfolio7-GUCCI/)
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
     - Viewport : PC / Tablet / Mobile
