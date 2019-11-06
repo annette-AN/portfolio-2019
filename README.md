@@ -18,7 +18,7 @@
     - 언어 : HTML5, SCSS, JS 
     - 기술 : JQuery, css3(animation)
     
- - [메인페이지](https://annette-an.github.io/portfolio-2019/portfolio7-GUCCI/)
+ - [메인페이지 바로가기](https://annette-an.github.io/portfolio-2019/portfolio7-GUCCI/)
 
 #### 1. 메모 저장 스크립트 카피 & 부분 리뉴얼 
     - Viewport : PC / Tablet / Mobile
