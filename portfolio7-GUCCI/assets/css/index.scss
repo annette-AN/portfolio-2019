@@ -1479,7 +1479,7 @@ input {
       position: relative;
       padding: 60px 15px 0px;
 
-      header, span, em, address {
+      header, i, em, address {
         font-size: 12px;
         color: #E5DFD9;
       }
@@ -1498,7 +1498,7 @@ input {
         }
     
         i {
-          font-size: 12px;
+          // font-size: 12px;
           margin-right: 6px;
         }
       }

@@ -1430,7 +1430,7 @@ input {
   padding: 60px 15px 0px;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap header, .index-footer .footer-wrap .footer-menu-wrap span, .index-footer .footer-wrap .footer-menu-wrap em, .index-footer .footer-wrap .footer-menu-wrap address {
+.index-footer .footer-wrap .footer-menu-wrap header, .index-footer .footer-wrap .footer-menu-wrap i, .index-footer .footer-wrap .footer-menu-wrap em, .index-footer .footer-wrap .footer-menu-wrap address {
   font-size: 12px;
   color: #E5DFD9;
 }
@@ -1450,7 +1450,6 @@ input {
 }
 
 .index-footer .footer-wrap .footer-menu-wrap a i {
-  font-size: 12px;
   margin-right: 6px;
 }
 
