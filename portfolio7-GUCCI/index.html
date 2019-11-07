@@ -1724,10 +1724,12 @@
       });
     }
 
-    if($img.prop("complete") === true){
+    if($img.load('complete') === true){
       calcWrapHeight();
+      console.log('contentsWrap', contentsProps.contentsHeight + 'px')
     } else {
-      $img.on("load", calcWrapHeight);
+      $img.load(calcWrapHeight);
+      console.log('loadcontentsWrap', contentsProps.contentsHeight + 'px')
     }
   }
 
