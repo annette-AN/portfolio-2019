@@ -73,7 +73,9 @@
         MENU
       </button>
       <button class="menu-close-btn">
-        X
+        <i class="fas fa-times">
+          <span class="i-text-ir">닫기 버튼</span>
+        </i>
       </button>
     </div>
 
@@ -113,13 +115,15 @@
           </div>
         </div>
       </li>
-      <li class="mobile-hidden">
+      <li class="mobile-menu-list mobile-hidden">
         <span hidden-text>한국어</span>
       </li>
-      <li class="mobile-hidden">
+      <li class="mobile-menu-list mobile-hidden">
         <span>
           <i class="fas fa-phone"><span class="i-text-ir">전화기</span></i>
-          02-3452-1921
+          <a href="#">
+            02-3452-1921
+          </a>
         </span>
       </li>
     </ul>
@@ -132,7 +136,7 @@
 
     <ul class="user-info">
       <!-- 유저인포 css 공유 -->
-      <li id="popup-login" class="mobile-hidden" popper>
+      <li id="popup-login" class="mobile-menu-list mobile-hidden" popper>
         <span class="cursor">
           <i class="fas fa-user"><span class="i-text-ir">사람</span></i>
           <span hidden-text>로그인</span>
@@ -153,13 +157,17 @@
           </div>
         </div>
       </li>
-      <li id="popup-like-it" class="mobile-hidden" popper>
+      <li id="popup-like-it" class="mobile-menu-list mobile-hidden" popper>
         <span class="cursor">
           <i class="far fa-heart"><span class="i-text-ir">좋아요</span></i>
         </span>
         <div class="dropdown-wrap" dropdown>
           <div>
-            <h3>관심상품</h3>
+            <h3>
+              <a href="#">
+                관심상품
+              </a>
+            </h3>
             <ul>
               <li>관심상품이 비어 있습니다.</li>
             </ul>
@@ -1429,6 +1437,12 @@
     </div>
   </div>
 
+  <div class="body-modal backdrop">
+    <div class="dialog">
+      준비중입니다.
+    </div>
+  </div>
+
 <script>
   'use strict';
 
@@ -1512,6 +1526,7 @@
     var $this = $(this);
     
     $this.find('[dropdown]').removeClass('on');
+    
     setTimeout(function() {
       $this.find('[dropdown]').addClass('hidden');
     }, 200);
@@ -1698,8 +1713,7 @@
     }
   ]);
 
-
-  //nav gnb 메뉴 오픈
+  //nav gng 토글 메뉴 오픈
   function createGnbToggleMenu() {
     $(document).on('mouseenter', '[menu]', function(){
       $(this).find('[menu-list]').addClass('on');
@@ -1709,8 +1723,32 @@
       $(this).find('[menu-list]').removeClass('on');
     });
   }
-
   createGnbToggleMenu();
+
+  $('#popup-shopping-bag').on('click', function() {
+    $(this).find('.dropdown-wrap').toggleClass('show');
+  });
+
+  // $('.gnb').addClass('on');
+  // $('.mobile-menu > .menu-close-btn').addClass('on');
+  // $('#index-header').find('[hidden-text]').removeClass('hidden');
+  // $('#index-header > ul > li').removeClass('mobile-hidden');
+  // $('#index-header > ul > li .dropdown-wrap').css({'display': 'block'});
+
+  $('.mobile-menu > .menu-open-btn').on('click', function(e) {
+    $('.gnb').addClass('on');
+    $('.mobile-menu > .menu-close-btn').addClass('on');
+    $('#index-header').find('[hidden-text]').removeClass('hidden');
+    $('#index-header > ul > li').removeClass('mobile-hidden');
+    $('#index-header > ul > li .dropdown-wrap').addClass('show');
+  });
+
+  $('.mobile-menu > .menu-close-btn').on('click', function(e) {
+    $('.gnb').removeClass('on');
+    $('.mobile-menu > .menu-close-btn').removeClass('on');
+    $('#index-header').find('[hidden-text]').addClass('hidden');
+    $('#index-header > ul > li .dropdown-wrap').removeClass('show');
+  });
 
   //nav gnb media style
 
@@ -1720,7 +1758,7 @@
     var top = $(document).scrollTop();
     var bodyWidth = $('body').width();
     var $header = $('#index-header');
-    
+
     var gnbMediaStyleOn = function() {
       $header.attr('minimal', '');
       $header.addClass('on');
@@ -1769,6 +1807,12 @@
       gnbMediaStyleIconTextShow();
     }
   }
+
+
+
+
+
+  
 
 
   //section-gucci-story height공유
