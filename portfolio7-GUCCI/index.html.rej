@@ -1,9 +1,0 @@
-diff a/portfolio7-GUCCI/index.html b/portfolio7-GUCCI/index.html	(rejected hunks)
-@@ -1716,7 +1716,6 @@
-   function createContentsWrapWidth(contentsProps) {
-     contentsProps.$contentsWrap = $('.section-gucci-story .contents-wrap');
-     contentsProps.contentsHeight = contentsProps.$contentsWrap.find('.center-relative').innerHeight();
--    console.log('contentsProps.contentsHeight', contentsProps.contentsHeight);
- 
-     contentsProps.$contentsWrap.css({
-       'height' : contentsProps.contentsHeight + 'px'
