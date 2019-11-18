@@ -68,9 +68,15 @@
   </div>
 
   <header id="index-header">
-    <button class="mobile-menu">
-      MENU
-    </button>
+    <div class="mobile-menu">
+      <button class="menu-open-btn">
+        MENU
+      </button>
+      <button class="menu-close-btn">
+        X
+      </button>
+    </div>
+
     <ul id="nation-info">
       <li id="popup-nation" popper>
         <span class="cursor">
@@ -118,7 +124,11 @@
       </li>
     </ul>
     
-    <h1><img src="assets/img/icons/gucci_light.png"></h1>
+    <h1>
+      <a href="#">
+        <img src="assets/img/icons/gucci_light.png">
+      </a>
+    </h1>
 
     <ul class="user-info">
       <!-- 유저인포 css 공유 -->
@@ -1731,7 +1741,7 @@
     //큰 미디어에서 작은미디어로 줄였을때 IconTextHidden이 안먹음
     //로드랑 스크롤 될때만 bodywidth가 구해져서 그런거 같음
     //css 1023이하 다시짜고 확인
-    
+
     if ( bodyWidth <= 1023 ) {
       gnbMediaStyleOff();
       gnbMediaStyleIconTextHidden();
