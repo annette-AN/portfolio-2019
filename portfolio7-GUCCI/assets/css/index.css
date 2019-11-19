@@ -1530,13 +1530,13 @@ input {
   margin-top: 5px;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group {
   position: relative;
   width: 50px;
   background-color: #1B1B1B;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle svg {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle svg {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1544,33 +1544,30 @@ input {
   bottom: auto;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .reversal-icon {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .reversal-icon {
   display: none;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .reversal-icon.on {
-  display: initial;
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .reversal-icon.on {
+  display: block;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap {
   position: absolute;
   bottom: 100%;
   left: -10px;
   top: auto;
   right: auto;
   padding-bottom: 15px;
-  opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap.on {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap.on {
   opacity: 1;
   pointer-events: initial;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap #app-links {
   width: 120px;
   padding: 0px 5px;
   background-color: #f2f2f2;
@@ -1578,25 +1575,23 @@ input {
           box-shadow: 0px 0px 3px 1px #9F111B;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links::before {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap #app-links::before {
+  display: block;
+  content: '';
   position: absolute;
   top: calc(100% - 15px);
   left: 15px;
   right: auto;
   bottom: auto;
-  display: block;
-  content: '';
   width: 14px;
   height: 14px;
-  border: 7px solid #f2f2f2;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
+  border: 7px solid transparent;
+  border-top-color: #f2f2f2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap #app-links > a {
   position: relative;
   display: block;
   padding: 6px 5px 4px;
@@ -1604,7 +1599,7 @@ input {
   text-align: left;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a i {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap #app-links > a i {
   position: absolute;
   right: 0px;
   bottom: 4px;
@@ -1613,7 +1608,7 @@ input {
   color: rgba(159, 17, 27, 0.8);
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > button .app-groups .app-link-toggle .app-links-wrap #app-links > a + a {
+.index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap #app-links > a + a {
   border-top: 1px solid rgba(159, 17, 27, 0.5);
 }
 

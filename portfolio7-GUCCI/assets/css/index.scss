@@ -1668,12 +1668,12 @@ input {
           }
         }
   
-        > button {
+        .app-group {
           position: relative;
           width: 50px;
           background-color: #1B1B1B;
   
-          .app-groups {
+          > div {
             .app-link-toggle {
               svg {
                 position: absolute;
@@ -1687,7 +1687,7 @@ input {
                 display: none;
     
                 &.on {
-                  display: initial;
+                  display: block;
                 }
               }
   
@@ -1698,9 +1698,9 @@ input {
                 top: auto;
                 right: auto;
                 padding-bottom: 15px;
-                opacity: 0;
+                // opacity: 0;
                 pointer-events: none;
-                transition: opacity .5s;
+                // transition: opacity .5s;
     
                 &.on {
                   opacity: 1;
@@ -1714,19 +1714,17 @@ input {
                   box-shadow: 0px 0px 3px 1px #9F111B;
         
                   &::before {
+                    display: block;
+                    content: '';
                     position: absolute;
                     top: calc(100% - 15px);
                     left: 15px;
                     right: auto;
                     bottom: auto;
-                    display: block;
-                    content: '';
                     width: 14px;
                     height: 14px;
-                    border: 7px solid #f2f2f2;
-                    border-left-color: transparent;
-                    border-right-color: transparent;
-                    border-bottom-color: transparent;
+                    border: 7px solid transparent;
+                    border-top-color: #f2f2f2;
                     box-sizing: border-box;
                   }
         
