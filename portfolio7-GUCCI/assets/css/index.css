@@ -1559,7 +1559,10 @@ input {
   top: auto;
   right: auto;
   padding-bottom: 15px;
+  opacity: 0;
   pointer-events: none;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap.on {
