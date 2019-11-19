@@ -1543,6 +1543,7 @@ input {
   position: relative;
   width: 50px;
   background-color: #1B1B1B;
+  overflow: visible;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle svg {
