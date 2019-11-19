@@ -1513,9 +1513,6 @@ input {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: absolute;
   top: auto;
   left: 73%;
@@ -1523,11 +1520,13 @@ input {
   bottom: 12px;
   max-width: 320px;
   width: 26%;
+  height: 50px;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap .other-site > a {
-  width: 65px;
-  height: 44px;
+  display: block;
+  width: 25%;
+  margin-top: 5px;
   opacity: 0.5;
 }
 
@@ -1535,13 +1534,17 @@ input {
   opacity: 1;
 }
 
-.index-footer .footer-wrap .footer-menu-wrap .other-site > a .margin-top {
-  margin-top: 5px;
+.index-footer .footer-wrap .footer-menu-wrap .other-site svg {
+  display: block;
+  width: 65px;
+  height: 45px;
+  margin: 0px auto;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group {
+  display: block;
   position: relative;
-  width: 50px;
+  width: 25%;
   background-color: #1B1B1B;
   overflow: visible;
 }
@@ -1549,9 +1552,13 @@ input {
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle svg {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 50%;
   right: auto;
   bottom: auto;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 50px;
+  height: 50px;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .reversal-icon {
@@ -1565,7 +1572,7 @@ input {
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap {
   position: absolute;
   bottom: 100%;
-  left: -10px;
+  left: 0px;
   top: auto;
   right: auto;
   padding-bottom: 15px;
@@ -1809,7 +1816,6 @@ input {
     width: 35vw;
   }
   .index-footer .footer-wrap .footer-menu-wrap .other-site > a {
-    width: 50px;
     margin-top: 90px;
   }
   .index-footer .footer-wrap .footer-menu-wrap .other-site > button {

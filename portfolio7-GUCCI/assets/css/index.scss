@@ -1654,7 +1654,6 @@ input {
 
       .other-site {
         display: inline-flex;
-        justify-content: space-between;
         position: absolute;
         top: auto;
         left: 73%;
@@ -1662,35 +1661,45 @@ input {
         bottom: 12px;
         max-width: 320px;
         width: 26%;
+        height: 50px;
+
   
         > a {
-          width: 65px;
-          height: 44px;
+          display: block;
+          width: 25%;
+          margin-top: 5px;
           opacity: 0.5;
   
           &:hover, &:focus {
             opacity: 1;
           }
-  
-          .margin-top {
-            margin-top: 5px;
-          }
+        }
+        
+        svg {
+          display: block;
+          width: 65px;
+          height: 45px;
+          margin: 0px auto;
         }
   
         .app-group {
+          display: block;
           position: relative;
-          width: 50px;
+          width: 25%;
           background-color: #1B1B1B;
           overflow: visible;
-  
+
           > div {
             .app-link-toggle {
               svg {
                 position: absolute;
                 top: 0px;
-                left: 0px;
+                left: 50%;
                 right: auto;
                 bottom: auto;
+                transform: translate(-50%, 0%);
+                width: 50px;
+                height: 50px;
               }
     
               .reversal-icon {
@@ -1704,7 +1713,7 @@ input {
               .app-links-wrap {
                 position: absolute;
                 bottom: 100%;
-                left: -10px;
+                left: 0px;
                 top: auto;
                 right: auto;
                 padding-bottom: 15px;
@@ -2000,7 +2009,6 @@ input {
           width: 35vw;
 
           > a {
-            width: 50px;
             margin-top: 90px;
           }
 
