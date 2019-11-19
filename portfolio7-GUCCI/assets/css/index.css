@@ -19,6 +19,10 @@ a {
   color: inherit;
 }
 
+img {
+  border: none;
+}
+
 li {
   list-style: none;
 }
@@ -345,6 +349,7 @@ input {
   text-align: center;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
@@ -609,6 +614,7 @@ input {
     bottom: auto;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
   }
@@ -618,6 +624,7 @@ input {
   #index-header #nation-info > li .dropdown-wrap.on, #index-header .user-info > li .dropdown-wrap.on {
     opacity: 1;
     pointer-events: initial;
+    visibility: inherit;
     z-index: 1;
   }
   #index-header #nation-info > li .dropdown-wrap > div, #index-header .user-info > li .dropdown-wrap > div {
@@ -702,10 +709,12 @@ input {
     transition: opacity .2s;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
   }
   .gnb > ul > li > ul.on {
     opacity: 1;
     pointer-events: initial;
+    visibility: inherit;
   }
   .gnb > ul > li > ul li {
     text-align: left;
@@ -1561,6 +1570,7 @@ input {
   padding-bottom: 15px;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
@@ -1568,6 +1578,7 @@ input {
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap.on {
   opacity: 1;
   pointer-events: initial;
+  visibility: inherit;
 }
 
 .index-footer .footer-wrap .footer-menu-wrap .other-site .app-group > div .app-link-toggle .app-links-wrap #app-links {

@@ -18,6 +18,10 @@ a {
   color: inherit;
 }
 
+img {
+  border: none;
+}
+
 li {
   list-style: none;
 }
@@ -333,6 +337,7 @@ input {
           text-align: center;
           opacity: 0;
           pointer-events: none;
+          visibility: hidden;
           transition: opacity .5s;
 
           &.on {
@@ -653,6 +658,7 @@ input {
           bottom: auto;
           opacity: 0;
           pointer-events: none;
+          visibility: hidden;
           transition: opacity .5s;
 
           &.hidden {
@@ -662,6 +668,7 @@ input {
           &.on {
             opacity: 1;
             pointer-events: initial;
+            visibility: inherit;
             z-index: 1;
           }
 
@@ -764,10 +771,12 @@ input {
           transition: opacity .2s;
           opacity: 0;
           pointer-events: none;
+          visibility: hidden;
 
           &.on {
             opacity: 1;
             pointer-events: initial;
+            visibility: inherit;
           }
 
           li {
@@ -1700,11 +1709,13 @@ input {
                 padding-bottom: 15px;
                 opacity: 0;
                 pointer-events: none;
+                visibility: hidden;
                 transition: opacity .5s;
     
                 &.on {
                   opacity: 1;
                   pointer-events: initial;
+                  visibility: inherit;
                 }
                 
                 #app-links {
