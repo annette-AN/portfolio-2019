@@ -53,7 +53,7 @@ input {
     display: block;
   }
 
-  > div {
+  .dialog {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -64,8 +64,10 @@ input {
     padding: 25px 0px;
     background: #fff;
     text-align: center;
+    color: #4B4B4B;
     font-weight: 300;
     z-index: 1;
+
 
     > em {
       position: relative;
@@ -73,6 +75,7 @@ input {
       padding: 25px 0px;
       font-weight: 400;
       font-size: 12px;
+      color: #222;
 
       &:after {
         content: '';
@@ -85,7 +88,7 @@ input {
         transform: translate(-50%, 0%);
         width: 30px;
         height: 1px;
-        background: gray;
+        background: #E0DAD4;
       }
     }
 
@@ -117,7 +120,7 @@ input {
   .visual {
     position: relative;
     height: 633px;
-    background: #e7e7e7;
+    background: #E0DAD4;
 
     .slide {
       position: absolute;
@@ -160,8 +163,10 @@ input {
           font-weight: 100;
         }
 
-        h3 {
+        em {
+          font-size: 18px;
           font-weight: 100;
+          letter-spacing: 1px;
         }
 
         .view-btn {
@@ -1264,17 +1269,17 @@ input {
     padding-bottom: 250px;
 
     .section-image {
-      top: 0px;
+      top: 100px;
     }
 
     .section-contents {
-      top: 100px;
+      top: 150px;
     }
 
     aside {
 
       &:nth-of-type(1) {
-        top: 50px;
+        top: 100px;
       }
             
       &:nth-of-type(2) {
@@ -1283,7 +1288,7 @@ input {
 
       &:nth-of-type(3) {
         top: auto;
-        bottom: 620px;
+        bottom: 420px;
       }
     }
   }
@@ -1879,9 +1884,10 @@ input {
     left: 5%;
   }
 
+
   .index-main .model-look .section-image {
     img {
-      width: 100%;
+      // width: 100%;
     }
   }
 }
@@ -1942,7 +1948,7 @@ input {
     .model-look {
       .section-image {
         img {
-          width: 100%;
+          // width: 100%;
         }
       }
 

@@ -56,7 +56,7 @@ input {
   display: block;
 }
 
-.backdrop > div {
+.backdrop .dialog {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -68,19 +68,21 @@ input {
   padding: 25px 0px;
   background: #fff;
   text-align: center;
+  color: #4B4B4B;
   font-weight: 300;
   z-index: 1;
 }
 
-.backdrop > div > em {
+.backdrop .dialog > em {
   position: relative;
   display: block;
   padding: 25px 0px;
   font-weight: 400;
   font-size: 12px;
+  color: #222;
 }
 
-.backdrop > div > em:after {
+.backdrop .dialog > em:after {
   content: '';
   display: block;
   position: absolute;
@@ -92,23 +94,23 @@ input {
           transform: translate(-50%, 0%);
   width: 30px;
   height: 1px;
-  background: gray;
+  background: #E0DAD4;
 }
 
-.backdrop > div > h4 {
+.backdrop .dialog > h4 {
   margin: 30px auto 0px;
   padding-bottom: 10px;
   font-size: 24px;
   font-weight: 300;
 }
 
-.backdrop > div > p {
+.backdrop .dialog > p {
   margin: 25px auto;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.backdrop > div > button {
+.backdrop .dialog > button {
   width: 120px;
   height: 45px;
   margin-top: 35px;
@@ -120,7 +122,7 @@ input {
 .index .visual {
   position: relative;
   height: 633px;
-  background: #e7e7e7;
+  background: #E0DAD4;
 }
 
 .index .visual .slide {
@@ -171,8 +173,10 @@ input {
   font-weight: 100;
 }
 
-.index .visual .slide .contents h3 {
+.index .visual .slide .contents em {
+  font-size: 18px;
   font-weight: 100;
+  letter-spacing: 1px;
 }
 
 .index .visual .slide .contents .view-btn {
@@ -1103,15 +1107,15 @@ input {
 }
 
 .index-main .model-look .section-image {
-  top: 0px;
-}
-
-.index-main .model-look .section-contents {
   top: 100px;
 }
 
+.index-main .model-look .section-contents {
+  top: 150px;
+}
+
 .index-main .model-look aside:nth-of-type(1) {
-  top: 50px;
+  top: 100px;
 }
 
 .index-main .model-look aside:nth-of-type(2) {
@@ -1120,7 +1124,7 @@ input {
 
 .index-main .model-look aside:nth-of-type(3) {
   top: auto;
-  bottom: 620px;
+  bottom: 420px;
 }
 
 .index-main .full-image .section-image {
@@ -1720,9 +1724,6 @@ input {
   .index-main > section .aside-left {
     left: 5%;
   }
-  .index-main .model-look .section-image img {
-    width: 100%;
-  }
 }
 
 @media all and (max-width: 1270px) and (min-width: 768px) {
@@ -1761,9 +1762,6 @@ input {
   .index-main .section-contents h4 {
     font-size: 25px;
     margin-top: 8px;
-  }
-  .index-main .model-look .section-image img {
-    width: 100%;
   }
   .index-main .model-look aside:nth-of-type(2) {
     top: 500px;
