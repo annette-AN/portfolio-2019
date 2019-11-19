@@ -1503,8 +1503,6 @@
 
   $('.present-svc > h3 > a').on('click', function(){
     $("#present-svc-modal").addClass('on')
-    // $(this).parent().find('div').addClass('on');
-    // $('body')
   });
 
   $('#present-svc-modal button').on('click', function(){
@@ -1872,30 +1870,17 @@
   }
   createFooterSearchEffect();
 
-  $('.scroll-top').on('mouseenter', function(){
-    console.log('scroll-top on')
-  });
-
-  $('.scroll-top').on('mouseleave', function(){
-    console.log('scroll-top off')
-  });
-
-
   function createOtherSiteEffect() {
     var $appGroup = $('.index-footer .other-site .app-group');
     
     $appGroup.on('mouseenter', function(){
       $(this).find('.reversal-icon').addClass('on');
       $(this).find('.app-links-wrap').addClass('on');
-      console.log('app-link-toggle on');
-      console.log( 'this', $(this));
     });
 
     $appGroup.on('mouseleave', function(){
       $(this).find('.reversal-icon').removeClass('on');
       $(this).find('.app-links-wrap').removeClass('on');
-      console.log('app-link-toggle off');
-      console.log( 'this', $(this));
     });
   }
   createOtherSiteEffect();
