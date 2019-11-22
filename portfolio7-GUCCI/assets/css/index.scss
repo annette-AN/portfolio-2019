@@ -309,6 +309,10 @@ input {
       background-color: #1B1B1B;
     }
 
+    .mobile-snb-wrap {
+      display: none;
+    }
+
     h1 {
       text-align: center;
       color: #f2f2f2;
@@ -317,63 +321,208 @@ input {
       letter-spacing: 15px;
     }
 
-    .popup-design {
-      border: 1px solid #f2f2f2;
+    .dropdown-wrap {
+      position: absolute;
+      top: 100%;
+      left: auto;
+      right: auto;
+      bottom: auto;
 
-      > ul {
-        position: relative;
-        height: 170px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 800px 170px;
-        box-shadow: inset 0 0 0 700px rgba(0,0,0,0.4);
-        color: #f2f2f2;
+      //hidden 안줘도 될거같은데 왜지
+      //뒤에서 나오게 하려면 header밖으로 옮겨야함
+      &.hidden {
+        display: none;
+      }
 
-        > li {
+      > div {
+        width: 310px;
+        margin-top: 20px;
+        background: #fff;
+
+        &:before {
+          content: '';
+          display: block;
           position: absolute;
-          top: 45px;
-          left: 50%;
+          top: 8px;
+          left: auto;
           right: auto;
           bottom: auto;
-          transform: translate(-50%, 0%);
-          width: 240px;
-          font-size: 16px;
-          color: #f2f2f2;
-          text-align: center;
-          opacity: 0;
-          pointer-events: none;
-          visibility: hidden;
-          transition: opacity .5s;
+          border: 6px solid transparent;
+          border-bottom-color: #fff;
+        }
 
-          &.on {
-            opacity: 1;
+        a {
+          color: #313131;
+        }
+
+        i {
+          color: #aaaaaa;
+        }
+
+        > h3 {
+          padding: 10px 0px;
+          font-size: 16px;
+          text-align: center;
+          border-bottom: 1px solid #e7e7e7;
+          color: #4d4d4d;
+        }
+
+        > ul {
+          padding: 20px;
+          color: #727272;
+
+          > li {
+            text-align: center;
           }
         }
       }
 
-      .login {
-        position: relative;
-
-        > a {
-          display: block;
-          margin: 20px;
-          padding: 13px 0px;
-          text-align: center;
-          background: #000;
-          color: #fff;
-          letter-spacing: 2px;
-          font-size: 12px;
+      .shopping-area {
+        &:before {
+          left: 10px;
         }
+  
+        > div {
+          margin: 0px 20px;
+          padding-top: 30px;
+  
+          &:last-child {
+            padding-bottom: 30px;
+          }
+  
+          > em {
+            font-weight: bold;
+          }
+  
+          > p {
+            margin: 20px 0px;
+          }
+  
+          .nation-select {
+            display: flex;
+            justify-content: space-between;
+  
+            > a {
+              position: relative;
+              display: inline-block;
+            }
+  
+            > a + a {
+              &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -8px;
+                left: -20px;
+                right: auto;
+                bottom: auto;
+                width: 1px;
+                height: 30px;
+                background: #e7e7e7;
+              }
+            }
+          }
+  
+          .search-box {
+            position: relative;
+            margin-top: 20px;
+  
+            input {
+              width: 100%;
+              height: 40px;
+              padding: 0px 10px;
+              background: #F4F4F4;
+              font-size: 12px;
+              box-sizing: border-box;
+              color: #aaaaaa;
+  
+              &.on {
+                border: 1px solid #9e9e9e;
+              }
+            }
+  
+            a {
+              position: absolute;
+              top: 50%;
+              right: 15px;
+              left: auto;
+              bottom: auto;
+              transform: translate(0%, -50%);
+  
+              i {
+                font-size: 15px;
+              }
+            }
+          }
+  
+          .use-gps {
+            margin-top: 10px;
+  
+            a {
+              color: #aaaaaa;
+            }
+          }
+        }
+      }
 
-        .join-btn {
-          position: absolute;
-          top: -100px;
-          right: auto;
-          left: auto;
-          bottom: auto;
-          width: calc(100% - 40px);
-          background: #fff;
-          color: #000;
+      .popup-design {
+        border: 1px solid #f2f2f2;
+  
+        > ul {
+          position: relative;
+          height: 170px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 800px 170px;
+          box-shadow: inset 0 0 0 700px rgba(0,0,0,0.4);
+          color: #f2f2f2;
+  
+          > li {
+            position: absolute;
+            top: 45px;
+            left: 50%;
+            right: auto;
+            bottom: auto;
+            transform: translate(-50%, 0%);
+            width: 240px;
+            font-size: 16px;
+            color: #f2f2f2;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+            transition: opacity .5s;
+  
+            &.on {
+              opacity: 1;
+            }
+          }
+        }
+  
+        .login {
+          position: relative;
+  
+          > a {
+            display: block;
+            margin: 20px;
+            padding: 13px 0px;
+            text-align: center;
+            background: #000;
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 12px;
+          }
+  
+          .join-btn {
+            position: absolute;
+            top: -100px;
+            right: auto;
+            left: auto;
+            bottom: auto;
+            width: calc(100% - 40px);
+            background: #fff;
+            color: #000;
+          }
         }
       }
     }
@@ -473,258 +622,111 @@ input {
       display: none;
     }
 
-    #nation-info {
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      right: auto;
-      bottom: auto;
+    .snb-wrap {
+      #nation-info {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        right: auto;
+        bottom: auto;
 
-      li + li {
-        margin-left: 10px;
+        li + li {
+          margin-left: 10px;
+        }
       }
 
-      .dropdown-wrap {
-        .shopping-area {
-          &:before {
-            left: 10px;
-          }
+      .user-info {
+        position: absolute;
+        top: 25px;
+        right: 90px;
+        left: auto;
+        bottom: auto;
 
-          > div {
-            margin: 0px 20px;
-            padding-top: 30px;
+        > li + li {
+          margin-left: 20px;
+        }
 
-            &:last-child {
-              padding-bottom: 30px;
-            }
+        #popup-login {
+          .dropdown-wrap {
+            left: -120px;
 
-            > em {
-              font-weight: bold;
-            }
-
-            > p {
-              margin: 20px 0px;
-            }
-
-            .nation-select {
-              display: flex;
-              justify-content: space-between;
-
-              > a {
-                position: relative;
-                display: inline-block;
-              }
-
-              > a + a {
-                &:before {
-                  content: '';
-                  display: block;
-                  position: absolute;
-                  top: -8px;
-                  left: -20px;
-                  right: auto;
-                  bottom: auto;
-                  width: 1px;
-                  height: 30px;
-                  background: #e7e7e7;
-                }
-              }
-            }
-
-            .search-box {
-              position: relative;
-              margin-top: 20px;
-
-              input {
-                width: 100%;
-                height: 40px;
-                padding: 0px 10px;
-                background: #F4F4F4;
-                font-size: 12px;
-                box-sizing: border-box;
-                color: #aaaaaa;
-
-                &.on {
-                  border: 1px solid #9e9e9e;
-                }
-              }
-
-              a {
-                position: absolute;
-                top: 50%;
-                right: 15px;
-                left: auto;
-                bottom: auto;
-                transform: translate(0%, -50%);
-
-                i {
-                  font-size: 15px;
-                }
-              }
-            }
-
-            .use-gps {
-              margin-top: 10px;
-
-              a {
-                color: #aaaaaa;
+            .popup-design {
+              &:before {
+                left: 130px;
               }
             }
           }
         }
-      }
-    }
 
-    .user-info {
-      position: absolute;
-      top: 25px;
-      right: 90px;
-      left: auto;
-      bottom: auto;
+        #popup-like-it {
+          .dropdown-wrap {
+            right: -5px;
 
-      > li + li {
-        margin-left: 20px;
-      }
-      
-      > li {
-        .dropdown-wrap {
-          > div {
-            > h3 {
-              padding: 10px 0px;
-              font-size: 16px;
-              text-align: center;
-              border-bottom: 1px solid #e7e7e7;
-              color: #4d4d4d;
-            }
-
-            > ul {
-              padding: 20px;
-              color: #727272;
-
-              > li {
-                text-align: center;
+            > div {
+              &:before {
+                right: 10px;
               }
             }
           }
         }
-      }
 
-      #popup-login {
-        .dropdown-wrap {
-          left: -120px;
+        #popup-shopping-bag {
+          .dropdown-wrap {
+            left: -220px;
 
-          .popup-design {
-            &:before {
-              left: 130px;
+            > div {
+              &:before {
+                left: 218px;
+              }
             }
+          }
+
+          h3 {
+            border: none;
           }
         }
       }
 
-      #popup-like-it {
-        .dropdown-wrap {
-          right: -5px;
+      #nation-info, .user-info {
+        > li {
+          position: relative;
+          display: inline-block;
 
-          > div {
-            &:before {
-              right: 10px;
+          .dropdown-wrap {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+            transition: opacity .5s;
+
+            &.on {
+              opacity: 1;
+              pointer-events: initial;
+              visibility: inherit;
+              z-index: 1;
             }
           }
         }
-      }
 
-      #popup-shopping-bag {
-        .dropdown-wrap {
-          left: -220px;
+        li {
+          > span {
+            color: rgba(255, 255, 255, 0.9);
 
-          > div {
-            &:before {
-              left: 218px;
-            }
-          }
-        }
-
-        h3 {
-          border: none;
-        }
-      }
-    }
-
-    #nation-info, .user-info {
-      > li {
-        position: relative;
-        display: inline-block;
-
-        .dropdown-wrap {
-          position: absolute;
-          top: 100%;
-          left: auto;
-          right: auto;
-          bottom: auto;
-          opacity: 0;
-          pointer-events: none;
-          visibility: hidden;
-          transition: opacity .5s;
-
-          &.hidden {
-            display: none;
-          }
-
-          &.on {
-            opacity: 1;
-            pointer-events: initial;
-            visibility: inherit;
-            z-index: 1;
-          }
-
-
-          > div {
-            width: 310px;
-            margin-top: 20px;
-            background: #fff;
-
-            &:before {
-              content: '';
-              display: block;
-              position: absolute;
-              top: 8px;
-              left: auto;
-              right: auto;
-              bottom: auto;
-              border: 6px solid transparent;
-              border-bottom-color: #fff;
+            &.cursor {
+              cursor: pointer;
             }
 
-            a {
-              color: #313131;
-            }
-
-            i {
-              color: #aaaaaa;
-            }
-          }
-        }
-      }
-
-      li {
-        > span {
-          color: rgba(255, 255, 255, 0.9);
-
-          &.cursor {
-            cursor: pointer;
-          }
-
-          &:hover, &:focus {
-            color: rgba(255, 255, 255, 1);
-
-            i {
+            &:hover, &:focus {
               color: rgba(255, 255, 255, 1);
-            }
-          }
 
-          i {
-            margin-right: 4px;
-            color: rgba(255, 255, 255, 0.5);
+              i {
+                color: rgba(255, 255, 255, 1);
+              }
+            }
+
+            i {
+              margin-right: 4px;
+              color: rgba(255, 255, 255, 0.5);
+            }
           }
         }
       }
@@ -1829,44 +1831,46 @@ input {
         display: none;
       }
 
-      #nation-info, .user-info {
-        > li {
-          span[hidden-text].hidden {
-            display: none;
+      .snb-wrap {
+        #nation-info, .user-info {
+          > li {
+            span[hidden-text].hidden {
+              display: none;
+            }
           }
         }
-      }
   
-      #nation-info {
-        li + li {
-          margin-left: 0px;
-        }
-  
-        > li {
-          .dropdown-wrap {
-            left: -12px;
-  
-            > div {
-              &:before {
-                left: 9px;
+        #nation-info {
+          li + li {
+            margin-left: 0px;
+          }
+    
+          > li {
+            .dropdown-wrap {
+              left: -12px;
+    
+              > div {
+                &:before {
+                  left: 9px;
+                }
               }
             }
           }
         }
-      }
   
-      // .index #index-header .user-info #popup-login .popup-design
-      .user-info {
-        li + li {
-          margin-left: 10px;
-        }
-  
-        #popup-login .dropdown-wrap {
-          left: -170px;
-          
-          .popup-design {
-            &:before {
-              left: 170px;
+        // .index #index-header .user-info #popup-login .popup-design
+        .user-info {
+          li + li {
+            margin-left: 10px;
+          }
+    
+          #popup-login .dropdown-wrap {
+            left: -170px;
+            
+            .popup-design {
+              &:before {
+                left: 170px;
+              }
             }
           }
         }
@@ -2045,6 +2049,7 @@ input {
       height: 55px;
       padding-top: 20px;
       box-shadow: inset 0px 95px 40px -50px rgba(0, 0, 0, 0.8);
+      z-index: none;
 
       .mobile-menu {
         .menu-open-btn {
@@ -2082,133 +2087,120 @@ input {
       }
 
       h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+
         img {
           width: 147px;
         }
       }
 
-      #nation-info, .user-info {
-        position: absolute;
-        top: 25px;
-        left: auto;
-        right: 0px;
-        bottom: auto;
+      .snb-wrap {
+        display: none;
+      }
 
-        > li {
-          font-size: 20px;
-          color: #ABA7A3;
-          cursor: pointer;
+      .mobile-snb-wrap {
+        display: block;
 
-          &.mobile-hidden {
-            display: none;
+        .inside-gnb-info, .outside-gnb-info {
+        }
+
+        .inside-gnb-info {
+          display: none;
+        }
+
+        .outside-gnb-info {
+          position: relative;
+          padding: 5px 60px 0px 0px;
+          text-align: right;
+
+          #popup-shopping-bag {
+            // position: absolute;
+            // top: 0px;
+            // right: 130px;
+            // left: auto;
+            // bottom: auto;
           }
 
-          .dropdown-wrap {
-            display: none;
+          #popup-nation {
+            // position: absolute;
+            // top: 0px;
+            // right: 85px;
+            // left: auto;
+            // bottom: auto;
+          }
 
-            &.show {
+          > li {
+            display: inline-block;
+            margin-right: 25px;
+            color: #ABA7A3;
+            font-size: 20px;
+            cursor: pointer; 
+
+            span[hidden-text].hidden {
+              display: none;
+            }
+
+            .dropdown-wrap {
               display: block;
-            }
-          }
+              top: -450px;
+              right: 70px;
+              left: auto;
+              bottom: auto;
+              font-size: 11px;
+              width: 43%;
+              transition: top .5s;
 
-          span[hidden-text].hidden {
-            display: none;
-          }
-        }
+              &.hidden {
+                display: none;
+              }
 
-        #popup-nation {
-          position: absolute;
-          right: 85px;
-        }
+              &.on {
+                top: 35px;
 
-        #popup-shopping-bag {
-          position: absolute;
-          right: 130px;
-        }
-        
-        .mobile-menu-list {
-          display: block;
-          position: fixed;
-          top: auto;
-          right: auto;
-          left: 0px;
-          bottom: auto;
-          z-index: 1;
-          width: 100%;
-          height: 40px;
-          line-height: 40px;
-          text-align: center;
-          color: #363636;
-
-          a {
-            width: 100%;
-            color: #363636;
-            font-size: 14px;
-            font-weight: bold;
-          }
-
-          &:nth-of-type(1) {
-            //#popup-login
-            top: 360px;
-            width: 100%;
-            height: auto;
-
-            .popup-design {
-              border: none;
-
-              > ul {
-                height: 145px;
-                background-size: initial;
-
-                > li {
-                  top: 35px;
-                  width: 70%;
+                > div {
+                  &:before {
+                    opacity: 1;
+                  }
                 }
               }
 
-              .login {
-                > a {
-                  margin: 0px;
-                  padding: 0px;
+              > div {
+                width: 100%;
+
+                &:before {
+                  position: fixed;
+                  top: 51px;
+                  right: 126px;
+                  border-width: 12px;
+                  opacity: 0;
+                  transition: opacity 1s;
                 }
-                
-                .join-btn {
-                  top: -80px;
-                  left: 50%;
-                  transform: translate(-50%, 0%);
-                  width: 320px;
-                  font-size: 12px;
-                  font-weight: normal;
+
+                > h3 {
+                  padding-top: 15px;
+                  font-size: 24px;
+                  border-bottom: none;
                 }
-                                
-                > a + a {
-                  margin-top: 20px;
-                  background: transparent;
+
+                > ul {
+                  padding: 0px 0px 25px 0px;
+                  > li {
+                    font-size: 16px;
+                  }
                 }
               }
             }
           }
 
-          &:nth-of-type(2) {
-            //#popup-like-it
-            top: 565px;
 
-            ul {
-              display: none;
-            }
-          }
 
-          &:nth-of-type(3) {
-            //#nation-info > 3번째 li
-            top: 605px;
-          }
-
-          span {
-            i {
-              display: none;
-            }
-          }
         }
+
       }
 
       .site-search {
