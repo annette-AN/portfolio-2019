@@ -83,115 +83,67 @@
       </button>
     </div>
 
-    <ul id="nation-info">
-      <li id="popup-nation" popper>
-        <span class="cursor">
-          <i class="fas fa-map-marker-alt"><span class="i-text-ir">지도표시</span></i>
-          <span hidden-text>대한민국</span>
-        </span>
-        <div class="dropdown-wrap" dropdown>
-          <div class="shopping-area">
-            <div>
-              <em>
-                아래의 지역에서 온라인 쇼핑이 가능합니다.
-              </em>
-              <p>지역을 변경하실 경우 쇼핑백에 담아두신 상품이 초기화 됩니다.</p>
-              <div class="nation-select">
-                <a href="#">배송지역: <span>대한민국</span></a>
-                <a href="#">국가 / 지역 변경 <i class="fas fa-chevron-right"><span class="i-text-ir">오른쪽 화살표</span></i></a>
+    <div class="snb-wrap">
+      <ul id="nation-info">
+        <li id="popup-nation" popper>
+          <span class="cursor">
+            <i class="fas fa-map-marker-alt"><span class="i-text-ir">지도표시</span></i>
+            <span hidden-text>대한민국</span>
+          </span>
+          <div class="dropdown-wrap" dropdown>
+            <div class="shopping-area">
+              <div>
+                <em>
+                  아래의 지역에서 온라인 쇼핑이 가능합니다.
+                </em>
+                <p>지역을 변경하실 경우 쇼핑백에 담아두신 상품이 초기화 됩니다.</p>
+                <div class="nation-select">
+                  <a href="#">배송지역: <span>대한민국</span></a>
+                  <a href="#">국가 / 지역 변경 <i class="fas fa-chevron-right"><span class="i-text-ir">오른쪽 화살표</span></i></a>
+                </div>
               </div>
-             </div>
-             <div>
-              <em>매장 찾기</em>
-              <div class="search-box">
-                <input type="text" placeholder="국가, 지역 또는 도시"/>
-                <a href="#">
-                  <i class="fas fa-search"><span class="i-text-ir">검색</span></i>
-                </a>
+              <div>
+                <em>매장 찾기</em>
+                <div class="search-box">
+                  <input type="text" placeholder="국가, 지역 또는 도시"/>
+                  <a href="#">
+                    <i class="fas fa-search"><span class="i-text-ir">검색</span></i>
+                  </a>
+                </div>
+                <div class="use-gps">
+                  <a href="#">
+                    <i class="fas fa-location-arrow"><span class="i-text-ir">위치 아이콘</span></i>
+                    <span>현재 위치 사용하기</span>
+                  </a>
+                </div>
               </div>
-              <div class="use-gps">
-                <a href="#">
-                  <i class="fas fa-location-arrow"><span class="i-text-ir">위치 아이콘</span></i>
-                  <span>현재 위치 사용하기</span>
-                </a>
-              </div>
-             </div>
-          </div>
-        </div>
-      </li>
-      <li class="mobile-menu-list mobile-hidden">
-        <span hidden-text>한국어</span>
-      </li>
-      <li class="mobile-menu-list mobile-hidden">
-        <span>
-          <i class="fas fa-phone"><span class="i-text-ir">전화기</span></i>
-          <a href="#">
-            02-3452-1921
-          </a>
-        </span>
-      </li>
-    </ul>
-    
-    <h1>
-      <a href="#">
-        <img src="assets/img/icons/gucci_light.png">
-      </a>
-    </h1>
-
-    <ul class="user-info">
-      <!-- 유저인포 css 공유 -->
-      <li id="popup-login" class="mobile-menu-list mobile-hidden" popper>
-        <span class="cursor">
-          <i class="fas fa-user"><span class="i-text-ir">사람</span></i>
-          <span hidden-text>로그인</span>
-        </span>
-        <div class="dropdown-wrap" dropdown>
-          <div class="popup-design">
-            <ul>
-              <!-- 
-              <li>고객님만을 위한 맞춤 리스트를 살펴보세요</li>
-              <li>최근 주문 내역, 배송 추적 및 반송 관리를 조회하세요</li>
-              <li>마음에 드는 상품을 저장하세요</li> 
-              -->
-            </ul>
-            <div class="login">
-              <a href="#" class="join-btn">신규 회원 가입</a>
-              <a href="#" class="login-btn">로그인</a>
             </div>
           </div>
-        </div>
-      </li>
-      <li id="popup-like-it" class="mobile-menu-list mobile-hidden" popper>
-        <span class="cursor">
-          <i class="far fa-heart"><span class="i-text-ir">좋아요</span></i>
-        </span>
-        <div class="dropdown-wrap" dropdown>
-          <div>
-            <h3>
-              <a href="#">
-                관심상품
-              </a>
-            </h3>
-            <ul>
-              <li>관심상품이 비어 있습니다.</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li id="popup-shopping-bag" popper>
-        <span class="cursor">
-          <i class="fas fa-shopping-bag"><span class="i-text-ir">가방</span></i>
-          <span hidden-text>쇼핑백</span>
-        </span>
-        <div class="dropdown-wrap" dropdown>
-          <div>
-            <h3>쇼핑백</h3>
-            <ul>
-              <li>쇼핑백이 비어 있습니다.</li>
-            </ul>
+        </li>
+        <li class="mobile-menu-list mobile-hidden">
+          <span hidden-text>한국어</span>
+        </li>
+        <li class="mobile-menu-list mobile-hidden">
+          <span>
+            <i class="fas fa-phone"><span class="i-text-ir">전화기</span></i>
+            <a href="#">
+              02-3452-1921
+            </a>
+          </span>
+        </li>
+      </ul>
+
+      <ul class="user-info">
+        <!-- 유저인포 css 공유 -->
+        <li id="popup-login" class="mobile-menu-list mobile-hidden" popper>
+          <span class="cursor">
+            <i class="fas fa-user"><span class="i-text-ir">사람</span></i>
+            <span hidden-text>로그인</span>
+          </span>
+          <div class="dropdown-wrap" dropdown>
             <div class="popup-design">
               <ul>
-                <!--
+                <!-- 
                 <li>고객님만을 위한 맞춤 리스트를 살펴보세요</li>
                 <li>최근 주문 내역, 배송 추적 및 반송 관리를 조회하세요</li>
                 <li>마음에 드는 상품을 저장하세요</li> 
@@ -203,9 +155,179 @@
               </div>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+        <li id="popup-like-it" class="mobile-menu-list mobile-hidden" popper>
+          <span class="cursor">
+            <i class="far fa-heart"><span class="i-text-ir">좋아요</span></i>
+          </span>
+          <div class="dropdown-wrap" dropdown>
+            <div>
+              <h3>
+                <a href="#">
+                  관심상품
+                </a>
+              </h3>
+              <ul>
+                <li>관심상품이 비어 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="popup-shopping-bag" popper>
+          <span class="cursor">
+            <i class="fas fa-shopping-bag"><span class="i-text-ir">가방</span></i>
+            <span hidden-text>쇼핑백</span>
+          </span>
+          <div class="dropdown-wrap" dropdown>
+            <div>
+              <h3>쇼핑백</h3>
+              <ul>
+                <li>쇼핑백이 비어 있습니다.</li>
+              </ul>
+              <div class="popup-design">
+                <ul>
+                  <!--
+                  <li>고객님만을 위한 맞춤 리스트를 살펴보세요</li>
+                  <li>최근 주문 내역, 배송 추적 및 반송 관리를 조회하세요</li>
+                  <li>마음에 드는 상품을 저장하세요</li> 
+                  -->
+                </ul>
+                <div class="login">
+                  <a href="#" class="join-btn">신규 회원 가입</a>
+                  <a href="#" class="login-btn">로그인</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-snb-wrap">
+      <ul class="inside-gnb-info">
+        <li id="popup-login" class="mobile-menu-list mobile-hidden" popper>
+          <span class="cursor">
+            <i class="fas fa-user"><span class="i-text-ir">사람</span></i>
+            <span hidden-text>로그인</span>
+          </span>
+          <div class="dropdown-wrap" dropdown>
+            <div class="popup-design">
+              <ul>
+                <!-- 
+                <li>고객님만을 위한 맞춤 리스트를 살펴보세요</li>
+                <li>최근 주문 내역, 배송 추적 및 반송 관리를 조회하세요</li>
+                <li>마음에 드는 상품을 저장하세요</li> 
+                -->
+              </ul>
+              <div class="login">
+                <a href="#" class="join-btn">신규 회원 가입</a>
+                <a href="#" class="login-btn">로그인</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="popup-like-it" class="mobile-menu-list mobile-hidden" popper>
+          <span class="cursor">
+            <i class="far fa-heart"><span class="i-text-ir">좋아요</span></i>
+          </span>
+          <div class="dropdown-wrap" dropdown>
+            <div>
+              <h3>
+                <a href="#">
+                  관심상품
+                </a>
+              </h3>
+              <ul>
+                <li>관심상품이 비어 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="mobile-menu-list mobile-hidden">
+          <span hidden-text>한국어</span>
+        </li>
+        <li class="mobile-menu-list mobile-hidden">
+          <span>
+            <i class="fas fa-phone"><span class="i-text-ir">전화기</span></i>
+            <a href="#">
+              02-3452-1921
+            </a>
+          </span>
+        </li>
+      </ul>
+
+      <ul class="outside-gnb-info">
+        <li id="popup-shopping-bag" popper>
+          <span class="cursor">
+            <i class="fas fa-shopping-bag"><span class="i-text-ir">가방</span></i>
+            <span hidden-text>쇼핑백</span>
+          </span>
+          <div class="dropdown-wrap" dropdown>
+            <div>
+              <h3>쇼핑백</h3>
+              <ul>
+                <li>쇼핑백이 비어 있습니다.</li>
+              </ul>
+              <div class="popup-design">
+                <ul>
+                  <!--
+                  <li>고객님만을 위한 맞춤 리스트를 살펴보세요</li>
+                  <li>최근 주문 내역, 배송 추적 및 반송 관리를 조회하세요</li>
+                  <li>마음에 드는 상품을 저장하세요</li> 
+                  -->
+                </ul>
+                <div class="login">
+                  <a href="#" class="join-btn">신규 회원 가입</a>
+                  <a href="#" class="login-btn">로그인</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="popup-nation" popper>
+          <span class="cursor">
+            <i class="fas fa-map-marker-alt"><span class="i-text-ir">지도표시</span></i>
+            <span hidden-text>대한민국</span>
+          </span>
+          <!-- <div class="dropdown-wrap" dropdown>
+            <div class="shopping-area">
+              <div>
+                <em>
+                  아래의 지역에서 온라인 쇼핑이 가능합니다.
+                </em>
+                <p>지역을 변경하실 경우 쇼핑백에 담아두신 상품이 초기화 됩니다.</p>
+                <div class="nation-select">
+                  <a href="#">배송지역: <span>대한민국</span></a>
+                  <a href="#">국가 / 지역 변경 <i class="fas fa-chevron-right"><span class="i-text-ir">오른쪽 화살표</span></i></a>
+                </div>
+              </div>
+              <div>
+                <em>매장 찾기</em>
+                <div class="search-box">
+                  <input type="text" placeholder="국가, 지역 또는 도시"/>
+                  <a href="#">
+                    <i class="fas fa-search"><span class="i-text-ir">검색</span></i>
+                  </a>
+                </div>
+                <div class="use-gps">
+                  <a href="#">
+                    <i class="fas fa-location-arrow"><span class="i-text-ir">위치 아이콘</span></i>
+                    <span>현재 위치 사용하기</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </li>
+      </ul>
+    </div>
+
+    <h1>
+      <a href="#">
+        <img src="assets/img/icons/gucci_light.png">
+      </a>
+    </h1>
 
     <div class="site-search">
       <div class="box-close">
@@ -1741,23 +1863,23 @@
   }
   createGnbToggleMenu();
 
-  $('#popup-shopping-bag').on('click', function() {
-    $(this).find('.dropdown-wrap').toggleClass('show');
-  });
+  // $('#popup-shopping-bag').on('click', function() {
+  //   $(this).find('.dropdown-wrap').toggleClass('show');
+  // });
 
   $('.mobile-menu > .menu-open-btn').on('click', function(e) {
     $('.gnb').addClass('on');
     $('.mobile-menu > .menu-close-btn').addClass('on');
-    $('#index-header').find('[hidden-text]').removeClass('hidden');
-    $('#index-header > ul > li').removeClass('mobile-hidden');
-    $('#index-header > ul > li .dropdown-wrap').addClass('show');
+    // $('#index-header').find('[hidden-text]').removeClass('hidden');
+    // $('#index-header > ul > li').removeClass('mobile-hidden');
+    // $('#index-header > ul > li .dropdown-wrap').removeClass('hidden');
   });
 
   $('.mobile-menu > .menu-close-btn').on('click', function(e) {
     $('.gnb').removeClass('on');
     $('.mobile-menu > .menu-close-btn').removeClass('on');
-    $('#index-header').find('[hidden-text]').addClass('hidden');
-    $('#index-header > ul > li .dropdown-wrap').removeClass('show');
+    // $('#index-header').find('[hidden-text]').addClass('hidden');
+    // $('#index-header > ul > li .dropdown-wrap').addClass('hidden');
   });
 
   //nav gnb media style
@@ -1903,6 +2025,7 @@
     });
   }
   createOtherSiteEffect();
+
 
 
 </script>
