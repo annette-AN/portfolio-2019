@@ -72,17 +72,6 @@
   </div>
 
   <header id="index-header">
-    <div class="mobile-menu">
-      <button class="menu-open-btn">
-        MENU
-      </button>
-      <button class="menu-close-btn">
-        <i class="fas fa-times">
-          <span class="i-text-ir">닫기 버튼</span>
-        </i>
-      </button>
-    </div>
-
     <div class="snb-wrap">
       <ul id="nation-info">
         <li id="popup-nation" popper>
@@ -144,6 +133,8 @@
             <div class="popup-design">
               <ul>
                 <!-- 
+                background-image는 jquery로 css변경 (#popup-shopping-bag 동시적용)
+
                 <li>고객님만을 위한 맞춤 리스트를 살펴보세요</li>
                 <li>최근 주문 내역, 배송 추적 및 반송 관리를 조회하세요</li>
                 <li>마음에 드는 상품을 저장하세요</li> 
@@ -204,9 +195,19 @@
     </div>
 
     <div class="mobile-snb-wrap">
+      <div class="mobile-menu">
+        <button class="menu-open-btn">
+          MENU
+        </button>
+        <button class="menu-close-btn">
+          <i class="fas fa-times">
+            <span class="i-text-ir">닫기 버튼</span>
+          </i>
+        </button>
+      </div>
       <ul class="inside-gnb-info">
         <li id="popup-login" class="mobile-menu-list mobile-hidden" popper>
-          <span class="cursor">
+          <span class="cursor inside-gnb-hidden">
             <i class="fas fa-user"><span class="i-text-ir">사람</span></i>
             <span hidden-text>로그인</span>
           </span>
@@ -227,7 +228,7 @@
           </div>
         </li>
         <li id="popup-like-it" class="mobile-menu-list mobile-hidden" popper>
-          <span class="cursor">
+          <span class="cursor inside-gnb-hidden">
             <i class="far fa-heart"><span class="i-text-ir">좋아요</span></i>
           </span>
           <div class="dropdown-wrap" dropdown>
@@ -243,10 +244,243 @@
             </div>
           </div>
         </li>
+        <li class="delivery-area">
+          <a href="#">배송지역: <span class="area">대한민국</span></a>
+          <ul>
+            <li class="delivery-area-header">
+              <div>
+                <i class="fas fa-chevron-left prev-fontawesome">
+                  <span class="i-text-ir">이전</span>
+                </i>
+                <a href="#">배송지역: <span class="area">대한민국</span></a>
+              </div>
+              <p>
+                <em>배송 지역을 선택하실 수 있습니다. (Please select your location.)</em>
+                지역을 변경하실 경우 쇼핑백에 담아두신 상품이 초기화 됩니다.
+              </p>
+            </li>
+
+            <li class="mobile-list">
+              <button>
+                NORTH AMERICA
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </button>
+              <ul>
+                <li>
+                  <a href="#">canda</a>
+                </li>
+                <li>
+                  <a href="#">united states</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-list">
+              <button>
+                EUROPE
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </button>
+              <ul>
+                <li>
+                  <a href="#">austria</a>
+                </li>
+                <li>
+                  <a href="#">italy</a>
+                </li>
+                <li>
+                  <a href="#">belgium</a>
+                </li>
+                <li>
+                  <a href="#">netherlands</a>
+                </li>
+                <li>
+                  <a href="#">bulgaria</a>
+                </li>
+                <li>
+                  <a href="#">norway</a>
+                </li>
+                <li>
+                  <a href="#">czech republic</a>
+                </li>
+                <li>
+                  <a href="#">poland</a>
+                </li>
+                <li>
+                  <a href="#">denmark</a>
+                </li>
+                <li>
+                  <a href="#">portugal</a>
+                </li>
+                <li>
+                  <a href="#">germany</a>
+                </li>
+                <li>
+                  <a href="#">romania</a>
+                </li>
+                <li>
+                  <a href="#">spain</a>
+                </li>
+                <li>
+                  <a href="#">slovenia</a>
+                </li>
+                <li>
+                  <a href="#">finland</a>
+                </li>
+                <li>
+                  <a href="#">sweden</a>
+                </li>
+                <li>
+                  <a href="#">france</a>
+                </li>
+                <li>
+                  <a href="#">switzerland</a>
+                </li>
+                <li>
+                  <a href="#">hungary</a>
+                </li>
+                <li>
+                  <a href="#">turkey</a>
+                </li>
+                <li>
+                  <a href="#">ireland</a>
+                </li>
+                <li>
+                  <a href="#">united kingdom</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-list">
+              <button>
+                ASIA
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </button>
+              <ul>
+                <li>
+                  <a href="#">
+                    <em>中國大陸地区</em>
+                    / chinese mainland
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <em>日本</em> 
+                    / japan
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <em>한국</em>
+                    / korea
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <em>香港特別行政区</em>
+                    / hong kong SAR
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-list">
+              <button>
+                MIDDLE EAST
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </button>
+              <ul>
+                <li>
+                  <a href="#">
+                    saudi arabia /
+                    <em>السعودية</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    qatar /
+                    <em>قطر</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    kuwait /
+                    <em>الكويت</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    uae /
+                    <em>الإمارات</em>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-list">
+              <button>
+                OCEANIA
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </button>
+              <ul>
+                <li>
+                  <a href="#">australia</a>
+                </li>
+                <li>
+                  <a href="#">new zealand</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="delivery-area-footer">
+              <div>for all other countries, regions</div>
+              <a href="#">
+                <div class="mobile-list">
+                  internatinal site
+                  <span class="mobile-list-icon">
+                    <i class="fas fa-angle-right">
+                      <span class="i-text-ir">바로가기</span>
+                    </i>
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="mobile-menu-list mobile-hidden">
           <span hidden-text>한국어</span>
         </li>
-        <li class="mobile-menu-list mobile-hidden">
+        <li class="mobile-menu-list mobile-hidden clientservice-num">
           <span>
             <i class="fas fa-phone"><span class="i-text-ir">전화기</span></i>
             <a href="#">
@@ -341,6 +575,7 @@
           <a href="#">
             <i class="fas fa-search"><span class="i-text-ir">검색</span></i>
           </a>
+          <!-- placeholder jquery로 수정 -->
           <input type="text" placeholder="검색"/>
         </div>
         <button>
@@ -352,10 +587,23 @@
     <nav class="gnb">
       <ul>
         <li menu>
+          <i class="fas fa-chevron-left prev-fontawesome">
+            <span class="i-text-ir">이전</span>
+          </i>
           <a href="#">WHAT'S NEW</a>
           <ul menu-list>
-            <li>
-              <a href="#">NEW</a>
+            <li class="mobile-list">
+              <a href="#">
+                NEW
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </a>
               <ul>
                 <li>
                   <a href="#">런웨이</a>
@@ -430,12 +678,25 @@
           </ul>
         </li>
         <li menu>
+          <i class="fas fa-chevron-left prev-fontawesome">
+            <span class="i-text-ir">이전</span>
+          </i>
           <a href="#">여성</a>
           <ul class="menu-style-WM" menu-list>
-            <li>
-              <div>
+            <li class="mobile-list">
+              <div> 
                 <header class="gnb-sub-header">
-                  <a href="#">신상품</a>
+                  <a href="#">
+                    신상품
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -455,7 +716,17 @@
                   </li>
                 </ul>
                 <header class="gnb-sub-header">
-                  <a href="#">선물제안</a>
+                  <a href="#">
+                    선물제안
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -471,7 +742,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">핸드백</a>
+                  <a href="#">
+                    핸드백
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -508,7 +789,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">지갑</a>
+                  <a href="#">
+                    지갑
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -528,7 +819,17 @@
                   </li>
                 </ul>
                 <header class="gnb-sub-header">
-                  <a href="#">패션소품</a>
+                  <a href="#">
+                    패션소품
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -553,7 +854,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">의류</a>
+                  <a href="#">
+                    의류
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -596,7 +907,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">여성 슈즈</a>
+                  <a href="#">
+                    여성 슈즈
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -625,7 +946,17 @@
                   </li>
                 </ul>
                 <header class="gnb-sub-header">
-                  <a href="#">DIY</a>
+                  <a href="#">
+                    DIY
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -643,12 +974,25 @@
           </ul>
         </li>
         <li menu>
+          <i class="fas fa-chevron-left prev-fontawesome">
+            <span class="i-text-ir">이전</span>
+          </i>
           <a href="#">남성</a>
           <ul class="menu-style-WM" menu-list>
-            <li>
-              <div>
+            <li class="mobile-list">
+              <div> 
                 <header class="gnb-sub-header">
-                  <a href="#">신상품</a>
+                  <a href="#">
+                    신상품
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -665,7 +1009,17 @@
                   </li>
                 </ul>
                 <header class="gnb-sub-header">
-                  <a href="#">선물제안</a>
+                  <a href="#">
+                    선물제안
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -681,7 +1035,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">남성 가방</a>
+                  <a href="#">
+                    남성 가방
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -712,7 +1076,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">지갑</a>
+                  <a href="#">
+                    지갑
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -729,7 +1103,17 @@
                   </li>
                 </ul>
                 <header class="gnb-sub-header">
-                  <a href="#">패션소품</a>
+                  <a href="#">
+                    패션소품
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -757,7 +1141,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">의류</a>
+                  <a href="#">
+                    의류
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -797,7 +1191,17 @@
               </div>
               <div>
                 <header class="gnb-sub-header">
-                  <a href="#">남성 슈즈</a>
+                  <a href="#">
+                    남성 슈즈
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -823,7 +1227,17 @@
                   </li>
                 </ul>
                 <header class="gnb-sub-header">
-                  <a href="#">DIY</a>
+                  <a href="#">
+                    DIY
+                    <span class="mobile-list-icon">
+                      <i class="fas fa-plus">
+                      <span class="i-text-ir">더보기</span>
+                      </i>
+                      <i class="fas fa-minus hidden">
+                        <span class="i-text-ir">접기</span>
+                      </i>
+                    </span>
+                  </a>
                 </header>
                 <ul>
                   <li>
@@ -841,10 +1255,23 @@
           </ul>
         </li>
         <li menu>
+          <i class="fas fa-chevron-left prev-fontawesome">
+            <span class="i-text-ir">이전</span>
+          </i>
           <a href="#">주얼리 &#38; 시계</a>
           <ul class="wide-list no-border-all-list" menu-list>
-            <li>
-              <a href="#">골드 주얼리</a>
+            <li class="mobile-list">
+              <a href="#">
+                골드 주얼리
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </a>
               <ul>
                 <li>
                   <a href="#">반지</a>
@@ -929,10 +1356,23 @@
           </ul>
         </li>
         <li menu>
+          <i class="fas fa-chevron-left prev-fontawesome">
+            <span class="i-text-ir">이전</span>
+          </i>
           <a href="#">구찌 데코</a>
           <ul class="gucci-deco" menu-list>
-            <li>
-              <a href="#">구찌 데코</a>
+            <li class="mobile-list">
+              <a href="#">
+                구찌 데코
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </a>
               <ul>
                 <li>
                   <a href="#">캔들</a>
@@ -989,10 +1429,23 @@
           </ul>
         </li>
         <li menu>
+          <i class="fas fa-chevron-left prev-fontawesome">
+            <span class="i-text-ir">이전</span>
+          </i>
           <a href="#">선물제안</a>
           <ul class="wide-list" menu-list>
-            <li>
-              <a href="#">선물제안</a>
+            <li class="mobile-list">
+              <a href="#">
+                선물제안
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </a>
               <ul>
                 <li>
                   <a href="#">for 여성</a>
@@ -1018,10 +1471,23 @@
           </ul>
         </li>
         <li menu>
+          <i class="fas fa-chevron-left prev-fontawesome">
+            <span class="i-text-ir">이전</span>
+          </i>
           <a href="#">구찌 스토리</a>
           <ul class="gucci-story" menu-list>
-            <li>
-              <a href="#">구찌 스토리</a>
+            <li class="mobile-list">
+              <a href="#">
+                구찌 스토리
+                <span class="mobile-list-icon">
+                  <i class="fas fa-plus">
+                  <span class="i-text-ir">더보기</span>
+                  </i>
+                  <i class="fas fa-minus hidden">
+                    <span class="i-text-ir">접기</span>
+                  </i>
+                </span>
+              </a>
               <ul>
                 <li>
                   <a href="#">패션쇼</a>
@@ -1651,33 +2117,52 @@
   });
 
   //snb dropdown effect
-  function showDropdown(){
-    var $this = $(this);
+  //정리, 확인 mobile size
+  function createPopperDropdownActive() {
+    var bodyWidth = $('body').width();
 
-    $this.find('[dropdown]').removeClass('hidden');
+    function showDropdown(){
+      var $this = $(this);
 
-    setTimeout(function() {
-      $this.find('[dropdown]').addClass('on');
-    }, 0);
+      $this.find('[dropdown]').removeClass('hidden');
+
+      setTimeout(function() {
+        $this.find('[dropdown]').addClass('on');
+      }, 0);
+    }
+
+    function hiddenDropDown() {
+      var $this = $(this);
+      
+      $this.find('[dropdown]').removeClass('on');
+      
+      setTimeout(function() {
+        $this.find('[dropdown]').addClass('hidden');
+      }, 200);
+    }
+
+    if ( bodyWidth > 1023 ) {
+      $(document).on('mouseenter', '[popper]', function(){
+        showDropdown.call(this);
+      });
+
+      $(document).on('mouseleave', '[popper]', function(){
+        hiddenDropDown.call(this);
+      });
+    } else {
+      $(document).on('click', '[popper]', function(){
+        showDropdown.call(this);
+
+        if( $('[dropdown]').hasClass('on') ) {
+          hiddenDropDown.call(this);
+        }
+      });
+    }
   }
 
-  function hiddenDropDown() {
-    var $this = $(this);
-    
-    $this.find('[dropdown]').removeClass('on');
-    
-    setTimeout(function() {
-      $this.find('[dropdown]').addClass('hidden');
-    }, 200);
-  }
+  createPopperDropdownActive();
 
-  $(document).on('mouseenter', '[popper]', function(){
-    showDropdown.call(this);
-  });
-
-  $(document).on('mouseleave', '[popper]', function(){
-    hiddenDropDown.call(this);
-  });
+  
 
 
 
@@ -1704,16 +2189,16 @@
       $selector.css({'background-image' : 'url(assets/img/SnbPopupImage/MenuFlyoutMedium_S93-FS_001_Default.jpg)'});
 
       function showSlide(n) {
-        slideNow = n;
-        slideNext = n + 1 > numSlide ? 1 : n + 1;
-        timerId = setTimeout(function(){showSlide(slideNext)}, timerSpeed);
-
         clearTimeout(timerId);
         $popupDesignUls.each(function(){
           var $selector = $(this);
           $selector.children('li').removeClass('on');
           $selector.children('li').eq(n - 1).addClass('on');
         });
+
+        slideNow = n;
+        slideNext = n + 1 > numSlide ? 1 : n + 1;
+        timerId = setTimeout(function(){showSlide(slideNext)}, timerSpeed);
       }
       showSlide(1);
     });
@@ -1737,8 +2222,18 @@
     var $boxOpen = $('.site-search .box-open');
     var $boxClose = $('.site-search .box-close');
     var $header = $('#index-header');
+    var bodyWidth = $('body').width();
 
+    console.log('bodyWidth', bodyWidth)
     $boxOpen.addClass('hidden');
+
+    if ( bodyWidth < 1024 ) {
+      $boxClose.find('button').on('click', function(e){
+        $boxOpen.toggleClass('active');
+        $header.toggleClass('on');
+      });
+      return;
+    }
 
     $boxClose.find('button').on('click', function(e){
       $boxClose.addClass('hidden');
@@ -1758,10 +2253,10 @@
 
   //nav gnb fashion-show slide 
   function createFashionShowSlide(data) {
-
     var $fashionShow = $('.fashion-show');
     var $fashionShowList = $fashionShow.children("ul").empty();
     var $fashionShowFigure = $fashionShow.find('figure .slide-wrap').empty();
+    var bodyWidth = $('body').width();
 
     for(var i=0,l=data.length;i<l;i++){
       var datum = data[i];
@@ -1782,6 +2277,7 @@
     var slideProps ={
       numSlide : '',
       slideWidth : 0,
+      slideHeight: 0,
       slideWrapWidth : 0
     }
 
@@ -1795,6 +2291,7 @@
     function createSlideWrapWidth(slideProps) {
       slideProps.numSlide = $('.fashion-show .slide-wrap a').length;
       slideProps.slideWidth = $('.fashion-show .slide').innerWidth();
+      slideProps.slideHeight = $('.fashion-show .slide').innerHeight();
       slideProps.slideWrapWidth = ( slideProps.numSlide * slideProps.slideWidth );
 
       $('.fashion-show .slide-wrap').css({
@@ -1806,6 +2303,14 @@
       });
 
       $('.fashion-show .slide .slide-wrap a').css({'width': (slideProps.slideWidth ) + 'px'});
+
+      //정리, 확인
+      if( bodyWidth < 1024 ) {
+        $('.fashion-show .slide .slide-wrap a').css({
+          'height' : slideProps.slideHeight + 'px' ,
+          // 'height' : 200 + 'px' ,
+        })
+      }
     }
 
     createSlideWrapWidth(slideProps);
@@ -1851,36 +2356,91 @@
     }
   ]);
 
+  (function(){
+    $('.gnb').addClass('on');
+    $('.gnb [menu]').addClass('hidden active');
+    $('.gnb [menu]:eq(0)').removeClass('hidden');
+    $('.gnb').find('[menu-list]:eq(0)').addClass('on');
+    $('.gnb').find('.mobile-list:eq(0)').find('ul').addClass('on');
+
+    $('.prev-fontawesome').addClass('on');
+    $('.menu-close-btn').addClass('active');
+
+
+    // $('.mobile-list-icon fa-plus').addClass('hidden');
+  })();
+
+
   //nav gng 토글 메뉴 오픈
   function createGnbToggleMenu() {
-    $(document).on('mouseenter', '[menu]', function(){
-      $(this).find('[menu-list]').addClass('on');
-    });
+    var bodyWidth = $('body').width();
+    var mobileGnbMenuOn = function() {
+      $('.inside-gnb-info').removeClass('on');
+    };
 
-    $(document).on('mouseleave', '[menu]', function(){
-      $(this).find('[menu-list]').removeClass('on');
-    });
+    var mobileGnbMenuOff = function() {
+      $('.inside-gnb-info').addClass('on');
+    };
+
+    
+    if ( bodyWidth > 1023 ) {
+      $(document).on('mouseenter', '[menu]', function(){
+        $(this).find('[menu-list]').addClass('on');
+      });
+
+      $(document).on('mouseleave', '[menu]', function(){
+        $(this).find('[menu-list]').removeClass('on');
+      });
+    } else {
+      $('.gnb').on('click', '[menu]', function(){
+        $(this).find('[menu-list]').addClass('on');
+      });
+
+      $('.gnb .mobile-list > a').on('click', function(){
+        if ( !$(this).siblings('ul').hasClass('on') ) {
+          $(this).find('ul').removeClass('on');
+          $(this).siblings('ul').addClass('on');
+        } else {
+          $(this).siblings('ul').toggleClass('on');
+        }
+      });
+
+      $('.gnb .prev-fontawesome').on('click', function() {
+        $('.gnb [menu-list]').removeClass('on');
+      });
+
+
+    }
   }
   createGnbToggleMenu();
 
-  // $('#popup-shopping-bag').on('click', function() {
-  //   $(this).find('.dropdown-wrap').toggleClass('show');
-  // });
+  ' '
 
-  $('.mobile-menu > .menu-open-btn').on('click', function(e) {
-    $('.gnb').addClass('on');
-    $('.mobile-menu > .menu-close-btn').addClass('on');
-    // $('#index-header').find('[hidden-text]').removeClass('hidden');
-    // $('#index-header > ul > li').removeClass('mobile-hidden');
-    // $('#index-header > ul > li .dropdown-wrap').removeClass('hidden');
-  });
 
-  $('.mobile-menu > .menu-close-btn').on('click', function(e) {
-    $('.gnb').removeClass('on');
-    $('.mobile-menu > .menu-close-btn').removeClass('on');
-    // $('#index-header').find('[hidden-text]').addClass('hidden');
-    // $('#index-header > ul > li .dropdown-wrap').addClass('hidden');
-  });
+    
+  function mobileMenuOpenClose() {
+    var $mobileMenu = $('.mobile-snb-wrap .mobile-menu');
+    var $mobileMenuInsideInfo = $('.mobile-snb-wrap .inside-gnb-info');
+
+    var mobileMenuOpen = function() {
+      $('.gnb').addClass('on');
+      $mobileMenu.find('.menu-close-btn').addClass('on');
+      $mobileMenuInsideInfo.addClass('on');
+    }
+
+    var mobileMenuClose = function() {
+      $('.gnb').removeClass('on');
+      $mobileMenu.find('.menu-close-btn').removeClass('on');
+      $mobileMenuInsideInfo.removeClass('on');
+    }
+
+    $mobileMenu.find('.menu-open-btn').on('click', mobileMenuOpen);
+    $mobileMenu.find('.menu-close-btn').on('click', mobileMenuClose);
+  };
+  mobileMenuOpenClose();
+
+
+
 
   //nav gnb media style
 

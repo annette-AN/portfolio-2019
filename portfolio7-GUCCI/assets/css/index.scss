@@ -1,3 +1,8 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
 body {
   font-family: Futura, "Futura", "Malgun Gothic", "Dotum", sans-serif;
   font-size: 11px;
@@ -486,7 +491,6 @@ input {
             transform: translate(-50%, 0%);
             width: 240px;
             font-size: 16px;
-            color: #f2f2f2;
             text-align: center;
             opacity: 0;
             pointer-events: none;
@@ -495,6 +499,7 @@ input {
   
             &.on {
               opacity: 1;
+              visibility: visible;
             }
           }
         }
@@ -534,7 +539,6 @@ input {
         left: auto;
         right: 0%;
         bottom: auto;
-        cursor: pointer;
 
         button {
           display: block;
@@ -574,52 +578,314 @@ input {
           }
         }
       }
+    }
 
-      .box-close, .box-open {
-        &.hidden {
-          display: none;
-        }
-      }
-
-      .box-open {
-        width: calc(100vw);
-        height: 65px;
-        background: #313131;
-
-        > div {
-          margin-top: 17px;
-
-          a {
-            display: inline-block;
-            margin-left: 4%;
-            color: #999999;
-            font-size: 16px;
-
-            &:hover, &:focus {
-              color: #fff;
+    .gnb {
+      > ul {
+        > li[menu] {
+          > ul[menu-list] {
+            .fashion-show {
+              a {
+                display: block;
+              }
+  
+              ul, figure {
+                display: inline-block;
+              }
+  
+              ul {
+                width: 108px;
+              }
+  
+              figure {
+                position: relative;
+                vertical-align: top;
+                max-width: 350px;
+                width: 25vw;
+                margin: 10px 0px 0px 40px;
+  
+                .slide {
+                  position: relative;
+                  height: 154px;
+                  overflow: hidden;
+  
+                  .slide-wrap {
+                    position: absolute;
+                    height: 100%;
+                    transition: left .3s;
+  
+                    a {
+                      position: absolute;
+                      height: 100%;
+  
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                  }
+                }
+  
+                #indicator {
+                  position: absolute;
+                  bottom: -20px;
+                  left: 50%;
+                  right: auto;
+                  top: auto;
+                  transform: translate(-50%, 0%);
+                  width: auto;
+  
+                  li + li {
+                    margin-left: 6px;
+                  }
+  
+                  li {
+                    display: inline-block;
+  
+                    a {
+                      width: 6px;
+                      height: 6px;
+                      border: 1px solid #727272;
+                      border-radius: 3px;
+                    }
+  
+                    &:hover, &:focus {
+                      a {
+                        background: black;
+                      }
+                    }
+  
+                    &.on {
+                      a {
+                        background: black;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+  
+            .gucci-edit {
+              > ul {
+                padding-top: 10px;
+  
+                > li {
+                  margin-top: 5px;
+  
+                  > a {
+                    display: block;
+                    cursor: pointer;
+  
+                    div {
+                      display: inline-block;
+                      width: 70px;
+                      height: 70px;
+  
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+  
+                    em {
+                      padding-left: 10px;
+                      font-size: 11px;
+                      vertical-align: top;
+                    }
+                  }
+                }
+              }
             }
           }
 
-          input {
-            display: inline-block;
-            width: calc(96% - 90px);
-            height: 30px;
-            margin-left: 5px;
-            outline: none;
-            background: #313131;
-            color: #999999;
-            font-size: 18px;
+          .menu-style-WM {
+            padding: 0px 0px 55px;
+            text-align: center;
+  
+            > li {
+              display: inline-flex;
+              justify-content: space-between;
+              max-width: 1150px;
+              width: 85vw;
+              margin: 0px auto;
+  
+              > div {
+                > .gnb-sub-header {
+                  margin: 26px 0px 22px;
+  
+                  a {
+                    color: #313131;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                  }
+                }
+  
+                > ul {
+                  li + li {
+                    margin-top: 12px;
+                  }
+                  li {
+                    a {
+                      font-size: 12px;
+                      color: rgba(49, 49, 49, 0.7);
+                      font-weight: 400;
+                    }
+  
+                    &:hover, &:focus {
+                      a {
+                        color: rgba(49, 49, 49, 1);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+  
+          .wide-list {
+            > li {
+              padding: 0px 65px;
+            }
+  
+            .details {
+              div {
+                margin-top: 40px;
+              }
+            }
+          }
+  
+          .gucci-deco {
+            > li {
+              display: inline-block;
+              width: 30vw;
+              overflow: hidden;
+  
+              > a {
+                display: block;
+                width: fit-content;
+                margin-bottom: 22px;
+              }
+  
+              &:nth-of-type(1) {
+                max-width: 470px;
+                width: 35vw;
+                padding: 0px 15px;
+              }
+  
+              > ul + ul {
+                padding-left: 12px;
+              }
+  
+              ul {
+                float: left;
+                max-width: 160px;
+                width: 33%;
+  
+                li:first-child {
+                  margin-top: 0px;
+                }
+              }
+            }
+          }
+  
+          .gucci-story {
+            > li {
+              &:nth-of-type(1) {
+                max-width: 350px;
+                width: 30%;
+                padding: 0px 15px;
+              }
+  
+              &:nth-of-type(2) {
+                max-width: 440px;
+                width: 36%;
+                padding: 0px 15px;
+  
+              }
+  
+              &:nth-of-type(3) {
+                width: 33%;
+              }
+  
+              > a {
+                margin-bottom: 26px;
+              }
+              overflow: hidden;
+              > ul {
+                float: left;
+                width: 50%;
+  
+                li:first-child {
+                  margin-top: 0px;
+                }
+              }
+            }
+  
+            
+            .recently-info {
+              > ul {
+                > li + li {
+                  margin-top: 10px;
+                }
+  
+                > li {
+                  > a {
+                    display: block;
+                    height: 80px;
+  
+                    img {
+                      height: 100%;
+                    }
+  
+                    div {
+                      display: inline-block;
+                      max-width: 120px;
+                      width: calc(100% - 86px);
+                      padding-left: 12px;
+                      vertical-align: top;
+                      font-size: 11px;
+  
+                      em, span {
+                        word-break: break-all;
+                      }
+  
+                      em {
+                        display: block;
+                        font-weight: bold;
+                        margin-bottom: 12px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .details {
+            > div {
+              position: relative;
+              margin-top: 22px;
+            }
           }
         }
       }
     }
   }
+
+  .mobile-list-icon {
+    display: none;
+  }
+
+  .prev-fontawesome {
+    display: none;
+  }
 }
 
 @media all and (min-width: 1024px) {
   #index-header {
-    .mobile-menu {
-      display: none;
+    .mobile-snb-wrap {
+      .mobile-menu {
+        display: none;
+      }
     }
 
     .snb-wrap {
@@ -732,6 +998,46 @@ input {
       }
     }
   }
+  
+  .site-search {
+    .box-close, .box-open {
+      &.hidden {
+        display: none;
+      }
+    }
+
+    .box-open {
+      width: 100%;
+      height: 65px;
+      background: #313131;
+
+      > div {
+        margin-top: 17px;
+
+        a {
+          display: inline-block;
+          margin-left: 4%;
+          color: #999999;
+          font-size: 16px;
+
+          &:hover, &:focus {
+            color: #fff;
+          }
+        }
+
+        input {
+          display: inline-block;
+          width: calc(96% - 90px);
+          height: 30px;
+          margin-left: 5px;
+          outline: none;
+          background: #313131;
+          color: #999999;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 
   .gnb {
     font-size: 12px;
@@ -751,7 +1057,7 @@ input {
         vertical-align: top;
       }
       
-      > li {
+      > li[menu] {
         display: inline-block;
         margin: 21px 0px 0px;
 
@@ -765,7 +1071,7 @@ input {
           }
         }
 
-        > ul {
+        > ul[menu-list] {
           position: absolute;
           top: 100%;
           left: 0%;
@@ -847,289 +1153,6 @@ input {
                 }
               }
             }
-          }
-
-          .fashion-show {
-            a {
-              display: block;
-            }
-
-            ul, figure {
-              display: inline-block;
-            }
-
-            ul {
-              width: 108px;
-            }
-
-            figure {
-              position: relative;
-              vertical-align: top;
-              max-width: 350px;
-              width: 25vw;
-              margin: 10px 0px 0px 40px;
-
-              .slide {
-                position: relative;
-                height: 154px;
-                overflow: hidden;
-
-                .slide-wrap {
-                  position: absolute;
-                  height: 100%;
-                  transition: left .3s;
-
-                  a {
-                    position: absolute;
-                    height: 100%;
-
-                    img {
-                      width: 100%;
-                      height: 100%;
-                    }
-                  }
-                }
-              }
-
-              #indicator {
-                position: absolute;
-                bottom: -20px;
-                left: 50%;
-                right: auto;
-                top: auto;
-                transform: translate(-50%, 0%);
-                width: auto;
-
-                li + li {
-                  margin-left: 6px;
-                }
-
-                li {
-                  display: inline-block;
-
-                  a {
-                    width: 6px;
-                    height: 6px;
-                    border: 1px solid #727272;
-                    border-radius: 3px;
-                  }
-
-                  &:hover, &:focus {
-                    a {
-                      background: black;
-                    }
-                  }
-
-                  &.on {
-                    a {
-                      background: black;
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          .gucci-edit {
-            > ul {
-              padding-top: 10px;
-
-              > li {
-                margin-top: 5px;
-
-                > a {
-                  display: block;
-                  cursor: pointer;
-
-                  div {
-                    display: inline-block;
-                    width: 70px;
-                    height: 70px;
-
-                    img {
-                      width: 100%;
-                      height: 100%;
-                    }
-                  }
-
-                  em {
-                    padding-left: 10px;
-                    font-size: 11px;
-                    vertical-align: top;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .menu-style-WM {
-          padding: 0px 0px 55px;
-          text-align: center;
-
-          > li {
-            display: inline-flex;
-            justify-content: space-between;
-            max-width: 1150px;
-            width: 85vw;
-            margin: 0px auto;
-
-            > div {
-              > .gnb-sub-header {
-                margin: 26px 0px 22px;
-
-                a {
-                  color: #313131;
-                  font-weight: bold;
-                  letter-spacing: 1px;
-                }
-              }
-
-              > ul {
-                li + li {
-                  margin-top: 12px;
-                }
-                li {
-                  a {
-                    font-size: 12px;
-                    color: rgba(49, 49, 49, 0.7);
-                    font-weight: 400;
-                  }
-
-                  &:hover, &:focus {
-                    a {
-                      color: rgba(49, 49, 49, 1);
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .wide-list {
-          > li {
-            padding: 0px 65px;
-          }
-
-          .details {
-            div {
-              margin-top: 40px;
-            }
-          }
-        }
-
-        .gucci-deco {
-          > li {
-            display: inline-block;
-            width: 30vw;
-            overflow: hidden;
-
-            > a {
-              display: block;
-              width: fit-content;
-              margin-bottom: 22px;
-            }
-
-            &:nth-of-type(1) {
-              max-width: 470px;
-              width: 35vw;
-              padding: 0px 15px;
-            }
-
-            > ul + ul {
-              padding-left: 12px;
-            }
-
-            ul {
-              float: left;
-              max-width: 160px;
-              width: 33%;
-
-              li:first-child {
-                margin-top: 0px;
-              }
-            }
-          }
-        }
-
-        .gucci-story {
-          > li {
-            &:nth-of-type(1) {
-              max-width: 350px;
-              width: 30%;
-              padding: 0px 15px;
-            }
-
-            &:nth-of-type(2) {
-              max-width: 440px;
-              width: 36%;
-              padding: 0px 15px;
-
-            }
-
-            &:nth-of-type(3) {
-              width: 33%;
-            }
-
-            > a {
-              margin-bottom: 26px;
-            }
-            overflow: hidden;
-            > ul {
-              float: left;
-              width: 50%;
-
-              li:first-child {
-                margin-top: 0px;
-              }
-            }
-          }
-
-          
-          .recently-info {
-            > ul {
-              > li + li {
-                margin-top: 10px;
-              }
-
-              > li {
-                > a {
-                  display: block;
-                  height: 80px;
-
-                  img {
-                    height: 100%;
-                  }
-
-                  div {
-                    display: inline-block;
-                    max-width: 120px;
-                    width: calc(100% - 86px);
-                    padding-left: 12px;
-                    vertical-align: top;
-                    font-size: 11px;
-
-                    em, span {
-                      word-break: break-all;
-                    }
-
-                    em {
-                      display: block;
-                      font-weight: bold;
-                      margin-bottom: 12px;
-                    }
-                  }
-                  
-                }
-              }
-            }
-          }
-        }
-        .details {
-          > div {
-            position: relative;
-            margin-top: 22px;
           }
         }
       }
@@ -1491,7 +1514,6 @@ input {
   .footer-wrap {
     position: relative;
     max-width: 1200px;
-    width: 100%;
     margin: 0px auto;
   
     .footer-menu-wrap {
@@ -1564,7 +1586,7 @@ input {
                 color: #fff;
               }
 
-              &:hover {
+              &:hover, &:focus  {
                 &:before {
                   display: block;
                 }
@@ -2045,46 +2067,33 @@ input {
   //min-height: 814px
   //header
   .index {
+    .mobile-list-icon {
+      display: block;
+    }
+    
+    .prev-fontawesome {
+      position: absolute;
+      top: 20px;
+      left: 17px;
+      right: auto;
+      bottom: auto;
+      width: 15px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 17px;
+      cursor: pointer;
+
+      &.on {
+        display: inline;
+      }
+    }
+
     #index-header {
       height: 55px;
       padding-top: 20px;
       box-shadow: inset 0px 95px 40px -50px rgba(0, 0, 0, 0.8);
       z-index: none;
-
-      .mobile-menu {
-        .menu-open-btn {
-          position: absolute;
-          top: 30px;
-          left: 30px;
-          right: auto;
-          bottom: auto;
-          font-size: 20px;
-          color: #ABA7A3;
-          background: transparent;
-      
-          &:before {
-            display: inline-block;
-            content: url(../img/icons/menu-bar.png);
-            margin-right: 5px;
-            vertical-align: middle;
-          }
-        }
-
-        .menu-close-btn {
-          display: none;
-          position: fixed;
-          right: 5px;
-          padding-left: 15px;
-          background: transparent;
-          font-size: 15px;
-          z-index: 1;
-
-
-          &.on {
-            display: block;
-          }
-        }
-      }
 
       h1 {
         position: absolute;
@@ -2106,33 +2115,50 @@ input {
       .mobile-snb-wrap {
         display: block;
 
-        .inside-gnb-info, .outside-gnb-info {
-        }
+        .mobile-menu {
+          .menu-open-btn {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            right: auto;
+            bottom: auto;
+            font-size: 20px;
+            color: #ABA7A3;
+            background: transparent;
+            z-index: 1;
 
-        .inside-gnb-info {
-          display: none;
+            &:before {
+              display: inline-block;
+              content: url(../img/icons/menu-bar.png);
+              margin-right: 5px;
+              vertical-align: middle;
+            }
+          }
+  
+          .menu-close-btn {
+            display: none;
+            position: fixed;
+            right: 5px;
+            padding-left: 15px;
+            background: transparent;
+            font-size: 15px;
+            z-index: 3;
+  
+            &.on {
+              display: block;
+            }
+
+            &.active {
+              display: block;
+              right: 20px;
+            }
+          }
         }
 
         .outside-gnb-info {
           position: relative;
           padding: 5px 60px 0px 0px;
           text-align: right;
-
-          #popup-shopping-bag {
-            // position: absolute;
-            // top: 0px;
-            // right: 130px;
-            // left: auto;
-            // bottom: auto;
-          }
-
-          #popup-nation {
-            // position: absolute;
-            // top: 0px;
-            // right: 85px;
-            // left: auto;
-            // bottom: auto;
-          }
 
           > li {
             display: inline-block;
@@ -2196,15 +2222,148 @@ input {
               }
             }
           }
-
-
-
         }
+        
+        .inside-gnb-info {
+          display: none;
+          position: fixed;
+          top: 345px;
+          width: 100%;
+          text-align: center;
+          z-index: 3;
 
+          &.on {
+            display: block;
+          }
+
+          .dropdown-wrap {
+            position: static;
+            top: 0px;
+
+            > div {
+              width: 100%;
+              border: none;
+              background: transparent;
+            }
+          }
+
+          > li {
+            height: 40px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #5C5C5C;
+            line-height: 40px;
+            letter-spacing: 1px;
+
+            h3, a, span {
+              font-size: 15px;
+              font-weight: bold;
+              color: #313131;
+            }
+
+            > span {
+              &.inside-gnb-hidden {
+                display: none;
+              }
+            }
+          }
+
+          #popup-login {
+            height: auto;
+
+            .dropdown-wrap {
+              .popup-design {
+                > ul {
+                  height: 140px;
+                  margin-bottom: 30px;
+                  background-size: cover;
+
+                  li {
+                    top: 25px;
+                    width: 90%;
+                  }
+                }
+  
+                .login {
+                  > a {
+                    height: 40px;
+                    line-height: 40px;
+                    margin: 0px;
+                    padding: 0px;
+                  }
+  
+                  .join-btn {
+                    top: -90px;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    width: 320px;
+                    font-weight: normal;
+                  }
+                  
+                  .login-btn {
+                    background: transparent;
+                    font-size: 15px;
+                    color: #313131;
+                    letter-spacing: 1px;
+                  }
+                }
+              }
+            }
+          }
+
+          #popup-like-it {
+            .dropdown-wrap {
+              > div {
+                margin: 0px;
+
+                h3 {
+                  padding: 0px;
+                  border: none;
+                  
+                  a {
+                    display: block;
+                  }
+                }
+
+                > ul {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .delivery-area {
+            .area {
+              text-decoration: underline;
+            }
+
+            > ul {
+              display: none;
+            }
+          }
+          
+          .clientservice-num {
+            > span {
+              i {
+                display: none;
+              }
+
+              a {
+                text-decoration: underline;
+                font-weight: normal;
+              }
+            }
+
+            &:before {
+              content: 'Client Services:';
+              font-weight: normal;
+            }
+          }
+        }
       }
 
       .site-search {
-        > div {
+        .box-close {
           button {
             top: 22px;
             right: 30px;
@@ -2222,12 +2381,115 @@ input {
             }
           }
         }
+
+        .box-open {
+          top: -100px;
+          width: 100%;
+          height: 65px;
+          background: #FDFDFD;
+          opacity: 0;
+          transition: top .5s;
+
+          &.active {
+            top: 75px;
+            opacity: 1;
+
+            &:before {
+              opacity: 1;
+            }
+          }
+
+          &:before {
+            content: '';
+            position: fixed;
+            top: 51px;
+            right: 35px;
+            border: 12px solid transparent;
+            border-bottom-color: #fff;
+            opacity: 0;
+            transition: opacity 1s;
+          }
+    
+          > div {
+            // background: pink;
+            margin-top: 17px;
+
+            &:before {
+              content: '\f12a';
+              font-family: "Font Awesome 5 Free";
+              font-style: normal;
+              font-weight: 900;
+              text-decoration: inherit;
+              line-height: 1;
+              display: block;
+              position: absolute;
+              bottom: 25px;
+              left: 12px;
+              top: auto;
+              right: auto;
+              width: 14px;
+              height: 14px;
+              border: 1px solid #FF0000;
+              border-radius: 14px;
+              text-align: center;
+              line-height: 14px;
+              color: #FF0000;
+              font-size: 10px;
+            }
+    
+            a {
+              display: inline-block;
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              left: auto;
+              bottom: auto;
+              transform: translate(0%, -50%);
+              width: 90px;
+              height: 40px;
+              line-height: 36px;
+              color: #313131;
+              font-size: 12px;
+              border: 2px solid #313131;
+
+              &:before {
+                content: '검색';
+                display: block;
+                text-align: center;
+                color: #313131;
+              }
+
+              i {
+                opacity: 0;
+              }
+    
+              &:hover, &:focus {
+                color: inherit;
+              }
+            }
+    
+            input {
+              position: relative;
+              display: inline-block;
+              width: calc(100% - 145px);
+              height: 30px;
+              margin-left: 35px;
+              outline: none;
+              background: #FDFDFD;
+              color: #34302B;
+              font-size: 17px;
+            }
+
+            input::placeholder {
+              color: #FF0000;
+            }
+          }
+          
+          button {
+            display: none;
+          }
+        }
       }
-
-
-
-
-
 
       .gnb {
         display: none;
@@ -2239,15 +2501,40 @@ input {
         width: 100%;
         height: 100%;
         background: rgba(255,255,255,0.98);
+        z-index: 2;
 
         &.on {
           display: block;
         }
 
         > ul {
+          // height: 100%;
+          min-height: 814px;
           padding-top: 30px;
+          overflow: auto;
 
-          > li {
+          > li[menu] {
+            &.hidden {
+              display: none;
+            }
+
+            &.active {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              right: auto;
+              bottom: auto;
+              width: 100%;
+              height: 100%;
+              padding: 0px 10px;
+
+              > a {
+                height: 60px;
+                line-height: 60px;
+                border-bottom: 1px solid #DBD8D6;
+              }
+            }
+
             > a {
               display: block;
               height: 45px;
@@ -2258,8 +2545,227 @@ input {
               color: #363636;
               letter-spacing: 1px;
             }
-            > ul {
+
+            > ul[menu-list] {
               display: none;
+
+
+              &.on {
+                display: block;
+                padding-top: 0px;
+              }
+
+              > li {
+                padding-left: 10px;
+              }
+
+              .mobile-list {
+                position: relative;
+                border-bottom: 1px solid #DBD8D6;
+
+                > a {
+                  display: block;
+                  height: 80px;
+                  line-height: 80px;
+                  font-size: 20px;
+                  color: #313131;
+
+                  .mobile-list-icon {
+                    position: absolute;
+                    top: 33px;
+                    right: 10px;
+                    left: auto;
+                    bottom: auto;
+                    width: 16px;
+                    height: 16px;
+                    color: #999999;
+
+                    i {
+                      position: absolute;
+                      top: 0px;
+                      right: 0px;
+                      left: auto;
+                      bottom: auto;
+                      font-size: 16px;
+
+                      &.hidden {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+
+                > ul {
+                  display: none;
+                  overflow: hidden;
+
+                  &.on {
+                    display: block;
+
+                    // > li {
+                    //   > a {
+                    //     opacity: 1;
+                    //     font-size: 16px;
+                    //     padding-bottom: 20px;
+                    //   }
+                    // }
+                  }
+
+                  > li {
+                    display: block;
+                    float: left;
+                    width: 50%;
+                    padding-left: 10px;
+
+                    > a {
+                      display: block;
+                      padding-bottom: 20px;
+                      color: #313131;
+                      font-size: 16px;
+                      font-weight: bold;
+                      letter-spacing: 1px;
+                    
+                      // opacity: 0;
+                      // font-size: 0px;
+                      // padding-bottom: 0px;
+                      // transition: font-size .5s, padding-bottom .5s;
+                    }
+                  }
+                }
+              }
+
+              .fashion-show, .gucci-edit {
+                border-bottom: none;
+
+                > a {
+                  padding-top: 30px;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: #313131;
+                }
+              }
+
+              .fashion-show {
+                .fashion-show-list {
+                  display: none;
+                }
+
+                figure {
+                  background: pink;
+                  display: block;
+                  width: 100%;
+                  max-width: none;
+                  margin: 20px auto 0px;
+
+                  .slide {
+                    padding-top: 38%;
+                    height: auto;
+                  }
+
+                  #indicator {
+                    bottom: 20px;
+
+                    li + li {
+                      margin-left: 8px;;
+                    }
+
+                    li {
+                      &:hover, &:focus, &.on {
+                        a {
+                          background: #fff;
+                        }
+                      }
+
+                      a {
+                        width: 8px;
+                        height: 8px;
+                        border-color: #fff;
+                        border-radius: 8px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .gucci-edit {
+                height: 300px;
+
+                > a {
+                  display: block;
+                }
+
+                > ul {
+                  display: block;
+                  padding: 0px;
+                  margin-top: 20px;
+
+                  > li + li {
+                    margin-top: 25px;
+                  }
+
+                  > li {
+                    margin-top: 0px;
+                    
+                    > a {
+                      div {
+                        width: 90px;
+                        height: 90px;
+                      }
+
+                      em {
+                        font-size: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+    
+
+                // > figure {
+                //   position: relative;
+                //   max-width: 280px;
+                //   width: 90vw;
+
+                //   .slide {
+                //     position: relative;
+                //     height: 280px;
+                //     overflow: hidden;
+                //     // width: 745px;
+
+                //     .slide-wrap {
+                //       position: absolute;
+                //       height: 100%;
+                //       transition: left .3s;
+                //       > a {
+                //         position: absolute;
+                //         top: 65px;
+                //         left: auto;
+                //         right: auto;
+                //         bottom: auto;
+
+                //         img {
+                //           position: relative;
+                //           width: 100%;
+                //           height: 280px;
+                //         }
+
+                //         > em {
+                //           position: absolute;
+                //           top: 50%;
+                //           left: 50%;
+                //           right: auto;
+                //           bottom: auto;
+                //           transform: translate(-50%, -50%);
+                //         }
+                //       }
+                //     }
+                //   }
+                // }
+              // }
+
+              // .gucci-edit {
+              //   height: 300px;
+              // }
             }
           }
         }
@@ -2271,6 +2777,10 @@ input {
 
 
 @media all and (max-width: 1023px) {
+  body {
+    overflow: hidden;
+  }
+  
   .body-modal.backdrop {
     display: block;
     background: black;
