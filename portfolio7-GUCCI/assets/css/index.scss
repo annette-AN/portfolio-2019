@@ -439,59 +439,6 @@ input {
     }
 
     .dropdown-wrap {
-      position: absolute;
-      top: 100%;
-      left: auto;
-      right: auto;
-      bottom: auto;
-
-      &.hidden {
-        display: none;
-      }
-
-      > div {
-        width: 310px;
-        margin-top: 20px;
-        background: #fff;
-
-        &:before {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 8px;
-          left: auto;
-          right: auto;
-          bottom: auto;
-          border: 6px solid transparent;
-          border-bottom-color: #fff;
-        }
-
-        a {
-          color: #313131;
-        }
-
-        i {
-          color: #aaaaaa;
-        }
-
-        > h3 {
-          padding: 10px 0px;
-          font-size: 16px;
-          text-align: center;
-          border-bottom: 1px solid #e7e7e7;
-          color: #4d4d4d;
-        }
-
-        > ul {
-          padding: 20px;
-          color: #727272;
-
-          > li {
-            text-align: center;
-          }
-        }
-      }
-
       .shopping-area {
         &:before {
           left: 10px;
@@ -576,120 +523,6 @@ input {
             a {
               color: #aaaaaa;
             }
-          }
-        }
-      }
-
-      .popup-design {
-        border: 1px solid #f2f2f2;
-  
-        > ul {
-          position: relative;
-          height: 170px;
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: 800px 170px;
-          box-shadow: inset 0 0 0 700px rgba(0,0,0,0.4);
-          color: #f2f2f2;
-  
-          > li {
-            position: absolute;
-            top: 45px;
-            left: 50%;
-            right: auto;
-            bottom: auto;
-            transform: translate(-50%, 0%);
-            width: 240px;
-            font-size: 16px;
-            text-align: center;
-            opacity: 0;
-            pointer-events: none;
-            visibility: hidden;
-            transition: opacity .5s;
-  
-            &.on {
-              opacity: 1;
-              visibility: visible;
-            }
-          }
-        }
-  
-        .login {
-          position: relative;
-  
-          > a {
-            display: block;
-            margin: 20px;
-            padding: 13px 0px;
-            text-align: center;
-            background: #000;
-            color: #fff;
-            letter-spacing: 2px;
-            font-size: 12px;
-          }
-  
-          .join-btn {
-            position: absolute;
-            top: -100px;
-            right: auto;
-            left: auto;
-            bottom: auto;
-            width: calc(100% - 40px);
-            background: #fff;
-            color: #000;
-          }
-        }
-      }
-    }
-
-    .site-search {
-      .box-close, .box-open {
-        &.hidden {
-          display: none;
-        }
-      }
-      > div {
-        position: absolute;
-        top: 0%;
-        left: auto;
-        right: 0%;
-        bottom: auto;
-
-        button {
-          display: block;
-          position: absolute;
-          top: 15px;
-          right: 25px;
-          left: auto;
-          bottom: auto;
-          width: 34px;
-          height: 34px;
-          border: 3px solid rgba(255, 255, 255, 0.4);
-          border-radius: 17px;
-          background: transparent;
-
-          &:hover, &:focus {
-            border-color: rgba(255, 255, 255, 0.9);
-    
-            &:before {
-              border-color: rgba(255, 255, 255, 0.9);
-            }
-    
-            i {
-              color: rgba(255, 255, 255, 0.9);
-            }
-          }
-
-          i {
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            right: auto;
-            bottom: auto;
-            transform: translate(-50%, -50%);
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 15px;
           }
         }
       }
@@ -981,6 +814,174 @@ input {
               margin-top: 22px;
             }
           }
+        }
+      }
+    }
+  }
+
+  .dropdown-wrap {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    &.hidden {
+      display: none;
+    }
+
+    > div {
+      width: 310px;
+      margin-top: 20px;
+      background: #fff;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        border: 6px solid transparent;
+        border-bottom-color: #fff;
+      }
+
+      a {
+        color: #313131;
+      }
+
+      i {
+        color: #aaaaaa;
+      }
+
+      > h3 {
+        padding: 10px 0px;
+        font-size: 16px;
+        text-align: center;
+        border-bottom: 1px solid #e7e7e7;
+        color: #4d4d4d;
+      }
+
+      > ul {
+        padding: 20px;
+
+        > li {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .popup-design {
+    border: 1px solid #f2f2f2;
+
+    > ul {
+      position: relative;
+      height: 170px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 800px 170px;
+      box-shadow: inset 0 0 0 700px rgba(0,0,0,0.4);
+      color: #f2f2f2;
+
+      > li {
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, 0%);
+        width: 240px;
+        font-size: 16px;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: opacity .5s;
+
+        &.on {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .login {
+      position: relative;
+
+      > a {
+        display: block;
+        margin: 20px;
+        padding: 13px 0px;
+        text-align: center;
+        background: #000;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 12px;
+      }
+
+      .join-btn {
+        position: absolute;
+        top: -100px;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        width: calc(100% - 40px);
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  .site-search {
+    .box-close, .box-open {
+      &.hidden {
+        display: none;
+      }
+    }
+    > div {
+      position: absolute;
+      top: 0%;
+      left: auto;
+      right: 0%;
+      bottom: auto;
+
+      button {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        left: auto;
+        bottom: auto;
+        width: 34px;
+        height: 34px;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        border-radius: 17px;
+        background: transparent;
+
+        &:hover, &:focus {
+          border-color: rgba(255, 255, 255, 0.9);
+  
+          &:before {
+            border-color: rgba(255, 255, 255, 0.9);
+          }
+  
+          i {
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+
+        i {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          right: auto;
+          bottom: auto;
+          transform: translate(-50%, -50%);
+          color: rgba(255, 255, 255, 0.4);
+          font-size: 15px;
         }
       }
     }
@@ -2581,26 +2582,33 @@ input {
 
         .outside-gnb-info {
           position: relative;
-          // padding: 5px 60px 0px 0px;
+          top: 0px;
+          left: auto;
+          right: 50px;
+          bottom: auto;
           text-align: right;
           height: 80px;
-          line-height: 80px;
 
           > li {
             display: inline-block;
-            margin-right: 25px;
+            margin: 26px 25px 0px 0px;
             color: #ABA7A3;
             font-size: 20px;
             cursor: pointer; 
   
-            span[hidden-text].hidden {
+            > span[hidden-text].hidden {
               display: none;
             }
-  
+
+            > span {
+              i {
+                color: rgba(255, 255, 255, 0.4);
+              }
+            }
             .dropdown-wrap {
               display: block;
               top: -450px;
-              right: 70px;
+              right: 18px;
               left: auto;
               bottom: auto;
               font-size: 11px;
@@ -2610,12 +2618,14 @@ input {
               &.hidden {
                 display: none;
               }
-  
+              
               &.on {
-                top: 35px;
+                top: calc(100% - 20px);
   
                 > div {
                   &:before {
+                    top: 56px;
+                    right: 118px;
                     opacity: 1;
                   }
                 }
@@ -2649,6 +2659,31 @@ input {
             }
           }
         }
+
+        .site-search {
+          > div {
+            button {
+              top: 23px;
+              border: none;
+
+              i {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .popup-design {
+      > ul {
+        height: 160px;
+      }
+
+      .login {
+        > a {
+          padding: 12px 0px;
+        }
       }
     }
         
@@ -2674,19 +2709,19 @@ input {
 
 
 
-@media all and (max-width: 1023px) {  
-  body {
-    overflow: hidden;
-  }
+// @media all and (max-width: 1023px) {  
+//   body {
+//     overflow: hidden;
+//   }
 
-  .body-modal.backdrop {
-    display: block;
-    background: black;
-    z-index: 3;
+//   .body-modal.backdrop {
+//     display: block;
+//     background: black;
+//     z-index: 3;
 
-    .dialog {
-      width: 500px;
-      font-size: 25px;
-    }
-  }
-}
+//     .dialog {
+//       width: 500px;
+//       font-size: 25px;
+//     }
+//   }
+// }

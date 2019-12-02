@@ -427,61 +427,6 @@ input {
   letter-spacing: 15px;
 }
 
-.index #pc-index-header .dropdown-wrap {
-  position: absolute;
-  top: 100%;
-  left: auto;
-  right: auto;
-  bottom: auto;
-}
-
-.index #pc-index-header .dropdown-wrap.hidden {
-  display: none;
-}
-
-.index #pc-index-header .dropdown-wrap > div {
-  width: 310px;
-  margin-top: 20px;
-  background: #fff;
-}
-
-.index #pc-index-header .dropdown-wrap > div:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 8px;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  border: 6px solid transparent;
-  border-bottom-color: #fff;
-}
-
-.index #pc-index-header .dropdown-wrap > div a {
-  color: #313131;
-}
-
-.index #pc-index-header .dropdown-wrap > div i {
-  color: #aaaaaa;
-}
-
-.index #pc-index-header .dropdown-wrap > div > h3 {
-  padding: 10px 0px;
-  font-size: 16px;
-  text-align: center;
-  border-bottom: 1px solid #e7e7e7;
-  color: #4d4d4d;
-}
-
-.index #pc-index-header .dropdown-wrap > div > ul {
-  padding: 20px;
-  color: #727272;
-}
-
-.index #pc-index-header .dropdown-wrap > div > ul > li {
-  text-align: center;
-}
-
 .index #pc-index-header .dropdown-wrap .shopping-area:before {
   left: 10px;
 }
@@ -570,121 +515,6 @@ input {
 
 .index #pc-index-header .dropdown-wrap .shopping-area > div .use-gps a {
   color: #aaaaaa;
-}
-
-.index #pc-index-header .dropdown-wrap .popup-design {
-  border: 1px solid #f2f2f2;
-}
-
-.index #pc-index-header .dropdown-wrap .popup-design > ul {
-  position: relative;
-  height: 170px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 800px 170px;
-  -webkit-box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.4);
-          box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.4);
-  color: #f2f2f2;
-}
-
-.index #pc-index-header .dropdown-wrap .popup-design > ul > li {
-  position: absolute;
-  top: 45px;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  width: 240px;
-  font-size: 16px;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
-}
-
-.index #pc-index-header .dropdown-wrap .popup-design > ul > li.on {
-  opacity: 1;
-  visibility: visible;
-}
-
-.index #pc-index-header .dropdown-wrap .popup-design .login {
-  position: relative;
-}
-
-.index #pc-index-header .dropdown-wrap .popup-design .login > a {
-  display: block;
-  margin: 20px;
-  padding: 13px 0px;
-  text-align: center;
-  background: #000;
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 12px;
-}
-
-.index #pc-index-header .dropdown-wrap .popup-design .login .join-btn {
-  position: absolute;
-  top: -100px;
-  right: auto;
-  left: auto;
-  bottom: auto;
-  width: calc(100% - 40px);
-  background: #fff;
-  color: #000;
-}
-
-.index #pc-index-header .site-search .box-close.hidden, .index #pc-index-header .site-search .box-open.hidden {
-  display: none;
-}
-
-.index #pc-index-header .site-search > div {
-  position: absolute;
-  top: 0%;
-  left: auto;
-  right: 0%;
-  bottom: auto;
-}
-
-.index #pc-index-header .site-search > div button {
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  left: auto;
-  bottom: auto;
-  width: 34px;
-  height: 34px;
-  border: 3px solid rgba(255, 255, 255, 0.4);
-  border-radius: 17px;
-  background: transparent;
-}
-
-.index #pc-index-header .site-search > div button:hover, .index #pc-index-header .site-search > div button:focus {
-  border-color: rgba(255, 255, 255, 0.9);
-}
-
-.index #pc-index-header .site-search > div button:hover:before, .index #pc-index-header .site-search > div button:focus:before {
-  border-color: rgba(255, 255, 255, 0.9);
-}
-
-.index #pc-index-header .site-search > div button:hover i, .index #pc-index-header .site-search > div button:focus i {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.index #pc-index-header .site-search > div button i {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 15px;
 }
 
 .index #pc-index-header .gnb > ul > li[menu] > ul[menu-list] .fashion-show a {
@@ -945,6 +775,175 @@ input {
 .index #pc-index-header .gnb > ul > li[menu] .details > div {
   position: relative;
   margin-top: 22px;
+}
+
+.index .dropdown-wrap {
+  position: absolute;
+  top: 100%;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.index .dropdown-wrap.hidden {
+  display: none;
+}
+
+.index .dropdown-wrap > div {
+  width: 310px;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.index .dropdown-wrap > div:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: 6px solid transparent;
+  border-bottom-color: #fff;
+}
+
+.index .dropdown-wrap > div a {
+  color: #313131;
+}
+
+.index .dropdown-wrap > div i {
+  color: #aaaaaa;
+}
+
+.index .dropdown-wrap > div > h3 {
+  padding: 10px 0px;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+  color: #4d4d4d;
+}
+
+.index .dropdown-wrap > div > ul {
+  padding: 20px;
+}
+
+.index .dropdown-wrap > div > ul > li {
+  text-align: center;
+}
+
+.index .popup-design {
+  border: 1px solid #f2f2f2;
+}
+
+.index .popup-design > ul {
+  position: relative;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 800px 170px;
+  -webkit-box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.4);
+  color: #f2f2f2;
+}
+
+.index .popup-design > ul > li {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 240px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.index .popup-design > ul > li.on {
+  opacity: 1;
+  visibility: visible;
+}
+
+.index .popup-design .login {
+  position: relative;
+}
+
+.index .popup-design .login > a {
+  display: block;
+  margin: 20px;
+  padding: 13px 0px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.index .popup-design .login .join-btn {
+  position: absolute;
+  top: -100px;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  width: calc(100% - 40px);
+  background: #fff;
+  color: #000;
+}
+
+.index .site-search .box-close.hidden, .index .site-search .box-open.hidden {
+  display: none;
+}
+
+.index .site-search > div {
+  position: absolute;
+  top: 0%;
+  left: auto;
+  right: 0%;
+  bottom: auto;
+}
+
+.index .site-search > div button {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  left: auto;
+  bottom: auto;
+  width: 34px;
+  height: 34px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 17px;
+  background: transparent;
+}
+
+.index .site-search > div button:hover, .index .site-search > div button:focus {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.index .site-search > div button:hover:before, .index .site-search > div button:focus:before {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.index .site-search > div button:hover i, .index .site-search > div button:focus i {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.index .site-search > div button i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
 }
 
 .index .index-main {
@@ -2283,24 +2282,30 @@ input {
   }
   .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info {
     position: relative;
+    top: 0px;
+    left: auto;
+    right: 50px;
+    bottom: auto;
     text-align: right;
     height: 80px;
-    line-height: 80px;
   }
   .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li {
     display: inline-block;
-    margin-right: 25px;
+    margin: 26px 25px 0px 0px;
     color: #ABA7A3;
     font-size: 20px;
     cursor: pointer;
   }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li span[hidden-text].hidden {
+  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li > span[hidden-text].hidden {
     display: none;
+  }
+  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li > span i {
+    color: rgba(255, 255, 255, 0.4);
   }
   .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap {
     display: block;
     top: -450px;
-    right: 70px;
+    right: 18px;
     left: auto;
     bottom: auto;
     font-size: 11px;
@@ -2312,9 +2317,11 @@ input {
     display: none;
   }
   .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap.on {
-    top: 35px;
+    top: calc(100% - 20px);
   }
   .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap.on > div:before {
+    top: 56px;
+    right: 118px;
     opacity: 1;
   }
   .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap > div {
@@ -2340,6 +2347,19 @@ input {
   .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap > div > ul > li {
     font-size: 16px;
   }
+  .index #mobile-index-header .mobile-menu-wrap .site-search > div button {
+    top: 23px;
+    border: none;
+  }
+  .index #mobile-index-header .mobile-menu-wrap .site-search > div button i {
+    font-size: 18px;
+  }
+  .index .popup-design > ul {
+    height: 160px;
+  }
+  .index .popup-design .login > a {
+    padding: 12px 0px;
+  }
   .index .prev-fontawesome {
     position: absolute;
     top: 20px;
@@ -2355,21 +2375,6 @@ input {
   }
   .index .prev-fontawesome.on {
     display: inline;
-  }
-}
-
-@media all and (max-width: 1023px) {
-  body {
-    overflow: hidden;
-  }
-  .body-modal.backdrop {
-    display: block;
-    background: black;
-    z-index: 3;
-  }
-  .body-modal.backdrop .dialog {
-    width: 500px;
-    font-size: 25px;
   }
 }
 /*# sourceMappingURL=index.css.map */
