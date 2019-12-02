@@ -2952,24 +2952,41 @@
         $this.find('[dropdown]').addClass('hidden');
       }, 200);
     }
+    
+    function toggleDropdown(){
+      var $this = $(this);
+      var dropdown = $this.find('[dropdown]');
 
-    $(document).on('mouseenter', '[popper]', function(){
-      showDropdown.call(this);
-    });
-
-    $(document).on('mouseleave', '[popper]', function(){
-      hiddenDropDown.call(this);
-    });
+      if( dropdown.hasClass('hidden') ) {
+        dropdown.removeClass('hidden');
+        setTimeout(function() {
+          dropdown.addClass('on');
+        }, 0);
+      } else {
+        dropdown.addClass('hidden');
+        dropdown.removeClass('on');
+      }
+    }
 
     $('[dropdown]').addClass('hidden');
-    
+    // $('[dropdown]').addClass('on');
+
+    if ( bodyWidth < 1023 ) {
+      $(document).on('click', '[popper]', function(){
+        toggleDropdown.call(this);
+      });
+    } else {
+      $(document).on('mouseenter', '[popper]', function(){
+        showDropdown.call(this);
+      });
+
+      $(document).on('mouseleave', '[popper]', function(){
+        hiddenDropDown.call(this);
+      });
+    }
   }
 
   createPopperDropdownActive();
-
-  
-
-
 
 
   //snb dropdown text slide .popup-design
@@ -2981,7 +2998,7 @@
     var timerId = '';
     var timerSpeed = 2000;
 
-    var $popupDesignUls = $('#pc-index-header .popup-design > ul');
+    var $popupDesignUls = $('.popup-design > ul');
     $popupDesignUls.each(function(){
       var $selector = $(this);
       $selector.empty();
@@ -3048,10 +3065,19 @@
 
   //nav gnb fashion-show slide 
   function createFashionShowSlide(data) {
-    var $fashionShow = $('#pc-index-header .fashion-show');
+    var slideProps ={
+      numSlide : '',
+      slideWidth : 0,
+      slideHeight: 0,
+      slideWrapWidth : 0
+    }
+
+    var $fashionShow =  $('.fashion-show');
     var $fashionShowList = $fashionShow.children("ul").empty();
     var $fashionShowFigure = $fashionShow.find('figure .slide-wrap').empty();
+    var $fashionShowIndicator = $fashionShow.find('#indicator').empty();
     var bodyWidth = $('body').width();
+
 
     for(var i=0,l=data.length;i<l;i++){
       var datum = data[i];
@@ -3067,19 +3093,9 @@
           ' + datum.title + '\
         </em>\
       </a>');
-    }
 
-    var slideProps ={
-      numSlide : '',
-      slideWidth : 0,
-      slideHeight: 0,
-      slideWrapWidth : 0
+      $fashionShowIndicator.append('<li><a href="#"><span class="text-ir"' +  ( datum.index + 1) + '번 슬라이드</span></a></li>\n');
     }
-
-    $('.fashion-show #indicator').empty();
-    $('.fashion-show .slide-wrap > a').each(function(i){
-      $('.fashion-show #indicator').append('<li><a href="#"><span class="text-ir"' + (i + 1) + '번 슬라이드</span></a></li>\n');
-    });
 
     $('.fashion-show #indicator li:first-child').addClass('on');
 
@@ -3105,6 +3121,7 @@
     $(window).resize(function() {
       createSlideWrapWidth(slideProps);
     });
+
 
     $('.fashion-show #indicator > li > a').on('click', function(e){
       var index = $('.fashion-show #indicator > li').index($(this).parent());
