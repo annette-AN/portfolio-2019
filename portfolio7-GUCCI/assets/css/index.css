@@ -125,6 +125,10 @@ input {
   font-size: 12px;
 }
 
+.inside-gnb-hidden {
+  display: none;
+}
+
 .index .visual {
   position: relative;
   height: 633px;
@@ -302,10 +306,6 @@ input {
   font-size: 9px;
 }
 
-.index #mobile-index-header {
-  display: none;
-}
-
 .index #pc-index-header {
   position: fixed;
   top: 0px;
@@ -425,6 +425,57 @@ input {
   font-size: 28px;
   font-weight: 400;
   letter-spacing: 15px;
+}
+
+.index #pc-index-header .site-search .box-close.hidden, .index #pc-index-header .site-search .box-open.hidden {
+  display: none;
+}
+
+.index #pc-index-header .site-search > div {
+  position: absolute;
+  top: 0%;
+  left: auto;
+  right: 0%;
+  bottom: auto;
+}
+
+.index #pc-index-header .site-search > div button {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  left: auto;
+  bottom: auto;
+  width: 34px;
+  height: 34px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 17px;
+  background: transparent;
+}
+
+.index #pc-index-header .site-search > div button:hover, .index #pc-index-header .site-search > div button:focus {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.index #pc-index-header .site-search > div button:hover:before, .index #pc-index-header .site-search > div button:focus:before {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.index #pc-index-header .site-search > div button:hover i, .index #pc-index-header .site-search > div button:focus i {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.index #pc-index-header .site-search > div button i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
 }
 
 .index #pc-index-header .dropdown-wrap .shopping-area:before {
@@ -777,6 +828,291 @@ input {
   margin-top: 22px;
 }
 
+.index #mnb {
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+
+.index #mnb.on {
+  max-height: 835px;
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.index #mnb .menu-wrap {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 80px;
+  background: #111;
+}
+
+.index #mnb .menu-wrap .menu .menu-open-btn {
+  position: relative;
+  float: left;
+  margin: 30px 0px 0px 30px;
+  font-size: 20px;
+  color: #ABA7A3;
+  background: transparent;
+  z-index: 1;
+}
+
+.index #mnb .menu-wrap .menu .menu-open-btn:before {
+  display: inline-block;
+  content: url(../img/icons/menu-bar.png);
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.index #mnb .menu-wrap .menu .menu-close-btn {
+  display: none;
+  position: relative;
+  float: right;
+  width: 18px;
+  margin: 15px 15px 0px 0px;
+  font-size: 15px;
+  background: transparent;
+  z-index: 5;
+}
+
+.index #mnb .menu-wrap .menu .menu-close-btn.on {
+  display: block;
+}
+
+.index #mnb .menu-wrap .menu .menu-close-btn.active {
+  display: block;
+  right: 20px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 835px;
+  text-align: center;
+  z-index: 3;
+  background-color: #fff;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info.on {
+  display: block;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info > li a {
+  display: block;
+  height: 40px;
+  margin: 5px 0px;
+  padding: 10px 0px 0px 0px;
+  color: #323232;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .gnb {
+  padding: 40px 0px 0px 0px;
+  background: rgba(255, 255, 255, 0.98);
+  z-index: 2;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .gnb > ul > li[menu] > a {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul {
+  display: none;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .dropdown-wrap {
+  position: static;
+  top: auto;
+  left: auto;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .dropdown-wrap .popup-design {
+  width: 100%;
+  border: none;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .dropdown-wrap .popup-design > ul {
+  height: 140px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .dropdown-wrap .popup-design > ul > li {
+  width: 80%;
+  top: 35px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info #popup-login .login .join-btn {
+  top: -85px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 320px;
+  font-size: 12px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info #popup-login .login .login-btn {
+  margin: 20px 0px 0px 0px;
+  background-color: transparent;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info #popup-like-it h3 {
+  padding: 0px;
+  border: none;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info #popup-like-it .dropdown-wrap > div {
+  width: 100%;
+  margin: 0px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info #popup-like-it .dropdown-wrap > div:before {
+  display: none;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info #popup-like-it .dropdown-wrap > div > ul {
+  display: none;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .delivery-area > ul {
+  display: none;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .languege {
+  height: 40px;
+  margin: 5px 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .languege span {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.index #mnb .menu-wrap .inside-gnb-info .clientservice-num i {
+  display: none;
+}
+
+.index #mnb .menu-wrap h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.index #mnb .menu-wrap h1 img {
+  width: 147px;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 80px;
+  text-align: right;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li {
+  display: inline-block;
+  margin: 26px 25px 0px 0px;
+  color: #ABA7A3;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li > span[hidden-text].hidden {
+  display: none;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li > span i {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap {
+  display: block;
+  top: -450px;
+  right: 18px;
+  left: auto;
+  bottom: auto;
+  font-size: 11px;
+  width: 43%;
+  -webkit-transition: top .5s;
+  transition: top .5s;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap.hidden {
+  display: none;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap.on {
+  top: calc(100% - 20px);
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap.on > div:before {
+  top: 56px;
+  right: 118px;
+  opacity: 1;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap > div {
+  width: 100%;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap > div:before {
+  position: fixed;
+  top: 51px;
+  right: 126px;
+  border-width: 12px;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap > div > h3 {
+  padding-top: 15px;
+  font-size: 24px;
+  border-bottom: none;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap > div > ul {
+  padding: 0px 0px 25px 0px;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info > li .dropdown-wrap > div > ul > li {
+  font-size: 16px;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info .site-search > div button {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.index #mnb .menu-wrap .outside-gnb-info .site-search > div button i {
+  font-size: 18px;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info .site-search .box-open.m-hidden {
+  display: none;
+}
+
+.index #mnb .menu-wrap .outside-gnb-info .site-search .box-close.m-hidden {
+  display: none;
+}
+
 .index .dropdown-wrap {
   position: absolute;
   top: 100%;
@@ -893,57 +1229,6 @@ input {
   width: calc(100% - 40px);
   background: #fff;
   color: #000;
-}
-
-.index .site-search .box-close.hidden, .index .site-search .box-open.hidden {
-  display: none;
-}
-
-.index .site-search > div {
-  position: absolute;
-  top: 0%;
-  left: auto;
-  right: 0%;
-  bottom: auto;
-}
-
-.index .site-search > div button {
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  left: auto;
-  bottom: auto;
-  width: 34px;
-  height: 34px;
-  border: 3px solid rgba(255, 255, 255, 0.4);
-  border-radius: 17px;
-  background: transparent;
-}
-
-.index .site-search > div button:hover, .index .site-search > div button:focus {
-  border-color: rgba(255, 255, 255, 0.9);
-}
-
-.index .site-search > div button:hover:before, .index .site-search > div button:focus:before {
-  border-color: rgba(255, 255, 255, 0.9);
-}
-
-.index .site-search > div button:hover i, .index .site-search > div button:focus i {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.index .site-search > div button i {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 15px;
 }
 
 .index .index-main {
@@ -1949,410 +2234,8 @@ input {
   .index #pc-index-header {
     display: none;
   }
-  .index #mobile-index-header {
+  .index #mnb {
     display: block;
-  }
-  .index #mobile-index-header .mobile-menu-wrap {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: auto;
-    bottom: auto;
-    width: 100%;
-    height: 80px;
-    background: #111;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .mobile-menu .menu-open-btn {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    right: auto;
-    bottom: auto;
-    font-size: 20px;
-    color: #ABA7A3;
-    background: transparent;
-    z-index: 1;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .mobile-menu .menu-open-btn:before {
-    display: inline-block;
-    content: url(../img/icons/menu-bar.png);
-    margin-right: 5px;
-    vertical-align: middle;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .mobile-menu .menu-close-btn {
-    display: none;
-    position: fixed;
-    right: 5px;
-    padding-left: 15px;
-    background: transparent;
-    font-size: 15px;
-    z-index: 3;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .mobile-menu .menu-close-btn.on {
-    display: block;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .mobile-menu .menu-close-btn.active {
-    display: block;
-    right: 20px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info {
-    display: none;
-    position: fixed;
-    top: 345px;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info.on {
-    display: block;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .dropdown-wrap {
-    position: static;
-    top: 0px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .dropdown-wrap > div {
-    width: 100%;
-    border: none;
-    background: transparent;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info > li {
-    height: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #5C5C5C;
-    line-height: 40px;
-    letter-spacing: 1px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info > li h3, .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info > li a, .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info > li span {
-    font-size: 15px;
-    font-weight: bold;
-    color: #313131;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info > li > span.inside-gnb-hidden {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb {
-    display: none;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: auto;
-    bottom: auto;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.98);
-    z-index: 2;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb.on {
-    display: block;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul {
-    min-height: 814px;
-    padding-top: 30px;
-    overflow: auto;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu].hidden {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu].active {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: auto;
-    bottom: auto;
-    width: 100%;
-    height: 100%;
-    padding: 0px 10px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu].active > a {
-    height: 60px;
-    line-height: 60px;
-    border-bottom: 1px solid #DBD8D6;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > a {
-    display: block;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #363636;
-    letter-spacing: 1px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list].on {
-    display: block;
-    padding-top: 0px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] > li {
-    padding-left: 10px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list {
-    position: relative;
-    border-bottom: 1px solid #DBD8D6;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > a {
-    display: block;
-    height: 80px;
-    line-height: 80px;
-    font-size: 20px;
-    color: #313131;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > a .mobile-list-icon {
-    display: block;
-    position: absolute;
-    top: 33px;
-    right: 10px;
-    left: auto;
-    bottom: auto;
-    width: 16px;
-    height: 16px;
-    color: #999999;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > a .mobile-list-icon i {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: auto;
-    bottom: auto;
-    font-size: 16px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > a .mobile-list-icon i.hidden {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > ul {
-    display: none;
-    overflow: hidden;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > ul.on {
-    display: block;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > ul > li {
-    display: block;
-    float: left;
-    width: 50%;
-    padding-left: 10px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .mobile-list > ul > li > a {
-    display: block;
-    padding-bottom: 20px;
-    color: #313131;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show, .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit {
-    border-bottom: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show > a, .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit > a {
-    padding-top: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #313131;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show .fashion-show-list {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure {
-    background: pink;
-    display: block;
-    width: 100%;
-    max-width: none;
-    margin: 20px auto 0px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure .slide {
-    padding-top: 38%;
-    height: auto;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure #indicator {
-    bottom: 20px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure #indicator li + li {
-    margin-left: 8px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure #indicator li:hover a, .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure #indicator li:focus a, .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure #indicator li.on a {
-    background: #fff;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .fashion-show figure #indicator li a {
-    width: 8px;
-    height: 8px;
-    border-color: #fff;
-    border-radius: 8px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit {
-    height: 300px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit > a {
-    display: block;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit > ul {
-    display: block;
-    padding: 0px;
-    margin-top: 20px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit > ul > li + li {
-    margin-top: 25px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit > ul > li {
-    margin-top: 0px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit > ul > li > a div {
-    width: 90px;
-    height: 90px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .gnb > ul > li[menu] > ul[menu-list] .gucci-edit > ul > li > a em {
-    font-size: 20px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-login {
-    height: auto;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-login .dropdown-wrap .popup-design > ul {
-    height: 140px;
-    margin-bottom: 30px;
-    background-size: cover;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-login .dropdown-wrap .popup-design > ul li {
-    top: 25px;
-    width: 90%;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-login .dropdown-wrap .popup-design .login > a {
-    height: 40px;
-    line-height: 40px;
-    margin: 0px;
-    padding: 0px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-login .dropdown-wrap .popup-design .login .join-btn {
-    top: -90px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-    width: 320px;
-    font-weight: normal;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-login .dropdown-wrap .popup-design .login .login-btn {
-    background: transparent;
-    font-size: 15px;
-    color: #313131;
-    letter-spacing: 1px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-like-it .dropdown-wrap > div {
-    margin: 0px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-like-it .dropdown-wrap > div h3 {
-    padding: 0px;
-    border: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-like-it .dropdown-wrap > div h3 a {
-    display: block;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info #popup-like-it .dropdown-wrap > div > ul {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .delivery-area .area {
-    text-decoration: underline;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .delivery-area > ul {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .clientservice-num > span i {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .clientservice-num > span a {
-    text-decoration: underline;
-    font-weight: normal;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .inside-gnb-info .clientservice-num:before {
-    content: 'Client Services:';
-    font-weight: normal;
-  }
-  .index #mobile-index-header .mobile-menu-wrap h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: auto;
-    bottom: auto;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  .index #mobile-index-header .mobile-menu-wrap h1 img {
-    width: 147px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info {
-    position: relative;
-    top: 0px;
-    left: auto;
-    right: 50px;
-    bottom: auto;
-    text-align: right;
-    height: 80px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li {
-    display: inline-block;
-    margin: 26px 25px 0px 0px;
-    color: #ABA7A3;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li > span[hidden-text].hidden {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li > span i {
-    color: rgba(255, 255, 255, 0.4);
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap {
-    display: block;
-    top: -450px;
-    right: 18px;
-    left: auto;
-    bottom: auto;
-    font-size: 11px;
-    width: 43%;
-    -webkit-transition: top .5s;
-    transition: top .5s;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap.hidden {
-    display: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap.on {
-    top: calc(100% - 20px);
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap.on > div:before {
-    top: 56px;
-    right: 118px;
-    opacity: 1;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap > div {
-    width: 100%;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap > div:before {
-    position: fixed;
-    top: 51px;
-    right: 126px;
-    border-width: 12px;
-    opacity: 0;
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap > div > h3 {
-    padding-top: 15px;
-    font-size: 24px;
-    border-bottom: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap > div > ul {
-    padding: 0px 0px 25px 0px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .outside-gnb-info > li .dropdown-wrap > div > ul > li {
-    font-size: 16px;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .site-search > div button {
-    top: 23px;
-    border: none;
-  }
-  .index #mobile-index-header .mobile-menu-wrap .site-search > div button i {
-    font-size: 18px;
   }
   .index .popup-design > ul {
     height: 160px;
@@ -2361,6 +2244,7 @@ input {
     padding: 12px 0px;
   }
   .index .prev-fontawesome {
+    display: none;
     position: absolute;
     top: 20px;
     left: 17px;
@@ -2375,6 +2259,21 @@ input {
   }
   .index .prev-fontawesome.on {
     display: inline;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  body {
+    overflow: hidden;
+  }
+  .body-modal.backdrop {
+    display: block;
+    background: black;
+    z-index: 3;
+  }
+  .body-modal.backdrop .dialog {
+    width: 500px;
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=index.css.map */
